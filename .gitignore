@@ -1,0 +1,11 @@
+# Ignore all hidden directories/files (covers .claude, .gemini, .agent, etc.)
+.*
+
+# Ignore specific content folders
+skills/
+
+# Ignore python scripts
+*.py
+
+# Exceptions (Allow these specific files)
+!.gitignore
