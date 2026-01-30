@@ -662,7 +662,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 ---
 
 ### 2.6 Long-Running Containers
-**Problem Solved:** Vercel timeout for AI agents (AI-02)  
+**Problem Solved:** Serverless function timeout for AI agents (AI-02)
 **Solution:** No timeouts, perfect for Python agents  
 **Features:**
 - ECS Fargate-based (serverless containers)

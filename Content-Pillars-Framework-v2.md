@@ -248,7 +248,7 @@ We allocate resources based on Revenue Potential (Agencies) and Viral Reach (AI-
 *   **Priority:** High (Buzz Engine, Viral Reach).
 *   **Focus Pillars:** Simplified DevOps (Pillar 1), Unified Billing (Pillar 4).
 *   **Primary Channels:**
-    *   **Twitter / X:** Short video demos (#BuildInPublic), memes about Vercel timeouts.
+    *   **Twitter / X:** Short video demos (#BuildInPublic), memes about serverless function timeouts.
     *   **YouTube:** 5-min tutorials ("Deploy Python AI Agent in 3 Clicks").
     *   **Dev.to:** Cross-post "Works on Localhost" guides.
 *   **Timing:** 2:00 PM EST / 8:00 PM [Local Time] (Catch US/Global overlap + night owls).
@@ -276,7 +276,7 @@ We allocate resources based on Revenue Potential (Agencies) and Viral Reach (AI-
     *   "It Works on Localhost, Fails in Production: A Fix" (Guide, AI-Native)
 *   **Week 3:**
     *   "Multi-Cloud Infrastructure for Agencies: The Setup" (Tutorial, Agency)
-    *   "Fixing Vercel Timeouts in 5 Mins" (Video, AI-Native)
+    *   "Fixing Serverless Function Timeouts in 5 Mins" (Video, AI-Native)
 *   **Week 4:**
     *   "The [Currency] Card Barrier: Paying for Cloud Locally" (Op-Ed, Agency)
     *   "No-Ops Guide for CTOs: Escaping the DevOps Tax" (Whitepaper, Spread)

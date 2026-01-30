@@ -51,6 +51,6 @@
 | Feature | Option A (Speed) | Option B (Ownership) |
 | :--- | :--- | :--- |
 | **Metaphor** | "The Launchpad" 🚀 | "The Automated CTO" 👔 |
-| **Enemy** | Limits & Timeouts (Vercel) | Rent & Lock-in (Heroku) |
+| **Enemy** | Limits & Serverless Function Timeouts | Rent & Lock-in (Heroku) |
 | **Promise** | "You will ship faster." | "You will build an asset." |
 | **Vibe** | Exciting, Limitless | Intelligent, Prudent |

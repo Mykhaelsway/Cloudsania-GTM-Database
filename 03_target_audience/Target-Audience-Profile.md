@@ -77,7 +77,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **Top Priority** | Speed to Prototype | Management Efficiency | Ease of Use / Modernization | Compliance & Governance |
 | **Key Fear** | Tech Debt / Config Hell | Client Churn (Downtime) | AWS Complexity Barrier | Regulatory Fines / Lock-in |
-| **Buying Trigger** | Hackathon / Vercel Timeout | Reaching >10 Client Sites | Moving off Shared Hosting | Audit / Regional Expansion |
+| **Buying Trigger** | Hackathon / Serverless Function Timeout | Reaching >10 Client Sites | Moving off Shared Hosting | Audit / Regional Expansion |
 | **Price Sensitivity** | High (Bootstrapping) | Low (Pass cost to client) | High (Personal projects) | Low (Pay for Reliability) |
 | **Simplicity Hook** | "No Dockerfiles" | "One Dashboard" | "Git Push PHP" | "Automated Compliance" |
 | **Billing Hook** | "Capped Pricing" | "Unified Client Billing" | "Predictable Costs" | "Infrastructure Ownership" |
