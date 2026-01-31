@@ -12,9 +12,9 @@ This document synthesizes the **Value Proposition Canvas** and the **Strategic O
 **Source Map:** *Canvas 1 + Option B ("Smart Ownership")*
 
 > **For** Agencies and Development Shops
-> **Who** struggle with "Dashboard Chaos," fragmented billing across 50+ client sites, and the high cost of hiring dedicated DevOps staff to manage downtime liability,
+> **Who** struggle with "Dashboard Chaos," fragmented billing across multiple client sites, and the high cost of hiring dedicated DevOps staff to manage downtime liability,
 > **Cloudsania is** an Automated Cloud Command Center (Multi-Tenancy PaaS)
-> **That** unifies all client infrastructure into a single "Chief Technology Office" dashboard, automating security updates, backups, and deployments so you can scale your client base without increasing headcount.
+> **That** unifies all client infrastructure into a single control dashboard, automating security updates, backups, and deployments so you can scale your client base without increasing headcount.
 > **Unlike** managing disparate hosting accounts or hiring an expensive DevOps team,
 > **Cloudsania** runs as a Unified Control Plane on your own infrastructure, giving you predictable flat-rate pricing per client and full ownership of the billing relationship.
 
@@ -28,7 +28,7 @@ This document synthesizes the **Value Proposition Canvas** and the **Strategic O
 > **For** AI Engineers and Fast-Moving Founders
 > **Who** need to ship viral applications instantly but are held back by **Deployment Anxiety** and the fear of **Production Instability** inherent in restrictive starter platforms,
 > **Cloudsania is** an Instant Infrastructure Launchpad
-> **That** provides **zero-config, one-click simplicity** combined with the raw, uncapped power of persistent cloud servers—allowing long-running agents and vector databases to scale indefinitely.
+> **That** provides **zero-config, one-click simplicity** combined with the raw, uncapped power of persistent cloud servers—allowing long-running agents and AI workloads to scale indefinitely.
 > **Unlike** serverless platforms that kill your processes or hit you with surprise overage bills,
 > **Cloudsania** offers an "Always-On" container architecture with capped pricing, ensuring your viral success doesn't bankrupt you.
 
@@ -42,7 +42,7 @@ This document synthesizes the **Value Proposition Canvas** and the **Strategic O
 > **For** PHP, Laravel, and WordPress Developers
 > **Who** want to modernize but battle the **Fear of Obsolescence** on aging platforms, and are held back by **Command-Line Anxiety** when facing the complexity of Kubernetes and AWS,
 > **Cloudsania is** a Cloud Abstraction Bridge
-> **That** delivers the effortless "Heroku Experience" for proven, established web technologies, removing the need for FTP, cPanel, or manual server maintenance.
+> **That** delivers the effortless "Modern PaaS Experience" for proven, established web technologies, removing the need for FTP, cPanel, or manual server maintenance.
 > **Unlike** staying stuck on fragile Shared Hosting or struggling to learn Docker from scratch,
 > **Cloudsania** wraps your trusted stack in modern containers automatically, giving you enterprise-grade reliability and rolling updates with zero refactoring required.
 

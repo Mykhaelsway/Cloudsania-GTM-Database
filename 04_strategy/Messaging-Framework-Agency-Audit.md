@@ -1,528 +1,591 @@
 # Messaging Framework & Agency Segment Audit Report
 
 **Date:** January 31, 2026
-**Scope:** Content Pillars Framework v2.1 (de facto Messaging Framework), Segment Positioning Statements (Agency Section), Non-Technical Positioning Option B, Target Audience Profile (Agency Section), Value Proposition Canvas 1 (Agencies)
-**Validated Against:** Product Capabilities Reference v1.0 (single source of truth)
-**Relationship:** This report extends the original Proof-Point-Audit-Report.md. Findings here are net-new — previously flagged items ($15 pricing, white-label, self-healing, etc.) are referenced but not repeated.
-**Status:** 15 net-new findings — 3 Critical, 5 High, 5 Medium, 2 Low
+**Scope:**
+- `Messaging-Framework.md` v2.0 (Core Messaging Framework — source of truth for all GTM messaging)
+- `04_strategy/Segment-Positioning-Statements.md` (Agency section — main branch version)
+- Cross-referenced with: Content Pillars Framework v2.1, Non-Technical Positioning Option B, Target Audience Profile, Value Proposition Canvas 1
+**Validated Against:** `Cloudsania-Product-Capabilities-Reference.md` v1.0
+**Relationship:** This report extends the original `Proof-Point-Audit-Report.md`. Findings here are net-new — previously flagged items ($15 pricing, white-label, self-healing, etc.) are referenced but not repeated.
+**Status:** 19 net-new findings — 4 Critical, 6 High, 6 Medium, 3 Low
 
 ---
 
 ## Executive Summary
 
-The Content Pillars Framework v2.1 functions as the operational messaging framework. Its narrative structure — 5 pillars, "Crisis → Trust → Conversion" sequence, 90-day editorial calendar — is strategically sound. However, beneath the structure, a pattern of **capability inflation** runs through the Agency segment specifically. Multiple messaging documents promise billing consolidation, client-level cost dashboards, and reseller-style billing control that the product does not offer. This is distinct from the phantom features flagged in the first audit (white-label, vector DB) — this is a systemic issue where the Agency value proposition has been built on assumptions about a billing/management layer that doesn't exist in the Product Capabilities Reference.
+The Messaging Framework v2.0 represents a significant improvement over the pre-audit state of the GTM database. Pricing has been largely corrected to $39/$79/$99 in the proof points catalog (Sections 4.x), the AI-Native segment ARPU is correctly stated as $39-79/mo, and the validation checklist (Section 8) provides strong governance guardrails. However, the audit identified **19 net-new findings** in three categories:
 
-The Agency segment of the Segment Positioning file compounds this by labeling Cloudsania a "Multi-Tenancy PaaS" — directly contradicting the core BYOC/Control Plane positioning that differentiates Cloudsania from every competitor.
+1. **Phantom capabilities in the Agency segment** — "Agency Portals," "Real-time per-client resource tracking," and "Pass-through billing transparency" are cited as proof points and sales script differentiators, but none exist in the Product Capabilities Reference. This is the same pattern identified in the previous audit: the Agency value proposition has been built on an assumed billing/management layer that the product does not offer.
 
-**Core problem:** The Agency messaging promises an "Agency Operating System" that manages billing, clients, and infrastructure from one dashboard. The product delivers a "Cloud Orchestration Control Plane" that manages infrastructure. The gap between these two messages is where trust will break.
+2. **"Capped pricing" language without BYOC disclaimer** — The framework uses "capped pricing" and "know your max spend" as core proof points across 7+ locations without clarifying that cloud provider costs are separate and variable under the BYOC model.
+
+3. **Structural gaps** — The Competitive Positioning Summary table (Section 2) is completely empty, the changelog records an obsolete $15/user correction, and three dependency documents remain missing from the repository.
 
 ---
 
-## Part 1: Content Pillars Framework v2.1 — Audit
+## Part 1: Messaging Framework v2.0 — Proof Point Audit
 
-### Finding M-1: AI-Native Segment ARPU Is Based on Obsolete Pricing
+### Finding F-1: Changelog Records $15/user as a "Fix" — Contradicts Document Content
 
 **Severity:** CRITICAL
-**Location:** `Content-Pillars-Framework-v2.md:12`
+**Location:** `Messaging-Framework.md:410`
 ```
-**AI-Native Builders (33%):** High Priority ($15-25/mo, High Virality).
+| 2.0 | Jan 22, 2026 | Comprehensive audit corrections: ... fixed pricing to $15/user ... |
 ```
 
 **The Problem:**
-The $15-25/mo ARPU figure for AI-Native Builders is derived from the phantom $15/user pricing (Critical Finding 1.1 in the original audit). If actual pricing is $39/user (Starter), the ARPU floor for this segment is $39/mo — not $15-25/mo.
+The changelog says v2.0 "fixed pricing to $15/user." But the actual document content uses $39/user throughout (lines 48, 110, 115, 119, 230, 254, 347, 398). The changelog records a correction that is itself wrong, creating confusion about which pricing is intentional.
 
-**Cascading Damage:**
-- The entire content allocation model (47%/33%/20%) is justified by ARPU ratios. If AI-Native ARPU is higher than modeled, the allocation split may need rebalancing.
-- The "High Virality / Low ARPU" narrative that justifies giving agencies 47% breaks down if AI-Native builders are actually $39+/mo.
+Anyone reading the changelog would conclude the document's $39/user references are errors that should be $15/user. This directly undermines the pricing governance the document tries to establish.
 
-**Cross-Reference:** Also appears in `Target-Audience-Profile.md:69` which cites "$120-375/mo" for agencies, while `Value-Proposition-Canvases-Professional.md:10` cites "ARPU Target: $500-1500/mo (10-15 users @ $79 or $99)". See Finding M-8 for the Agency ARPU conflict.
-
-**Recommendation:** Recalculate both segment ARPUs using confirmed pricing. If Starter is $39/user:
-- AI-Native (solo builder): ~$39/mo
-- AI-Native (2-person team): ~$78/mo
-- Agency (5-person team @ Pro): ~$395/mo
-- Agency (10-person team @ Team): ~$990/mo
+**Recommendation:** Update the changelog entry to reflect the actual state:
+```
+| 2.0 | Jan 22, 2026 | Comprehensive audit corrections: Removed Whogohost/Flutterwave/M-Pesa references, aligned pricing to $39/$79/$99 tiers (Product Capabilities Reference), reordered pillars to match validated hierarchy (Simplicity+Control PRIMARY), replaced all customer language with validated Secret Language + Pain IDs, updated Control Plane guidance |
+```
 
 ---
 
-### Finding M-2: Pillar 4 Promises Billing Consolidation Across Cloud Accounts
+### Finding F-2: "Agency Portals" — Phantom Feature Used as Proof Point and Sales Differentiator
 
 **Severity:** CRITICAL
-**Location:** `Content-Pillars-Framework-v2.md:60`
-```
-**Theme:** Consolidate 50+ client cloud bills into one dashboard.
-Pay in your local currency, bill your client on your terms.
-```
+**Locations:**
+- `Messaging-Framework.md:75` — Secondary Benefit: "Multi-Org Agency Portals"
+- `Messaging-Framework.md:278` — Proof Point: "Agency Portals for Clients"
+- `Messaging-Framework.md:355` — Sales Call Script: "99.9% uptime guarantee and Agency Portal included"
 
 **Product Reality:**
-The Product Capabilities Reference contains **zero mentions** of:
-- Billing dashboard
-- Cost breakdown per project or per client
-- Usage dashboard
-- Billing consolidation
-- Client billing management
+The Product Capabilities Reference documents "Multi-Org Support" (`line 1016: ✅ Available`) — this is organizational separation within the platform. It is NOT an "Agency Portal" — a term that implies a client-facing, possibly branded interface for agencies to give their end clients access to a managed hosting dashboard.
 
-Grep for `billing.*dashboard`, `cost.*breakdown`, `resource.*tracking`, `per.project.*cost`, and `usage.*dashboard` across the Product Capabilities Reference returned **zero results**.
+Grep for `agency portal`, `client portal`, `portal` across the Product Capabilities Reference:
+- Zero results for "agency portal" or "client portal"
+- "Portal" only appears in the context of the support portal (`line 1025: "emergency hotline available via support portal"`)
 
-The product offers:
-- "Monitoring Dashboard" and "Logging Dashboard" (infrastructure metrics, not billing)
-- "Resource optimization: Automated recommendations for cost and performance optimization" (line 515) — but this is infrastructure optimization guidance, not a billing tool
-- Pricing is per-user for the Cloudsania platform; cloud provider costs go directly to the customer's own cloud account
-
-**The Gap:** BYOC means each client's infrastructure lives on their own (or the agency's) cloud provider account. Cloud provider bills go to the account holder, not through Cloudsania. Cloudsania cannot "consolidate 50+ client cloud bills" because those bills are between the client and AWS/DO/Vultr — Cloudsania is not in the billing chain.
-
-**Where this claim propagates:**
-| File | Line | Claim |
-|:---|:---|:---|
-| `Content-Pillars-Framework-v2.md` | 60 | "Consolidate 50+ client cloud bills into one dashboard" |
-| `Content-Pillars-Framework-v2.md` | 168 | "Unexpected AWS Bill? Pass Costs to Clients Transparently" |
-| `Target-Audience-Profile.md` | 106 | Feature Focus: "Dashboard, Unified Billing" |
-| `Target-Audience-Profile.md` | 121 | Billing Hook: "Unified Client Billing" |
-| `Target-Audience-Profile.md` | 135 | "Your Agency Operating System (Consolidation of billing + tech)" |
-| `Value-Proposition-Canvases-Professional.md` | 63 | "Usage Dashboard: Client-level resource breakdown — 🟢 Strong" |
-| `digital-to-physical-framework.md` | 100 | Event slide: "Automate Client Billing" |
-| `digital-to-physical-framework.md` | 157 | "Billing Automation: Handle client payments easily" |
-| `digital-to-physical-framework.md` | 169 | Workshop: "Setting Up Client Billing" |
-| `Segment-Positioning-Statements.md` | 19 | "full ownership of the billing relationship" |
-
-**Risk:** This is the single most pervasive phantom capability in the Agency messaging. It appears in 6 different documents across 10+ locations. An agency owner attending a Cloudsania workshop expecting to "set up client billing" will find no such feature exists.
+**Risk:** The Agency sales call script (line 355) uses "Agency Portal included" as a closing differentiator. A sales prospect hearing this will expect a specific feature that doesn't exist. This is the highest-risk finding because it will surface in live sales conversations, not just content.
 
 **Recommendation:**
-1. Remove all "Unified Billing" claims that imply billing aggregation or client invoicing
-2. Replace with validated capability: "Unified infrastructure dashboard — monitor all client projects, deployments, and uptime from one screen"
-3. If a billing/cost-visibility dashboard is on the product roadmap, document it in the Product Capabilities Reference with a target date before messaging it
-4. The Pillar 4 name "Unified Billing & Cost Control" should be reframed to "Predictable Pricing & Cost Visibility" to reflect what actually exists (fixed per-user platform fee + BYOC cost transparency through cloud provider consoles)
+1. Replace "Multi-Org Agency Portals" with "Multi-Org project separation with role-based access"
+2. Remove "Agency Portals for Clients" from proof points catalog (Section 4.7)
+3. Rewrite sales call script line 355: "99.9% uptime guarantee and multi-project management included."
 
 ---
 
-### Finding M-3: Pillar 5 Claims "Global Support Team" — Contradicts Documented Hours
-
-**Severity:** HIGH
-**Location:** `Content-Pillars-Framework-v2.md:72`
-```
-"Global support team that understands your local infrastructure reality."
-```
-
-**Product Reality:**
-- `Cloudsania-Product-Capabilities-Reference.md:1047-1048`: Support hours are Mon-Fri 9AM-6PM UTC+1, Sat 10AM-4PM UTC+1, Sun limited email
-- No mention of "global support team" anywhere in the Product Capabilities Reference
-- Grep for `global support`, `global team`, `support team` across the Product Capabilities Reference returned **zero results**
-
-**The Contradiction:** The support hours are aligned to a single timezone (West African Time / UTC+1). This is the opposite of a "global" team — it's a regional team, which is actually a *strength* for the African market positioning but shouldn't be called "global."
-
-**Recommendation:** Replace "Global support team" with "Engineering support team based in your timezone (WAT/UTC+1)." This turns a weakness (not 24/7 global) into a strength (same-timezone, context-aware support).
-
----
-
-### Finding M-4: Pillar 5 Claims Region-Specific Infrastructure Expertise — Not Validated
-
-**Severity:** HIGH
-**Location:** `Content-Pillars-Framework-v2.md:69`
-```
-"Engineering support that understands infrastructure challenges (latency, bandwidth, local constraints) specific to your region."
-```
-
-**Product Reality:**
-The Product Capabilities Reference documents support channels (email, Slack, WhatsApp) and incident response processes but makes no claims about:
-- Region-specific infrastructure expertise
-- Latency optimization knowledge
-- Bandwidth-aware support
-- Local ISP or connectivity constraint knowledge
-
-**Risk:** This positions Pillar 5 as a differentiation pillar built on unvalidated expertise claims. If a customer opens a ticket about latency issues from Lagos to AWS eu-west-1 and receives generic troubleshooting, the pillar fails.
-
-**Recommendation:** Either validate this capability with the support team (document specific regional expertise in the Product Capabilities Reference) or soften to: "Support team that understands the deployment challenges developers face in emerging markets."
-
----
-
-### Finding M-5: "Bill Your Client on Your Terms" Implies Reseller Billing
-
-**Severity:** HIGH
-**Location:** `Content-Pillars-Framework-v2.md:60`
-```
-bill your client on your terms
-```
-**Also appears in:**
-- `Target-Audience-Profile.md:76`: "Wants to markup hosting costs easily"
-- `Target-Audience-Profile.md:134`: "Turn hosting costs into profit margins"
-- `digital-to-physical-framework.md:100, 157, 169, 351`: Client billing slides, workshops, checklists
-
-**Product Reality:**
-Cloudsania does not provide:
-- Client invoicing tools
-- Markup/margin configuration
-- Reseller billing dashboards
-- White-label payment processing
-
-"Infrastructure Reselling" is explicitly listed as a **Roadmap** item (`Cloudsania-Product-Capabilities-Reference.md:820-823`):
-```
-**1. Cloudsania Cloud (Infrastructure Reselling):**
-- **Goal:** Direct margin capture on compute resources.
-- **Model:** Reselling standardized server instances (similar to PipeOps Nova).
-- **Timeline:** Late 2026.
-```
-
-**The Problem:** The messaging treats reseller billing as a current capability. The product roadmap says it's targeted for late 2026. Every event workshop slide, every agency positioning statement, and every "Billing Hook" in the ICP comparison table references a feature that won't exist until late 2026 at the earliest.
-
-**Recommendation:**
-1. Remove all "bill your client" and "markup hosting" claims from current messaging
-2. Replace with validated capability: "Manage all client infrastructure from one dashboard. Pass through cloud costs transparently — clients own their accounts, you own the relationship"
-3. When "Cloudsania Cloud" launches (late 2026), reinstate the reseller billing narrative with validated proof points
-
----
-
-### Finding M-6: Content Pillars Appendix Cites Stale Competitive Landscape Version
-
-**Severity:** MEDIUM
-**Location:** `Content-Pillars-Framework-v2.md:403`
-```
-**Competitive Landscape v2.4:** Source of Competitive Angles.
-```
-
-**Reality:** The current document is `Competitive-Landscape-Analysis-v2.md` at version 2.5 (per the changelog on line 641). The Content Pillars Framework references v2.4, which means competitive angles may be based on outdated analysis.
-
-**Recommendation:** Update the appendix reference to v2.5 (or current version). Verify that any competitive angles derived from v2.4 remain valid in v2.5.
-
----
-
-### Finding M-7: "Vercel Bill Shock: The Capped Solution" Editorial Title Is Misleading
-
-**Severity:** MEDIUM
-**Locations:** `Content-Pillars-Framework-v2.md:160, 228, 275`
-
-These editorial calendar entries position Cloudsania's "capped pricing" as a direct solution to Vercel's usage-based billing overages. However:
-1. Cloudsania's platform fee is per-user, not usage-based — this IS more predictable than Vercel's bandwidth overages
-2. BUT the cloud provider bill under BYOC is still usage-based and NOT capped
-3. The total cost comparison Cloudsania vs Vercel is more nuanced than "capped vs shock"
-
-**Recommendation:** Retitle to "Vercel Bill Shock: The BYOC Cost Control Alternative" — this frames the value as *control over your infrastructure spend* rather than *capping*, which is more honest and still compelling.
-
----
-
-### Finding M-8: Agency Segment Has a Missing Value Proposition (#2)
-
-**Severity:** MEDIUM
-**Location:** `Target-Audience-Profile.md:78-82`
-```
-### **The Value Proposition:**
-1.  **"Unified Dashboard":** Manage 50 clients from one screen.
-
-3.  **"No-Ops":** Fire your SysAdmin. We are your DevOps team.
-```
-
-Value proposition #2 is entirely missing. The numbering jumps from 1 to 3. This is the **highest-ARPU** segment with the **highest content allocation (47%)** and it has an incomplete value proposition in the source document.
-
-**Recommendation:** Add the missing value proposition #2. Based on Canvas 1 and the Segment Positioning Statement, this should be the reliability/SLA proposition: `2. **"Enterprise Reliability":** 99.9% SLA with automated health monitoring — stop the 3AM client calls.`
-
----
-
-## Part 2: Agency Segment Positioning — Deep Audit
-
-### Finding M-9: "Multi-Tenancy PaaS" Label Contradicts Core Positioning
+### Finding F-3: "Real-Time Per-Client Resource Tracking" — Not a Product Feature
 
 **Severity:** CRITICAL
+**Locations:**
+- `Messaging-Framework.md:79` — Missing VP entry: "Cost Transparency: Real-time per-client resource tracking"
+- `Messaging-Framework.md:253` — Proof Point: "Real-time resource tracking"
+
+**Product Reality:**
+The Product Capabilities Reference mentions:
+- "Resource optimization: Automated recommendations for cost and performance optimization" (line 515) — this is optimization guidance, not real-time tracking
+- "Monitoring Dashboard" and "Logging Dashboard" (Starter tier features) — these track infrastructure health metrics (CPU, memory, uptime), not per-client or per-project cost/resource breakdowns
+- No feature is documented that provides per-client cost allocation, resource breakdown, or billing visibility
+
+**Risk:** This proof point is listed for use in "Dashboard demos, sales" — meaning it will be demonstrated live. If the dashboard doesn't show per-client resource tracking, the demo fails at the point of highest trust-building.
+
+**Recommendation:** Remove "Real-time per-client resource tracking" from proof points. Replace with validated capability: "Centralized monitoring dashboard — uptime, health checks, and deployment status for all projects in one view."
+
+---
+
+### Finding F-4: "Pass-Through Billing Transparency" — Not a Product Feature
+
+**Severity:** HIGH
+**Location:** `Messaging-Framework.md:280`
+```
+| "Pass-through billing transparency" | Agencies | Sales calls, case studies |
+```
+
+**Product Reality:**
+Cloudsania does not provide any billing pass-through tools, invoicing, or cost-allocation features for agencies. Under BYOC, the cloud provider bills the account holder directly. Cloudsania's platform fee is billed to the agency's Cloudsania account. There is no mechanism to allocate, split, or pass through costs to end clients.
+
+**Note:** Line 252 states "Client cloud costs billed directly to them" — this is actually an honest description of how BYOC works (the client's cloud account gets the cloud bill). This should be kept and emphasized as the correct framing.
+
+**Recommendation:** Remove "Pass-through billing transparency" from proof points. Retain and promote line 252's honest framing: "Client cloud costs billed directly to their own cloud account — full transparency, no markup."
+
+---
+
+### Finding F-5: "Know Your Max Spend" — Misleading Under BYOC
+
+**Severity:** HIGH
+**Location:** `Messaging-Framework.md:48`
+```
+| **3B. Cost Certainty** | Capped, transparent pricing | "No bill shock. Know your max spend." | Capped pricing ($39/79/99 tier) |
+```
+
+**Also appears at:** Lines 110, 115, 119, 230, 254, 347
+
+**The Problem:**
+"Know your max spend" implies total cost predictability. Under BYOC:
+- The Cloudsania platform fee IS predictable ($39/$79/$99 per user per month)
+- The cloud provider bill IS NOT predictable — it depends on resource consumption (compute hours, storage, bandwidth, etc.)
+- Total spend = Cloudsania fee (predictable) + cloud provider bill (variable)
+
+"Know your max spend" is only true for the Cloudsania portion. A user running 10 ECS Fargate tasks on AWS will NOT know their max spend.
+
+**What's Correct:** The proof point column correctly states "Capped pricing ($39/79/99 tier)" — this accurately describes the Cloudsania fee. The customer language column ("Know your max spend") overstates this into total cost.
+
+**Recommendation:** Change customer language to: "Know your platform cost upfront. $39/79/99 per user — no usage surprises on Cloudsania." Add a standard qualifier wherever "capped pricing" appears: "Cloud provider costs are separate and depend on your usage."
+
+---
+
+### Finding F-6: "Lagos & Nairobi Support Hours" — Nairobi Hours Not Documented
+
+**Severity:** HIGH
+**Location:** `Messaging-Framework.md:51`
+```
+| **5. African-First Support** | Local timezone, local understanding | "Someone who knows your context" | Lagos & Nairobi support hours |
+```
+
+**Product Reality:**
+- `Cloudsania-Product-Capabilities-Reference.md:1047-1048`: Support hours are Mon-Fri 9:00 AM - 6:00 PM UTC+1 (West African Time = Lagos)
+- No mention of Nairobi (EAT = UTC+3) support hours
+- No documentation of a Nairobi-based support team or East African timezone coverage
+
+**Impact:** If a Nairobi-based user contacts support at 5:00 PM EAT (2:00 PM WAT), they'll get a response. But if they contact at 8:00 PM EAT (5:00 PM WAT), support is closing. The claim of "Nairobi support hours" implies dedicated East African coverage that isn't documented.
+
+**Recommendation:** Change proof point to: "Lagos-timezone support (9AM-6PM WAT)" until Nairobi-specific support hours are documented. If the team does cover EAT hours, document this in the Product Capabilities Reference first.
+
+---
+
+### Finding F-7: "Predictable Billing You Can Pass to Clients"
+
+**Severity:** HIGH
+**Location:** `Messaging-Framework.md:76`
+```
+| **Tertiary Benefit** | Predictable billing you can pass to clients |
+```
+
+**The Problem:**
+This implies Cloudsania provides a mechanism to "pass billing to clients." It doesn't. The agency's Cloudsania bill is per-user (team member), not per-client. An agency would need external invoicing tools (Stripe Billing, QuickBooks, etc.) to bill clients.
+
+What's valid: the Cloudsania platform fee is predictable, making it easy for an agency to factor into their client pricing. But the framing "pass to clients" implies a product feature, not a business practice.
+
+**Recommendation:** Replace with: "Predictable per-user pricing — easy to factor into client retainers."
+
+---
+
+### Finding F-8: "SOC 2/ISO 27001 Security" Used as Proof Point Without Qualification
+
+**Severity:** HIGH
+**Location:** `Messaging-Framework.md:271`
+```
+| "SOC 2/ISO 27001 security" | Startups, Agencies | RFPs, security questionnaires |
+```
+
+**Product Reality:**
+Per `Cloudsania-Product-Capabilities-Reference.md:765-771`: SOC 2 and ISO 27001 controls are "implemented" / "practices" in place, with the status described as "compliance-ready infrastructure." This is framework alignment, not achieved certification (see original audit Finding 1.5).
+
+**Risk:** This proof point is designated for use in "RFPs, security questionnaires" — the exact context where the distinction between "aligned" and "certified" matters legally. An RFP response citing "SOC 2/ISO 27001 security" without qualification could constitute misrepresentation.
+
+**Recommendation:** Replace with: "SOC 2/ISO 27001 aligned controls — compliance-ready infrastructure." Add footnote for sales team: "If asked 'Are you SOC 2 certified?' the honest answer is: 'We have SOC 2 aligned controls implemented. Formal certification is in progress.'"
+
+---
+
+### Finding F-9: "Deploy Laravel in 2 Minutes" — Unsupported Time Claim
+
+**Severity:** MEDIUM
+**Location:** `Messaging-Framework.md:150`
+```
+| **Proof Point** | "Deploy Laravel in 2 minutes. No Docker knowledge needed." |
+```
+
+**Product Reality:**
+- App Services setup time: 15-18 minutes (`Product-Capabilities-Reference.md:92`)
+- Konstacks (ECS/EC2) setup time: 20-30 minutes (`line 54-56`)
+- Cloud Connector setup time: 3 minutes (`line 183`)
+- CI/CD Pipeline setup time: 15 minutes (`line 356`)
+
+No deployment path documented in the Product Capabilities Reference takes 2 minutes end-to-end. The fastest setup (Cloud Connector) is 3 minutes, and that's just the connection — not a full deployment.
+
+**Recommendation:** Change to: "Deploy Laravel from GitHub — no Docker knowledge needed." Remove the specific time claim, or use a validated time: "App deployed in under 20 minutes from first connection."
+
+---
+
+### Finding F-10: Competitive Positioning Summary Table Is Empty
+
+**Severity:** MEDIUM
+**Location:** `Messaging-Framework.md:55-57`
+```
+| vs Competitor | Our Advantage |
+|:---|:---|
+```
+
+The table has headers but zero content. This is a core Section 2 deliverable — the "Why We Win" competitive summary. Sales and marketing teams relying on this document for competitive positioning will find nothing here.
+
+**Recommendation:** Populate from `Competitive-Landscape-Analysis-v2.md`. Minimum viable content:
+
+```
+| vs Competitor | Our Advantage |
+|:---|:---|
+| vs PipeOps | Better reliability (99.9% SLA), managed databases, no scaling ceiling |
+| vs Render/Railway | BYOC — customer owns infrastructure, no vendor lock-in |
+| vs Northflank/Porter | Heroku-like simplicity, no Kubernetes required, local payment |
+| vs Vercel | Long-running containers (no timeouts), predictable platform pricing |
+| vs Heroku | Modern infrastructure, BYOC, local payment, active development |
+```
+
+---
+
+### Finding F-11: Three Dependency Documents Still Missing
+
+**Severity:** MEDIUM
+**Location:** `Messaging-Framework.md:6`
+```
+**Dependencies:** Pain-Point-Database, Secret-Language-Dictionary, Value-Proposition-Canvases v2.0, Competitive-Landscape-v2.4, Product-Capabilities-Reference
+```
+
+**Status:**
+| Dependency | In Repository? |
+|:---|:---|
+| Pain-Point-Database | ❌ Missing |
+| Secret-Language-Dictionary | ❌ Missing |
+| Value-Proposition-Canvases v2.0 | ✅ Present (as `Value-Proposition-Canvases-Professional.md`) |
+| Competitive-Landscape-v2.4 | ✅ Present (as v2.5 — stale reference) |
+| Product-Capabilities-Reference | ✅ Present |
+
+The Messaging Framework references 19 Pain IDs (AG-01 through AG-06, AI-01 through AI-07, TD-01 through TD-06, FS-01 through FS-06) and specific "Secret Language" phrases. These are validated and useful but exist scattered across multiple documents with no single source of truth.
+
+**Recommendation:** Create `Pain-Point-Database.md` consolidating all Pain IDs. Optionally consolidate Secret Language into the same document. Update the dependency line to reflect current document names and versions.
+
+---
+
+### Finding F-12: Competitive Landscape Version Stale (v2.4 → v2.5)
+
+**Severity:** MEDIUM
+**Locations:** `Messaging-Framework.md:6, 39, 393`
+```
+Line 6:   Dependencies: ... Competitive-Landscape-v2.4 ...
+Line 39:  Based on Competitive Landscape Analysis v2.4 ...
+Line 393: Matches Competitive-Landscape-v2.4 (no Whogohost, no Flutterwave)
+```
+
+**Reality:** Current document is `Competitive-Landscape-Analysis-v2.md` at version 2.5 (per changelog line 641 of that file). Version 2.4 → 2.5 included "SOC2 achieved" corrections — meaning the Messaging Framework's compliance guidance may be based on outdated data.
+
+**Recommendation:** Update all three references to v2.5.
+
+---
+
+### Finding F-13: AI-Native Pain ID Coverage Expanded Beyond Canvas 2
+
+**Severity:** MEDIUM
+**Location:** `Messaging-Framework.md:124-129`
+```
+- **AI-06:** "OOM killed", "Container died", "Exit 137"
+- **AI-07:** "How do I deploy this?", "Totally demoralized", "I'm not technical"
+```
+
+**Observation:** The Messaging Framework references AI-06 and AI-07, but the Value Proposition Canvas 2 (AI-Native) only maps pains AI-01 through AI-04. AI-06 (Container Instability / OOM kills) and AI-07 (Non-technical deployment barrier) are additional pain points not present in the Canvas.
+
+**Impact:** This is not necessarily wrong — the Messaging Framework may have identified additional pain points from research that the Canvas didn't include. However, the Canvas should be the validated source. Either the Canvas needs updating or the Messaging Framework is using unvalidated Pain IDs.
+
+**Recommendation:** If AI-06 and AI-07 are validated from research, add them to Value Proposition Canvas 2. If not, remove from the Messaging Framework or mark as "unvalidated."
+
+---
+
+### Finding F-14: "NDPR Compliance" Referenced Without Product Validation
+
+**Severity:** MEDIUM
+**Location:** `Messaging-Framework.md:195`
+```
+- **FS-01:** "NDPR compliance deadline", "AWS Africa regions confusing", "N10M fine"
+```
+
+**Also:** Line 269: "NDPR compliance without complexity"
+
+**Product Reality:**
+The Product Capabilities Reference (Section 4.1) lists compliance alignment with: SOC 2, ISO 27001, GDPR, PCI DSS, HIPAA. Nigeria's NDPR (Nigeria Data Protection Regulation) is **not mentioned.** The BYOC model enables data residency in AWS Africa (Cape Town), which supports NDPR compliance — but the platform itself doesn't provide NDPR-specific controls, templates, or documentation.
+
+**Risk:** Telling a FinTech startup "NDPR compliance without complexity" implies Cloudsania has specific NDPR capabilities. It doesn't — it enables the infrastructure choice (deploy to af-south-1) but the compliance burden remains with the customer.
+
+**Recommendation:** Reframe from "NDPR compliance" to "NDPR-ready infrastructure — deploy to AWS Cape Town to meet data residency requirements." This is honest: Cloudsania enables the infrastructure choice; the customer handles the compliance framework.
+
+---
+
+## Part 2: Agency Segment Positioning — Deep Audit (Main Branch Version)
+
+The `main` branch version of `Segment-Positioning-Statements.md` has been partially corrected:
+- ✅ "50+ client sites" → "multiple client sites" (line 15)
+- ✅ "vector databases" → "AI workloads" (line 31)
+- ✅ "Heroku Experience" → "Modern PaaS Experience" (line 45)
+
+**However, the following issues from the previous audit persist:**
+
+### Finding F-15: "Multi-Tenancy PaaS" Label Still Present
+
+**Severity:** CRITICAL (Carried forward from M-9, confirmed on main)
 **Location:** `Segment-Positioning-Statements.md:16`
 ```
 **Cloudsania is** an Automated Cloud Command Center (Multi-Tenancy PaaS)
 ```
 
-**The Contradiction:**
-The entire GTM strategy is built on differentiating Cloudsania from PaaS providers:
-- `Competitive-Landscape-Analysis-v2.md:26`: "Cloudsania occupies the white space where Heroku-like deployment simplicity meets full infrastructure control" — positioned AGAINST PaaS
-- `Cloudsania-Product-Capabilities-Reference.md:484`: Cloudsania described as a "Control Plane", never as PaaS
-- `Technical-Positioning-Options.md:39`: "Unlike rigid PaaS providers that mask your infrastructure"
-- Every battle card positions Cloudsania as the BYOC alternative TO PaaS
+Still contradicts the core BYOC/Control Plane positioning. The main branch did NOT fix this.
 
-Calling Cloudsania a "Multi-Tenancy PaaS" in the Agency positioning statement:
-1. Undermines the BYOC differentiation (PaaS = provider hosts; BYOC = customer hosts)
-2. Invites direct comparison with Heroku/Render/Railway on PaaS terms where Cloudsania is more expensive
-3. Contradicts the "(Multi-Tenancy PaaS)" parenthetical with the immediately preceding "on your own infrastructure" claim on line 19
-
-**Recommendation:** Remove "(Multi-Tenancy PaaS)". Replace with:
-```
-**Cloudsania is** an Automated Cloud Command Center
-```
-Or, if a technical descriptor is needed:
-```
-**Cloudsania is** an Automated Cloud Command Center (Multi-Tenant Control Plane)
-```
+**Recommendation:** Remove "(Multi-Tenancy PaaS)". Use "(Multi-Tenant Control Plane)" if a technical descriptor is needed.
 
 ---
 
-### Finding M-10: "Predictable Flat-Rate Pricing Per Client" — Wrong Pricing Unit
+### Finding F-16: "Predictable Flat-Rate Pricing Per Client" Still Present
 
-**Severity:** HIGH
+**Severity:** HIGH (Carried forward from M-10, confirmed on main)
 **Location:** `Segment-Positioning-Statements.md:19`
 ```
-giving you predictable flat-rate pricing per client
+giving you predictable flat-rate pricing per client and full ownership of the billing relationship.
 ```
 
-**Product Reality:**
-Pricing is **per user** (team member), not **per client** (managed website/project). An agency with 5 team members managing 30 clients pays 5 × $79 = $395/mo regardless of the number of clients. The cost does not scale with client count — it scales with team headcount.
+Pricing is per-user, not per-client. "Full ownership of the billing relationship" implies reseller billing that doesn't exist. Main branch did NOT fix this.
 
-"Per client" framing implies a model where adding client #31 increases the Cloudsania bill. It doesn't.
-
-**Why this matters:** The "per client" framing is actually *less compelling* than reality. "Per user" means an agency can add unlimited clients without increasing their Cloudsania fee — that's a stronger selling point. The current messaging accidentally undersells the pricing model.
-
-**Recommendation:** Replace with:
-```
-giving you predictable per-user platform pricing — add more clients without increasing your Cloudsania fee
-```
+**Recommendation:** Replace with: "giving you predictable per-user platform pricing and full ownership of the infrastructure."
 
 ---
 
-### Finding M-11: "Full Ownership of the Billing Relationship" — Unsupported
+### Finding F-17: "Capped Pricing" Without BYOC Disclaimer in AI-Native Positioning
 
-**Severity:** HIGH
-**Location:** `Segment-Positioning-Statements.md:19`
+**Severity:** HIGH (Carried forward from M-5, confirmed on main)
+**Location:** `Segment-Positioning-Statements.md:33`
 ```
-full ownership of the billing relationship
+**Cloudsania** offers an "Always-On" container architecture with capped pricing, ensuring your viral success doesn't bankrupt you.
 ```
 
-**Product Reality:**
-Cloudsania provides no tools for agencies to manage, invoice, or own the billing relationship with their clients. See Finding M-2 for the comprehensive evidence. The only billing relationship Cloudsania manages is between Cloudsania and the agency (the platform subscription). How the agency bills their end clients is entirely outside Cloudsania's product scope.
+"Capped pricing" without clarifying that cloud provider costs are separate. Main branch did NOT fix this.
 
-**Recommendation:** Replace with:
-```
-full ownership of the infrastructure — your cloud, your clients, your terms
-```
-This preserves the "ownership" narrative but shifts it from billing (unvalidated) to infrastructure (validated via BYOC).
+**Recommendation:** Append: "— predictable platform pricing with transparent cloud costs on your own account."
 
 ---
 
-### Finding M-12: "Automating Security Updates" Claim Scope Is Unclear
+### Finding F-18: "Automating Security Updates" Scope Ambiguity Persists
 
-**Severity:** MEDIUM
+**Severity:** LOW (Carried forward from M-12, confirmed on main)
 **Location:** `Segment-Positioning-Statements.md:17`
 ```
 automating security updates, backups, and deployments
 ```
 
-**Validation:**
-| Claim | Product Capabilities Evidence | Status |
-|:---|:---|:---|
-| Security updates | "Regular updates and patches" (line 841), "Automated security updates" for VPS Connector (line 248) | 🟡 Partial — platform-level patches are automated; application-level security updates are customer responsibility (Shared Responsibility Model, Section 4.6) |
-| Backups | "Automated scheduled backups" (line 871), "Backup support for container volumes" (line 231) | 🟡 Partial — automated for Add-on databases; "Point-in-time recovery" is listed as upcoming (line 424) |
-| Deployments | CI/CD pipelines (Section 1.5), git-push deploy, rolling updates | ✅ Validated |
+"Security updates" doesn't distinguish between platform-level patches (automated) and application-level dependency updates (customer responsibility). Main branch did NOT fix this.
 
-**The Issue:** "Automating security updates" is ambiguous. Platform/container security patches are automated. Application dependency updates (npm audit, pip, Composer) are NOT automated by Cloudsania — those are customer responsibility per the Shared Responsibility Model. An agency hearing "automated security updates" may expect WordPress plugin auto-patching, which Cloudsania does not do.
-
-**Recommendation:** Qualify: "automating infrastructure security, automated backups, and zero-downtime deployments" — the word "infrastructure" scopes the claim correctly.
+**Recommendation:** Change to "automating infrastructure security, backups, and deployments."
 
 ---
 
-### Finding M-13: Non-Technical Option B Overpromises Dashboard Scope
-
-**Severity:** MEDIUM
-**Location:** `Non-Technical-Positioning-Options.md:39`
-```
-you get **one unified dashboard** to control everything.
-```
-
-**Product Reality:**
-The Cloudsania dashboard controls:
-- ✅ Deployments and environments
-- ✅ Infrastructure monitoring (uptime, health)
-- ✅ Logging and alerts
-- ✅ Cloud connector management
-- ✅ CI/CD pipeline configuration
-- ❌ Client billing/invoicing
-- ❌ Client communication
-- ❌ Project management
-- ❌ White-label portals
-
-"Control everything" sets an expectation the product cannot meet. Agencies managing 50 clients also need CRM, project management, and invoicing tools — none of which Cloudsania provides.
-
-**Recommendation:** Replace with: "you get **one unified dashboard** to manage all your client infrastructure."
-
----
-
-### Finding M-14: Agency ARPU Range Conflict Across Documents
-
-**Severity:** MEDIUM
-**Location:** Multiple files
-
-| Document | Agency ARPU Cited | Implied Team Size |
-|:---|:---|:---|
-| `Content-Pillars-Framework-v2.md:11` | $120-375/mo | 3-5 users @ $39-$79 |
-| `Content-Pillars-Framework-v2.md:239` | $120-375/mo | Same |
-| `Target-Audience-Profile.md:69` | $120-375/mo | Same |
-| `Value-Proposition-Canvases-Professional.md:10` | $500-1,500/mo | 10-15 users @ $79-$99 |
-
-The Content Pillars and Target Audience Profile describe a 3-15 employee agency (`Target-Audience-Profile.md:70`) with $120-375/mo ARPU. The Value Proposition Canvas targets 10-15 users at $79-$99/user, yielding $500-1,500/mo.
-
-These describe different agency sizes. The messaging framework allocates 47% of content to agencies based on the $120-375 range, but the Canvas targets the $500-1,500 range. The content may be optimized for the wrong agency size.
-
-**Recommendation:** Clarify whether the primary agency target is:
-- **Small agency (3-5 users, $120-375/mo):** Content should focus on affordability, ease of adoption, "replace your DevOps intern"
-- **Mid-size agency (10-15 users, $500-1,500/mo):** Content should focus on scale, multi-project management, enterprise SLA
-
-Align all documents to a single primary agency profile.
-
----
-
-### Finding M-15: "Fire Your SysAdmin" Language May Alienate Technical Buyers
+### Finding F-19: AI-Native Segment Positioning References "Capped Pricing" as Core Differentiator Without Dollar Amount
 
 **Severity:** LOW
-**Location:** `Target-Audience-Profile.md:81`
-```
-3. **"No-Ops":** Fire your SysAdmin. We are your DevOps team.
-```
+**Location:** `Segment-Positioning-Statements.md:33`
 
-**The Risk:** Agency purchasing decisions often involve the technical lead (the person who IS the SysAdmin). Messaging that says "fire your SysAdmin" may alienate the very person evaluating the tool. This language works for non-technical agency owners but backfires if the evaluator is technical.
+The AI-Native positioning says "capped pricing" but doesn't state the actual price. The Messaging Framework correctly uses "$39/user" in the AI-Native section. The positioning statement should be consistent.
 
-**Recommendation:** For technical audiences, reframe to: "**No-Ops:** Free your technical team from infrastructure management. We handle the DevOps so they can ship features." For non-technical audiences, the current language may remain in sales scripts but should not appear in public-facing content.
+**Recommendation:** If price is included, use the validated amount: "capped platform pricing from $39/user."
 
 ---
 
-### Finding M-16: Strategic Messaging Angle Depends on Unvalidated Reseller Capability
+## Part 3: Proof Points Catalog Cross-Reference (Messaging Framework Section 4)
 
-**Severity:** LOW
-**Location:** `Target-Audience-Profile.md:132-135`
-```
-### **Digital Agencies (The "Profit" Angle)**
-*   **"Stop being a SysAdmin. Start building your agency."**
-*   **"Turn hosting costs into profit margins."**
-*   **"Your Agency Operating System."** (Consolidation of billing + tech).
-```
+### Section-by-Section Validation
 
-**The Problem:** Two of three messaging angles depend on billing/reseller capabilities:
-- "Turn hosting costs into profit margins" — implies Cloudsania enables markup on hosting, which requires reseller billing (roadmap late 2026)
-- "Your Agency Operating System" — implies billing + tech consolidation; only tech is validated
+**4.1 Payment Proof Points**
 
-Only the first angle ("Stop being a SysAdmin") is fully supported by current product capabilities.
-
-**Recommendation:** Replace the billing-dependent angles with validated alternatives:
-```
-### **Digital Agencies (The "Efficiency" Angle)**
-*   **"Stop being a SysAdmin. Start building your agency."**
-*   **"One dashboard. Every client. Zero SSH."**
-*   **"Your Agency Infrastructure Command Center."** (Consolidation of deployments, monitoring, and environments).
-```
-
----
-
-## Part 3: Alignment Scorecard — Agency Segment
-
-### Segment Positioning Statement vs Product Capabilities Reference
-
-| Claim in Positioning Statement (Line) | Product Capabilities Evidence | Alignment |
+| Proof Point | Validated? | Notes |
 |:---|:---|:---|
-| "Dashboard Chaos" pain point (15) | Multi-org support, centralized monitoring | ✅ Valid pain identification |
-| "fragmented billing across 50+ client sites" (15) | No billing dashboard or billing consolidation | ❌ **Phantom capability** |
-| "high cost of hiring dedicated DevOps staff" (15) | Automated provisioning, Konstacks, CI/CD | ✅ Valid pain identification |
-| "Automated Cloud Command Center" (16) | Control Plane architecture, multi-org | ✅ Aligned |
-| "(Multi-Tenancy PaaS)" (16) | Explicitly positioned as Control Plane, NOT PaaS | ❌ **Contradicts core positioning** |
-| "unifies all client infrastructure into a single dashboard" (17) | Multi-org, centralized monitoring/logging | ✅ Validated |
-| "automating security updates" (17) | Platform-level patches automated; app-level is customer responsibility | 🟡 **Overstated** |
-| "automating backups" (17) | Automated backups for Add-on databases; PITR is roadmap | 🟡 **Partially validated** |
-| "automating deployments" (17) | CI/CD, git-push deploy, rolling updates | ✅ Validated |
-| "scale client base without increasing headcount" (17) | Per-user pricing, multi-org, automated provisioning | ✅ Validated |
-| "Unified Control Plane on your own infrastructure" (19) | Product Capabilities Section 1.10: "Control Plane" | ✅ Validated |
-| "predictable flat-rate pricing per client" (19) | Pricing is per-user, not per-client | ❌ **Wrong pricing unit** |
-| "full ownership of the billing relationship" (19) | No client billing/invoicing tools; reselling is roadmap (late 2026) | ❌ **Phantom capability** |
+| "Card Declined? Ours Works." | 🟡 | Depends on Paystack verification (Medium finding 3.3 from original audit) |
+| "Paystack integration live" | 🟡 | Same — "✅ Implemented / 🟡 To verify" status |
+| "No Grey.co fees" | ✅ | Competitive differentiation against a specific payment intermediary |
+| "Pay with your Naira card" | 🟡 | Depends on Paystack verification |
 
-**Scorecard: 6 Validated, 2 Partially Validated, 4 Misaligned/Phantom, 1 Contradicts Positioning**
+**4.2 Reliability Proof Points**
 
----
+| Proof Point | Validated? | Notes |
+|:---|:---|:---|
+| "99.9% SLA guarantee" | ✅ | Product Capabilities Section 2.4 |
+| "Your cloud, your reliability" | ✅ | BYOC model validated |
+| "Zero-downtime deployments" | ✅ | Rolling updates confirmed (Section 1.5) |
+| "Automated health monitoring" | ✅ | Service Health Monitoring (Section 2.4) |
 
-## Part 4: Summary Action Matrix
+**4.3 Feature Proof Points**
 
-| Finding | ID | Severity | File(s) | Fix |
+| Proof Point | Validated? | Notes |
+|:---|:---|:---|
+| "Manage multiple sites. One dashboard." | ✅ | Multi-Org + centralized monitoring |
+| "Capped pricing from $39/user" | 🟡 | Pricing correct; "capped" misleads re: cloud costs |
+| "No SSH. No Kubernetes." | ✅ | Easy Mode (Section 1.9) |
+| "Deploy from GitHub in one click" | ✅ | App Services, CI/CD integration |
+| "Git push = deploy" | ✅ | CI/CD pipelines (Section 1.5) |
+| "Zero-config deployment" | ✅ | App Services (Section 1.2) |
+| "Zero-config simplicity" | ✅ | App Services / Easy Mode |
+
+**4.4 Control & BYOC Proof Points**
+
+| Proof Point | Validated? | Notes |
+|:---|:---|:---|
+| "You keep your AWS keys" | ✅ | Cloud Connectors architecture |
+| "Deploy to your own cloud account" | ✅ | Core BYOC model |
+| "Exit anytime - your infrastructure" | ✅ | Customer owns infrastructure |
+| "Multi-cloud: AWS, DO, Vultr" | ✅ | AWS Connector + VPS Connector |
+| "Switch providers without rebuilding" | 🟡 | Architecturally possible, but no migration tooling documented |
+
+**4.5 Cost Transparency Proof Points**
+
+| Proof Point | Validated? | Notes |
+|:---|:---|:---|
+| "No bill shock. No surprises." | 🟡 | Platform fee is predictable; cloud costs are not |
+| "Client cloud costs billed directly to them" | ✅ | **Honest BYOC description — keep this** |
+| "Real-time resource tracking" | ❌ | **Phantom feature** (Finding F-3) |
+| "Cap your costs — $39 to $99/user" | 🟡 | Platform fee only; total cost not capped |
+
+**4.5B Environment Parity Proof Points**
+
+| Proof Point | Validated? | Notes |
+|:---|:---|:---|
+| "What runs in dev runs in production" | ✅ | Containerized environments (Section 1.4) |
+| "Identical environments across stages" | ✅ | Environment isolation (Section 1.4) |
+| "No more 'works on my machine'" | ✅ | Docker-based runtime consistency |
+
+**4.6 Compliance & Data Residency Proof Points**
+
+| Proof Point | Validated? | Notes |
+|:---|:---|:---|
+| "One-click deploy to AWS Cape Town" | ✅ | BYOC with AWS multi-region |
+| "NDPR compliance without complexity" | 🟡 | Enables data residency, not NDPR-specific controls (Finding F-14) |
+| "Deploy to Cape Town, Mumbai, or any region" | ✅ | Multi-region support |
+| "SOC 2/ISO 27001 security" | 🟡 | Aligned, not certified (Finding F-8) |
+| "You own the data. We orchestrate." | ✅ | Core BYOC + Control Plane model |
+
+**4.7 Agency-Specific Proof Points**
+
+| Proof Point | Validated? | Notes |
+|:---|:---|:---|
+| "Agency Portals for Clients" | ❌ | **Phantom feature** (Finding F-2) |
+| "Role-based access for junior devs" | ✅ | RBAC documented (Section 4.3) |
+| "Pass-through billing transparency" | ❌ | **Phantom feature** (Finding F-4) |
+
+### Proof Points Scorecard
+
+| Category | Total | ✅ Validated | 🟡 Needs Qualifier | ❌ Phantom |
 |:---|:---|:---|:---|:---|
-| AI-Native ARPU based on phantom $15 pricing | M-1 | CRITICAL | Content-Pillars-Framework-v2.md:12 | Recalculate using confirmed pricing |
-| Pillar 4 promises billing consolidation | M-2 | CRITICAL | 6 files, 10+ locations (see table above) | Remove billing claims; reframe as infrastructure dashboard |
-| "Multi-Tenancy PaaS" label | M-9 | CRITICAL | Segment-Positioning-Statements.md:16 | Remove "(Multi-Tenancy PaaS)", use "Control Plane" |
-| Pillar 5 "Global support team" contradiction | M-3 | HIGH | Content-Pillars-Framework-v2.md:72 | Replace with "Same-timezone support team" |
-| Pillar 5 region-specific expertise unvalidated | M-4 | HIGH | Content-Pillars-Framework-v2.md:69 | Validate with support team or soften language |
-| "Bill your client on your terms" | M-5 | HIGH | Content-Pillars, Target-Audience, digital-to-physical (6+ locations) | Remove reseller billing claims |
-| "Pricing per client" — wrong unit | M-10 | HIGH | Segment-Positioning-Statements.md:19 | Correct to "per-user" |
-| "Ownership of billing relationship" | M-11 | HIGH | Segment-Positioning-Statements.md:19 | Replace with "ownership of infrastructure" |
-| Stale Competitive Landscape version in appendix | M-6 | MEDIUM | Content-Pillars-Framework-v2.md:403 | Update to current version |
-| "Capped Solution" editorial title misleading | M-7 | MEDIUM | Content-Pillars-Framework-v2.md:160, 228, 275 | Retitle to "BYOC Cost Control Alternative" |
-| Missing Agency value proposition #2 | M-8 | MEDIUM | Target-Audience-Profile.md:80 | Add missing reliability/SLA proposition |
-| "Security updates" scope ambiguous | M-12 | MEDIUM | Segment-Positioning-Statements.md:17 | Qualify with "infrastructure" scope |
-| "Control everything" overpromise | M-13 | MEDIUM | Non-Technical-Positioning-Options.md:39 | Scope to "manage all client infrastructure" |
-| Agency ARPU conflict across documents | M-14 | MEDIUM | Content-Pillars, Target-Audience, Value-Proposition Canvas | Align to single agency profile |
-| "Fire your SysAdmin" alienates evaluators | M-15 | LOW | Target-Audience-Profile.md:81 | Reframe for technical audiences |
-| 2/3 Agency messaging angles depend on roadmap features | M-16 | LOW | Target-Audience-Profile.md:132-135 | Replace with validated alternatives |
+| Payment (4.1) | 4 | 1 | 3 | 0 |
+| Reliability (4.2) | 4 | 4 | 0 | 0 |
+| Features (4.3) | 7 | 6 | 1 | 0 |
+| Control/BYOC (4.4) | 5 | 4 | 1 | 0 |
+| Cost Transparency (4.5) | 4 | 1 | 2 | **1** |
+| Environment Parity (4.5B) | 3 | 3 | 0 | 0 |
+| Compliance (4.6) | 5 | 3 | 2 | 0 |
+| Agency-Specific (4.7) | 3 | 1 | 0 | **2** |
+| **TOTAL** | **35** | **23 (66%)** | **9 (26%)** | **3 (9%)** |
+
+**Summary:** 66% of proof points are fully validated. 26% need qualifying language (mostly around "capped pricing" and unverified Paystack status). 9% are phantom features that should be removed.
 
 ---
 
-## Part 5: QA Validation Grep Commands
+## Part 4: QA Validation Grep Commands
 
-Run from repository root after remediation. Expected: zero matches per check.
+Run from repository root after remediation. Expected: zero matches per check (excluding audit/remediation docs).
 
 ```bash
-echo "--- CHECK M-2: Billing consolidation / unified billing claims ---"
-grep -rni 'consolidat.*bill\|unified.*billing\|client.*billing\|billing.*automat\|bill.*client.*terms' \
-  --include="*.md" \
-  | grep -v "Proof-Point" \
-  | grep -v "Remediation"
-echo "Expected: 0 matches"
+#!/bin/bash
+echo "=========================================="
+echo "MESSAGING FRAMEWORK QA VALIDATION"
+echo "=========================================="
+FAIL=0
 
 echo ""
-echo "--- CHECK M-5: Reseller billing / markup claims ---"
-grep -rni 'markup.*hosting\|hosting.*profit\|billing relationship\|bill your client' \
-  --include="*.md" \
-  | grep -v "Proof-Point" \
-  | grep -v "Remediation"
-echo "Expected: 0 matches"
+echo "--- CHECK F-1: '$15/user' in changelog ---"
+RESULT=$(grep -n 'fixed pricing to \$15' Messaging-Framework.md | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL" && FAIL=$((FAIL+1)) || echo "✅ PASS"
 
 echo ""
-echo "--- CHECK M-9: PaaS label on Cloudsania ---"
-grep -rn 'Multi-Tenancy PaaS\|Multi.Tenant.*PaaS' \
-  --include="*.md" \
-  | grep -v "Proof-Point" \
-  | grep -v "Remediation"
-echo "Expected: 0 matches"
+echo "--- CHECK F-2: 'Agency Portal' as feature ---"
+RESULT=$(grep -rni 'agency portal' --include="*.md" \
+  | grep -v "Proof-Point\|Remediation\|Audit" | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL" && FAIL=$((FAIL+1)) || echo "✅ PASS"
 
 echo ""
-echo "--- CHECK M-3: 'Global support team' ---"
-grep -rni 'global support team\|global.*team.*support' \
-  --include="*.md" \
-  | grep -v "Proof-Point" \
-  | grep -v "Remediation"
-echo "Expected: 0 matches"
+echo "--- CHECK F-3: 'Real-time per-client resource tracking' ---"
+RESULT=$(grep -rni 'per.client.*resource\|resource.*tracking' --include="*.md" \
+  | grep -v "Proof-Point\|Remediation\|Audit" | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL" && FAIL=$((FAIL+1)) || echo "✅ PASS"
 
 echo ""
-echo "--- CHECK M-10: 'Per client' pricing ---"
-grep -rni 'pricing per client\|per.client.*pricing\|flat.*rate.*per client' \
-  --include="*.md" \
-  | grep -v "Proof-Point" \
-  | grep -v "Remediation"
-echo "Expected: 0 matches"
+echo "--- CHECK F-4: 'Pass-through billing' ---"
+RESULT=$(grep -rni 'pass.through.*billing\|billing.*pass' --include="*.md" \
+  | grep -v "Proof-Point\|Remediation\|Audit" | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL" && FAIL=$((FAIL+1)) || echo "✅ PASS"
 
 echo ""
-echo "--- CHECK M-1: $15-25 ARPU figure ---"
-grep -rn '\$15-25\|\$15.*25.*ARPU\|15-25/mo' \
-  --include="*.md" \
-  | grep -v "Proof-Point" \
-  | grep -v "Remediation"
-echo "Expected: 0 matches"
+echo "--- CHECK F-5: 'Know your max spend' without qualifier ---"
+RESULT=$(grep -ni 'max spend\|know your max' Messaging-Framework.md | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL — needs BYOC qualifier" && FAIL=$((FAIL+1)) || echo "✅ PASS"
 
 echo ""
-echo "--- CHECK M-13: 'control everything' ---"
-grep -rni 'control everything\|manage everything' \
-  --include="*.md" \
-  | grep -v "Proof-Point" \
-  | grep -v "Remediation"
-echo "Expected: 0 matches"
+echo "--- CHECK F-6: 'Nairobi support hours' without validation ---"
+RESULT=$(grep -ni 'Nairobi.*support\|support.*Nairobi' Messaging-Framework.md | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL — Nairobi support hours not in Product Capabilities" && FAIL=$((FAIL+1)) || echo "✅ PASS"
+
+echo ""
+echo "--- CHECK F-8: Unqualified SOC 2 in proof points ---"
+RESULT=$(grep -n 'SOC 2/ISO 27001 security' Messaging-Framework.md \
+  | grep -v 'aligned\|compliance-ready' | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL — needs 'aligned' qualifier" && FAIL=$((FAIL+1)) || echo "✅ PASS"
+
+echo ""
+echo "--- CHECK F-9: '2 minutes' deployment claim ---"
+RESULT=$(grep -ni '2 minutes\|two minutes' Messaging-Framework.md | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL — no 2-min deployment path validated" && FAIL=$((FAIL+1)) || echo "✅ PASS"
+
+echo ""
+echo "--- CHECK F-10: Empty competitive table ---"
+RESULT=$(grep -A2 'vs Competitor.*Our Advantage' Messaging-Framework.md | grep -c '|.*|.*|')
+echo "Rows with content: $RESULT"
+[ "$RESULT" -lt 3 ] && echo "❌ FAIL — table needs content" && FAIL=$((FAIL+1)) || echo "✅ PASS"
+
+echo ""
+echo "--- CHECK F-12: Stale v2.4 reference ---"
+RESULT=$(grep -n 'v2\.4' Messaging-Framework.md | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL — should be v2.5" && FAIL=$((FAIL+1)) || echo "✅ PASS"
+
+echo ""
+echo "--- CHECK F-15: 'Multi-Tenancy PaaS' (Segment Positioning) ---"
+RESULT=$(grep -n 'Multi-Tenancy PaaS' 04_strategy/Segment-Positioning-Statements.md | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL" && FAIL=$((FAIL+1)) || echo "✅ PASS"
+
+echo ""
+echo "--- CHECK F-16: 'pricing per client' (Segment Positioning) ---"
+RESULT=$(grep -ni 'pricing per client\|per client' 04_strategy/Segment-Positioning-Statements.md | wc -l)
+echo "Matches: $RESULT"
+[ "$RESULT" -gt 0 ] && echo "❌ FAIL — should be per-user" && FAIL=$((FAIL+1)) || echo "✅ PASS"
+
+echo ""
+echo "=========================================="
+echo "SUMMARY: $FAIL check(s) failed"
+if [ "$FAIL" -eq 0 ]; then
+  echo "✅ ALL CHECKS PASSED"
+else
+  echo "❌ REMEDIATION INCOMPLETE"
+fi
+echo "=========================================="
 ```
 
 ---
 
-## Relationship to Previous Audit
+## Part 5: Cumulative Finding Count (All Audits)
 
-This report adds 15 net-new findings to the 18 in the original Proof-Point-Audit-Report.md, bringing the total to **33 findings across the GTM database.** The original audit's remediation plan (Proof-Point-Remediation-Plan.md) should be extended to include these findings. Specifically:
+| Audit Report | Findings | Critical | High | Medium | Low |
+|:---|:---|:---|:---|:---|:---|
+| Proof-Point-Audit-Report.md (original) | 18 | 5 | 6 | 4 | 3 |
+| This report (Messaging Framework + Agency) | 19 | 4 | 6 | 6 | 3 |
+| **Total unique findings** | **37** | **9** | **12** | **10** | **6** |
 
-- **Phase 1** should add: M-9 (remove "Multi-Tenancy PaaS"), M-2 billing claims (10+ locations), M-5 reseller billing claims
-- **Phase 2** should add: M-1 (recalculate ARPU after pricing decision), M-10 (correct pricing unit)
-- **Phase 3** should add: M-3 (global support team), M-4 (regional expertise), M-12 (security scope)
-- **Phase 5** should add: M-6 (stale version), M-7 (editorial titles), M-8 (missing VP), M-13-16 (language fixes)
-- **Phase 6 QA** should add: All 7 grep commands above
+*Note: Findings F-15, F-16, F-17, F-18 are carried forward from the previous audit report, confirmed as still present on the main branch. They are counted once in the cumulative total.*
 
 ---
 
 **Audit Completed By:** GTM Strategy Audit
-**Version:** 1.0
+**Version:** 2.0 (replaces v1.0 — now includes actual Messaging Framework v2.0 audit)
