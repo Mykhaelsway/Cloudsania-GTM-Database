@@ -23,6 +23,44 @@
 2.  **"Long-Running Containers":** Run persistent Python/LangChain agents without the 10-second timeout limits of serverless functions.
 3.  **"Managed Data & Cost Certainty":** One-click provisioning for **Vector DBs (Pinecone/Weaviate)** and Relational DBs, all with **Capped Pricing** to prevent bill shock.
 
+### **Observed Archetypes (Field Research)**
+
+#### 1. The "AI-Native" API Wrapper (Archetype: Zyron)
+*Based on `Zyron-Tech` (Lagos)*
+
+**Who they are:**
+- **Stack:** Python/Node.js + Multiple AI APIs (Claude, Gemini, OpenAI).
+- **Behavior:** Building GenAI wrappers or internal tools powered by LLM chains.
+
+**Pain Point Hypothesis:**
+*(Ordered by Canvas 2 severity)*
+- **Configuration Complexity (10/10):** YAML, Dockerfiles, and CI pipelines stand between their code and production. They want `git push → live`. *(Canvas 2: highest-severity pain)*
+- **Cloud Cost Unpredictability (9/10):** Hosting a long-running Python server on AWS is too complex; serverless platforms are incompatible and introduce surprise overage bills. *(Canvas 2: top-3 pain)*
+- **Environment Drift (9/10):** Agent works in dev notebook but fails in production due to different Python versions, missing env vars, or dependency mismatches. *(Canvas 2: top-3 pain)*
+- **Serverless Function Timeouts (9/10):** Serverless functions time out after 10-60s. AI agent responses and chain-of-thought workflows take longer. *(Canvas 2: 9/10 pain)*
+- **Deployment Anxiety (Critical Emotional):** Fear of pushing to production and breaking a running agent mid-conversation — one bad deploy means dropped user sessions and lost trust. *(Canvas 2: Critical emotional job)*
+
+**Cloudsania Angle:** "Zero-config deployment for long-running AI agents. No YAML. No timeouts. No bill shock."
+
+---
+
+#### 2. The "Modern Stack" PaaS Refugee (Archetype: Musyonchez)
+*Based on `Musyonchez` (Lagos) & Reddit/Nairobi Techies*
+
+**Who they are:**
+- **Stack:** Next.js (Frontend) + Supabase (Backend) + Stripe/Solana.
+- **Behavior:** They love the serverless "git push deploy" DX but hate the pricing and limits.
+- **Evidence:** Reddit user explicitly moving to **Dokploy** to avoid serverless vendor lock-in.
+
+**Pain Point Hypothesis:**
+*(Ordered by Canvas 2 severity)*
+- **Configuration Complexity (10/10):** Wants the `git push` DX but can't replicate it outside serverless platforms without writing Dockerfiles and CI configs. *(Canvas 2: highest-severity pain)*
+- **Cloud Cost Unpredictability (9/10):** Serverless pricing makes no sense when hit by bots or when scaling — surprise bills turn viral success into financial disaster. *(Canvas 2: top-3 pain)*
+- **Environment Drift (9/10):** Dev/preview/prod environments behave differently — "works in preview, breaks in production." *(Canvas 2: top-3 pain)*
+- **Deployment Anxiety (Critical Emotional):** Every deploy is a gamble — the fear that a push will break the live app and there's no easy rollback. *(Canvas 2: Critical emotional job)*
+
+**Cloudsania Angle:** "The serverless DX on your own cost-capped container. Same environment from dev to prod. No surprise bills."
+
 ---
 
 ## 2. Primary Revenue Segment (The Cash Flow)
