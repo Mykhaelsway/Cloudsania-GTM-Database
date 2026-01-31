@@ -25,7 +25,7 @@
 | **AWS User Group Kenya** | Cloud/DevOps | Meetup | 600+ members. Key for infrastructure discussions. | [meetup.com/aws-user-group-nairobi](https://www.meetup.com/aws-user-group-nairobi/) |
 | **Nairobi Gophers** | GoLang | Meetup | Niche but highly technical backend devs. | [nairobi.ai](https://nairobi.ai) (Check site) |
 | **Active Tech Hubs Repo** | **MASTER LIST** | GitHub | Inventory of *physical* hubs in Kenya (Eldoret, Mombasa). | [github.com/ItsMurumba](https://github.com/ItsMurumba/tech-hubs) |
-| **Android254** | Mobile Dev | Meetup/Twitter | The OG Android community. Very active events. | [twitter.com/android254](https://twitter.com/android254) |
+| **Android254** | Mobile Dev | Meetup/Twitter | The OG Android community. Very active events. | [[Android254 Meetup](https://www.meetup.com/android254/)|
 
 ## Pan-African & Niche Communities
 **Strategy:** Join these for specialized talent (AI, Crypto, No-Code) that transcends borders.
