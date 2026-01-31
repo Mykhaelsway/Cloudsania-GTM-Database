@@ -6,7 +6,7 @@
 | Hub / Community | Location | "Vibe Check" | Key Features | Contact/Access |
 | :--- | :--- | :--- | :--- | :--- |
 | **NitHub (UNILAG)** | Akoka (Campus) | **Innovation/Dev** | The main tech hub at UNILAG. Hosting hackathons & training. | [nithub.unilag.edu.ng](https://nithub.unilag.edu.ng) |
-| **Gamr Hub (UNILAG)** | Akoka (Campus) | **Gaming/AI** | E-sports focus but attracts high-end creative devs. | Search "Gamma Hub Unilag" |
+| **Gamr Hub (UNILAG)** | Akoka (Campus) | **Gaming/AI** | E-sports focus but attracts high-end creative devs. | Search "Gamer Hub Unilag" |
 | **GDSC UNILAG** | Akoka (Community) | **Web/Mobile** | One of the most active in Africa. High builder density. | [Twitter @DSCUnilag](https://twitter.com/DSCUnilag) |
 | **CITS (UNILAG)** | Akoka (Campus) | **Academic** | "Centre for Info Tech". More formal/research focused. | [cits.unilag.edu.ng](https://cits.unilag.edu.ng) |
 | **Bridge Hub** | Akoka (Off-Campus) | **Student Hangout** | Right outside UNILAG gate. "Vibe coding" central. | [bridgebyobsidian.com](https://bridgebyobsidian.com) |
@@ -17,7 +17,6 @@
 | **PAU Tech Innovation Club** | Ibeju-Lekki | **Elite/Active** | 7 Streams (Robotics, AI, Web). 100+ Active Members. | [techinnovationclub.com](https://techinnovationclub.com) |
 | **PAU EDC** | Ibeju-Lekki | **SME/Business** | "Harvard" vibe. Best for "Agency Founder" students. | [edc.edu.ng](https://edc.edu.ng) |
 | **Hebron Startup Lab** | Ota (Covenant) | **Hard Tech** | (Offline Focus). Known to produce top founders (PiggyVest etc). | Visit Campus |
-| **Anchor Student Orgs** | Ipaja (Lagos) | **Emerging** | 600+ students. Early stage tech adoption. | Visit Campus |
 
 ## Abuja (The Emerging Capital)
 | Hub / Community | Location | "Vibe Check" | Key Features | Contact/Access |
