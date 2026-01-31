@@ -324,31 +324,43 @@ Let me know if you're still stuck. Happy to jump on a quick call.
 ### Jobs-to-be-Done (JTBD) Framework
 
 **Functional Job:**
-"When I need to deploy a client's website, I want a reliable platform that won't wake me at 3AM, so I can maintain my reputation and sleep peacefully"
+- **Agencies:** "When I need to deploy updates across 50 client sites, I want zero-downtime deployments from a single dashboard, so I can scale my client base without hiring DevOps or risking my reputation on 3 AM failures." (Canvas 1: Two Critical functional jobs + Critical emotional + Critical social)
+- **AI Builders:** "When I need to ship my AI agent to production, I want to push my repo and have it live — zero config, same environment as dev — so I can move fast without deployment anxiety or surprise bills." (Canvas 2: Config Complexity 10/10 + Environment Drift 9/10 + Both Critical emotional jobs)
+- **Traditional Devs:** "When I want to modernize my deployment workflow, I want a visual interface that replaces cPanel/FTP without requiring me to learn Docker or Kubernetes, so I can feel current without the command-line anxiety." (Canvas 3: Both Critical emotional jobs + Loss of cPanel simplicity 9/10)
+- **Funded Startups:** "When I need to pass a compliance audit and ship reliably, I want automated infrastructure on my own cloud accounts that handles deployment, security, and CI/CD, so I can stop spending $3K/mo on a DevOps hire and satisfy investors from Day 1." (Canvas 4: DevOps Costs 10/10 + Compliance 9/10 + Deployment Reliability 9/10 + Critical social job)
 
 **Emotional Job:**
-- **Feel competent:** "I can handle this without hiring expensive DevOps"
-- **Avoid embarrassment:** "No 3AM panic calls"
-- **Reduce anxiety:** "No function timeout anxiety"
+- **Agencies — Reduce operational anxiety (Critical):** "No more after-hours emergencies and manual firefighting." (Canvas 1)
+- **AI Builders — Eliminate deployment anxiety (Critical):** "Ship to production with confidence — what runs in dev runs in prod." (Canvas 2)
+- **AI Builders — Confidence in production stability (Critical):** "No 2 AM PagerDuty fears. Automated health monitoring and rollback." (Canvas 2)
+- **Traditional Devs — Overcome fear of obsolescence (Critical):** "You're not behind. Your stack just needs a modern runway." (Canvas 3)
+- **Traditional Devs — Eliminate command-line anxiety (Critical):** "No terminal. No Docker. No YAML. Just push your code." (Canvas 3)
+- **Funded Startups — Eliminate deployment fear (Critical):** "One bad deploy in regulated fintech can trigger an audit. Deploy with automated rollback." (Canvas 4)
 
 **Social Job:**
-- **Be seen as modern:** "Puzzle pieces without a picture" -> "Modern dev"
-- **Support local ecosystem:** "I'm supporting African-built solutions"
+- **Agencies — Mitigate reputational risk (Critical):** "One outage can lose an enterprise client permanently." (Canvas 1)
+- **AI Builders — Demonstrate rapid velocity (High):** "Build in Public — show investors and Twitter you ship fast." (Canvas 2)
+- **Traditional Devs — Adopt modern practices (Medium):** "Be seen as current by peers and clients." (Canvas 3)
+- **Funded Startups — Satisfy investor due diligence (Critical):** "Walk into due diligence with infrastructure that speaks for itself." (Canvas 4)
+- **All — Support local ecosystem:** "Supporting African-built solutions."
 
 ### Cognitive Biases We Leverage
 
 #### 1. Loss Aversion
-- **Application:** "Every 3AM downtime call costs you client trust. Cloudsania prevents the loss."
+- **Agencies:** "Every 3 AM downtime call costs you client trust. Cloudsania prevents the loss."
+- **Funded Startups:** "Every month without automated compliance is a month closer to regulatory fines."
+- **AI Builders:** "Every hour configuring YAML is an hour your competitor ships."
 
 #### 2. Status Quo Bias
-- **Application:** Make migration frictionless (10-minute setup). "Keep your Next.js workflow."
+- **AI Builders:** "Keep your git-push workflow. We just remove the YAML and the bill shock."
+- **Traditional Devs:** "Keep your PHP/Laravel stack. We just remove the cPanel and the FTP."
 
 #### 3. Social Proof & Belonging
-- **Application:** "Join 50+ Lagos agencies who switched." (Community Triggers)
-- **Shared Pain:** "We've debugged 'it works on production' too."
+- **Agencies:** "Join 50+ Lagos agencies who switched."
+- **AI Builders:** "Join builders who ship without deployment anxiety."
 
 #### 4. Authority
-- **Application:** "Trusted by CcHUB Lagos tech community."
+- **All:** "Trusted by CcHUB Lagos tech community."
 
 ---
 
@@ -359,10 +371,14 @@ Let me know if you're still stuck. Happy to jump on a quick call.
 | Trigger Event | Pain Point ID | Severity | Psychological State | Our Response |
 |:---|:---|:---|:---|:---|
 | **3AM downtime call** | AG-03 | 8/10 | Panic, Embarrassment | "Stop the 3AM panic. Guaranteed 99.9% uptime." |
-| **Vercel Bill Shock** | AI-03 | 10/10 | Financial Panic | "Switch to capped $15/user pricing. No surprises." |
+| **Serverless Bill Shock** | AI-03 | 9/10 | Financial Panic | "Switch to capped pricing from $39/user. No surprises." |
+| **Configuration wall** | AI-04 | 10/10 | Technical Frustration | "Push your repo. It's live. Zero config, zero YAML." |
+| **"Works on my machine" failure** | AI-01/TD-05 | 9/10 | Confusion, Frustration | "Identical environments from dev to prod. Guaranteed." |
 | **Function Timeout** | AI-02 | 9/10 | Technical Urgency | "Run long processes. No 10s limits." |
-| **Dollar Card Declined** | TD-04 | 6/10 | Frustration | "Pay with your Naira card via Paystack." |
+| **DevOps hire decision** | FS-02 | 10/10 | Budget Anxiety | "Replace the $3K/mo DevOps hire with a $99/user platform." |
+| **Investor due diligence deadline** | FS-01 | 9/10 | Compliance Panic | "Automated compliance templates. Pass due diligence from Day 1." |
 | **Compliance Audit** | FS-01 | 9/10 | Compliance Panic | "Deploy to AWS Cape Town. Your keys, your compliance." |
+| **Dollar Card Declined** | TD-04 | 6/10 | Frustration | "Pay with your Naira card via Paystack." |
 
 ---
 
