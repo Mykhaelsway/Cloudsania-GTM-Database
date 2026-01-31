@@ -29,10 +29,9 @@
 
 | Community Name | Focus Niche | Platform | "Vibe Check" / Notes | Join Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **Masakhane NLP** | **AI Research** | Slack | **The "Holy Grail" for African AI**. Researchers & NLP pros. | [Slack Invite](https://join.slack.com/t/masakhane-nlp/shared_invite/enQtODM3ODA3ODE0ODIwLTAyYzg3M2E3Nzg4Y2I3NzgxNDg4MmNlZDE4OTBjMzBjMjg4NTcxMWZlYTg3ZDljMTU4M2FjOTk3MDVjOWM2NGM) |
 | **Open Source Community Africa** | Open Source | Discord | **5k+ Members**. The main hub for OS contributors. | [Discord Invite](https://discord.com/invite/open-source-community-africa-676252299093475348) |
 | **She Code Africa** | Women in Tech | Slack | **6.5k+ Members**. Highly vetted and active. | [Apply to Join](https://shecodeafrica.org/community) |
-| **Nocode Africa** | Low-Code/No-Code | Telegram | The active chat for Bubble/Flutterflow builders. | [t.me/growwithnocodeafrica](https://t.me/growwithnocodeafrica) |
+| **Nocode Africa** | Low-Code/No-Code | Telegram | The active chat for no-code builders. | [t.me/growwithnocodeafrica](https://t.me/growwithnocodeafrica) |
 | **Web3Afrika** | Web3/Crypto | Discord | Pan-African web3 devs. | [web3afrika.com](https://web3afrika.com) |
 | **Indie Hackers Cape Town** | Bootstrapping | Meetup | Best for validated founders (despite being CPT based). | [meetup.com/indie-hackers-cape-town](https://www.meetup.com/indie-hackers-cape-town/) |
-| **TechCabal Insights** | Startups/VC | Newsletter | Not a chat, but the "Daily Read" for everyone. | [techcabal.com](https://techcabal.com) |
+
