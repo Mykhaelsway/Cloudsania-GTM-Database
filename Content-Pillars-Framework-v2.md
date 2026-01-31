@@ -53,7 +53,7 @@ These 5 pillars are the immutable core of our messaging, derived directly from M
     *   **Severity:** 10/10 (Critical)
     *   **Secret Language:** "Can't afford DevOps hire", "Constantly pulling engineers into infra", "Burn rate", "Hiring SREs"
     *   **Example Topics:**
-        *   "Replace the $3K/mo DevOps Hire with a Platform"
+        *   "Replace Dedicated DevOps Hires with a Platform"
         *   "The CTO's Guide to Zero-Ops Compliance"
         *   "Burn Rate Math: Platform vs Personnel"
     *   **Format:** ROI Calculator / Whitepaper
@@ -167,7 +167,7 @@ Each pillar is activated through 3-5 specific "Topic Clusters," prioritized by t
         *   "Stop the 3AM Client Calls: Unified Reliability"
         *   "Terrified of Plugin Updates? Automate Safety"
     *   **Format:** Case Study / Solution Brief
-    *   **SEO Targets:** "manage multiple client websites" (1,500+), "white label agency dashboard" (800+)
+    *   **SEO Targets:** "manage multiple client websites" (1,500+), "client management dashboard" (800+)
 
 *   **Cluster 2: Production Deployment Risk**
     *   **Severity:** 7/10
@@ -254,7 +254,7 @@ This distribution ensures we solve problems first (Awareness) before selling sol
 *   **Sample Topics:**
     *   "The Migration Nightmare: Leaving Proprietary Clouds"
     *   "White Label Agency Dashboard: The Feature Guide"
-    *   "Capped Pricing vs Serverless Bill Shock"
+    *   "Capped Platform Fees vs Serverless Bill Shock"
     *   "Stop Hiding Cloud Costs in Retainers"
     *   "Heroku vs Railway vs Cloudsania: 2026 Comparison"
 
@@ -309,16 +309,16 @@ We allocate resources based on Revenue Potential (Agencies) and Viral Reach (AI-
 ### Month 1: Crisis Content (Severity 9-10 Pain Points)
 *   **Week 1:**
     *   "Deploy AI Agents with Zero Config" (Tutorial, AI-Native)
-    *   "Manage 50 Projects Across AWS & DigitalOcean" (Case Study, Agency)
+    *   "Manage High-Volume Projects Across AWS & DigitalOcean" (Case Study, Agency)
 *   **Week 2:**
-    *   "Serverless Bill Shock: The Capped Solution" (Comparison, AI-Native)
+    *   "Serverless Bill Shock: The Capped Platform Solution" (Comparison, AI-Native)
     *   "It Works on Localhost, Fails in Production: A Fix" (Guide, AI-Native)
 *   **Week 3:**
     *   "Multi-Cloud Infrastructure for Agencies: The Setup" (Tutorial, Agency)
     *   "You're Not Behind: Modern Deployment Without the Terminal" (Guide, Traditional Dev)
 *   **Week 4:**
     *   "The [Currency] Card Barrier: Paying for Cloud Locally" (Op-Ed, Agency)
-    *   "Replace the $3K/mo DevOps Hire: Platform vs Personnel ROI" (Calculator/Whitepaper, Funded Startups)
+    *   "Platform vs Personnel ROI: The Cost of DevOps" (Calculator/Whitepaper, Funded Startups)
 
 ### Month 2: Trust Building (Severity 7-8 Pain Points)
 *   **Week 5:**
@@ -328,11 +328,11 @@ We allocate resources based on Revenue Potential (Agencies) and Viral Reach (AI-
     *   "Compliance Infrastructure in 15 Minutes: A CTO Walkthrough" (Demo, Funded Startups)
     *   "Why We Built No-Config Deployment" (Engineering Blog, AI-Native)
 *   **Week 7:**
-    *   "Agency Dashboard Walkthrough: 50 Sites in 1 View" (Demo, Agency)
+    *   "Agency Dashboard Walkthrough: All Your Sites in 1 View" (Demo, Agency)
     *   "cPanel to Git Migration Story" (Guide, Spread)
 *   **Week 8:**
     *   "[Region] Tech Fest 2026: DevOps Takeaways" (Recap, Agency)
-    *   "Self-Healing Infrastructure Explained" (Explainer, AI-Native)
+    *   "Auto-Recovery Infrastructure Explained" (Explainer, AI-Native)
 
 ### Month 3: Conversion (Make the Switch)
 *   **Week 9:**

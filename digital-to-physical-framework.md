@@ -153,7 +153,7 @@ Join 30 [City] Agency Owners at Our Free No-Ops Masterclass
 **What You'll Learn:**
 - ✓ **Unified Dashboard:** Manage 50 client sites from one screen
 - ✓ **BYOC:** Connect your own AWS/DigitalOcean account (We don't lock you in)
-- ✓ **White-Labeling:** Give clients a branded portal
+- ✓ **Multi-Org:** Separate client projects and billing
 - ✓ **Billing Automation:** Handle client payments easily
 
 **Who Should Attend:**

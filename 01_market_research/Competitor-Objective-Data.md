@@ -100,7 +100,7 @@
 ### **Comparative Pricing Matrix (5-User Team)**
 | Provider | Entry Cost | 5-User Estimate | Payment Method |
 | :--- | :--- | :--- | :--- |
-| **Cloudsania** | $15/user | ~$75/mo | Local/Paystack |
+| **Cloudsania** | $39/user | ~$195/mo | Local/Paystack |
 | **Northflank** | Usage | ~$50-150/mo | USD Only |
 | **Porter** | Usage | ~$60-200/mo | USD Only |
 | **Qovery** | $29/dev | $145/mo | USD Only |

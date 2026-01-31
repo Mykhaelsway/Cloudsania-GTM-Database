@@ -48,7 +48,7 @@
 | Customer Pain | Cloudsania Solution | Fit |
 |:---|:---|:---|
 | Fragmented multi-site management | **Unified Control Plane:** Centralized view for all client projects (Multi-org supported) | 🟢 Strong |
-| Client site downtime liability | **99.9% SLA:** Automated health monitoring & self-healing | 🟢 Strong |
+| Client site downtime liability | **99.9% SLA:** Automated health monitoring & auto-recovery | 🟢 Strong |
 | Talent shortage | **No-Ops Platform:** Automated Konstacks ($79/user) replace DevOps hires | 🟢 Strong |
 | Lack of Cost Transparency | **BYOC Transparency:** Real-time resource tracking per project | 🟢 Strong |
 | Production Deployment Risk | **Fearless Deployments:** Zero-downtime rolling updates | 🟢 Strong |
@@ -111,7 +111,7 @@
 | Customer Pain | Cloudsania Solution | Fit |
 |:---|:---|:---|
 | Serverless Function Timeouts | **Long-Running Containers:** No execution time limits; persistent processes | 🟢 Strong |
-| Cloud Cost Unpredictability | **Capped Pricing:** Guaranteed maximum spend ($39/user) | 🟢 Strong |
+| Cloud Cost Unpredictability | **Capped Platform Fee:** Fixed per-user pricing; separating platform costs from cloud usage | 🟢 Strong |
 | Configuration Complexity | **Zero-Config Deployment:** Automated Build→Test→Deploy pipeline | 🟢 Strong |
 | Environment Drift | **Environment Parity:** Identical configurations across stages | 🟢 Strong |
 | Container Instability | **Smart Management:** Automated resource monitoring & restarts | 🟢 Strong |

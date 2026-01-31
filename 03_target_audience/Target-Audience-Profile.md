@@ -11,7 +11,7 @@
 
 *   **Rationale:** This segment serves as the **Marketing Engine**. They create the viral loops ("I built this in 5 mins") and have the largest Total Addressable Market (TAM) due to the generative AI boom.
 *   **Profile:** Indie Hacker, AI Engineer, or Startup Technical Founder.
-*   **Tech Stack:** Python, LangChain, Vector DBs (Pinecone/Weaviate), Next.js, OpenAI/Anthropic APIs.
+*   **Tech Stack:** Python, LangChain, PostgreSQL (pgvector), Next.js, OpenAI/Anthropic APIs.
 *   **Current State:** Needs to ship AI agents and LLM-powered applications instantly but is held back by **Deployment Anxiety**, the fear of **Production Instability** on restrictive starter platforms, and the **Configuration Complexity** of getting from repo to production. *(Aligned to Positioning Statement "Who" clause + Canvas 2 top pain)*
 *   **Psychographics:**
     *   **Emotional Driver (1 — Critical):** Paralyzed by **Deployment Anxiety** — the fear that pushing code will break production and trigger "2 AM PagerDuty" incidents. *(Source: Canvas 2 Emotional Job — "Eliminate deployment anxiety," Critical)*
@@ -33,10 +33,10 @@
     **Identical configurations across dev, staging, and production** — eliminates the "works on my machine" problem. What you test locally is exactly what runs in production. *(Canvas Solution: "Environment Parity: Identical configurations across stages")*
 
 4.  **"Always-On Containers"** → *Addresses: Serverless Function Timeouts (9/10)*
-    Run persistent Python/LangChain agents and vector databases without the 10-second timeout limits of serverless functions. Long-running processes scale indefinitely. *(Canvas Solution: "Long-Running Containers: No execution time limits")*
+    Run persistent Python/LangChain agents without the 10-second timeout limits of serverless functions. Long-running processes scale indefinitely. *(Canvas Solution: "Long-Running Containers: No execution time limits")*
 
 5.  **"Managed Data Services"** → *Addresses: Database Ops Complexity (8/10)*
-    One-click provisioning for **Postgres, Redis**, and Vector DBs with automated lifecycle management. *(Canvas Solution: "Managed Services: One-click provisioning")*
+    One-click provisioning for **PostgreSQL and Redis** with automated lifecycle management. *(Canvas Solution: "Managed Services: One-click provisioning")*
 
 ---
 
@@ -46,7 +46,7 @@
 *   **Rationale:** This segment provides **Sustainable Revenue**. They stick for years, pay higher tiers ($120-375/mo), and manage high-volume workloads.
 *   **Profile:** Founder / Lead Developer / CTO of small-to-mid digital agency (3-15 employees).
 *   **Tech Stack:** WordPress, Laravel, React (Client Sites).
-*   **Current State:** Drowning in "Dashboard Chaos" (50+ client sites across cPanel/AWS/VPS).
+*   **Current State:** Drowning in "Dashboard Chaos" (multiple client sites across cPanel/AWS/VPS).
 *   **Psychographics:**
     *   **Functional Driver (1 — Critical):** Must **manage 20-50 client websites efficiently** from a single interface — current fragmentation across cPanel/AWS/VPS is unsustainable. *(Source: Canvas 1 Functional Job, Critical)*
     *   **Functional Driver (2 — Critical):** Must **deploy updates without service interruption** — every failed deployment is a direct client-churn risk. *(Source: Canvas 1 Functional Job, Critical)*
@@ -59,10 +59,10 @@
 *(Ordered by Canvas 1 pain severity and functional criticality)*
 
 1.  **"Unified Control Plane"** → *Addresses: Fragmented Multi-Site Management (9/10)*
-    Manage 50+ clients from a single "Chief Technology Office" dashboard — logs, uptime, status, and deployments in one view. *(Canvas Solution: "Unified Control Plane: Centralized view for all client projects")*
+    Manage high-volume clients from a single "Chief Technology Office" dashboard — logs, uptime, status, and deployments in one view. *(Canvas Solution: "Unified Control Plane: Centralized view for all client projects")*
 
 2.  **"Fearless Deployments"** → *Addresses: Critical Functional Job — "Deploy updates without service interruption"*
-    Zero-downtime rolling updates with automated health monitoring and self-healing. Push client updates without the 2 AM downtime risk. *(Canvas Solution: "Fearless Deployments: Zero-downtime rolling updates" + "99.9% SLA: Automated health monitoring & self-healing")*
+    Zero-downtime rolling updates with automated health monitoring and auto-recovery. Push client updates without the 2 AM downtime risk. *(Canvas Solution: "Fearless Deployments: Zero-downtime rolling updates" + "99.9% SLA: Automated health monitoring & auto-recovery")*
 
 3.  **"Predictable Flat-Rate Pricing"** → *Addresses: Critical Gain — "Predictable, flat-rate monthly billing"*
     Fixed $79/user (Pro) or $99/user (Team) pricing. No surprise bills, no cloud cost variance. Full ownership of the client billing relationship with built-in markup. *(Canvas Solution: "Capped Management Fee: Fixed $79/user" + Positioning: "predictable flat-rate pricing per client and full ownership of the billing relationship")*
@@ -95,7 +95,7 @@
     A visual, zero-config dashboard that replaces cPanel with a modern equivalent — no terminal, no SSH, no command-line required. *(Canvas Solution: "Modern Interface: Visual, zero-config dashboard")*
 
 2.  **"Cloud Power, No AWS Complexity"** → *Addresses: Hyperscaler Complexity (9/10)*
-    Automated handling of IAM, Security Groups, VPC, and all the cloud plumbing you shouldn't need to understand. The "Heroku Experience" on your own infrastructure. *(Canvas Solution: "No-Ops Abstraction: Automated handling of IAM/Security Groups")*
+    Automated handling of IAM, Security Groups, VPC, and all the cloud plumbing you shouldn't need to understand. The "Modern PaaS Experience" on your own infrastructure. *(Canvas Solution: "No-Ops Abstraction: Automated handling of IAM/Security Groups")*
 
 3.  **"Dev-to-Prod Parity"** → *Addresses: Environment Inconsistency (9/10)*
     Consistent Docker-based runtime ensures what runs in XAMPP/MAMP locally runs identically in production. No more "works on my machine." *(Canvas Solution: "Containerization: Consistent Docker-based runtime")*
@@ -112,7 +112,7 @@
 *   **Current State:** Struggling with **High DevOps Personnel Costs**, strict **Data Residency Compliance** requirements, and maintaining **Deployment Reliability** without a dedicated platform team. Needs to pass investor due diligence from Day 1. *(Aligned to Positioning Statement "Who" clause)*
 *   **Psychographics:**
     *   **Functional Driver (1 — Critical):** Must **ensure data residency compliance** — regulators require data in specific regions, and non-compliance means fines or loss of operating license. *(Source: Canvas 4 Functional Job, Critical; Pain — "Data Residency/Compliance Risk," 9/10)*
-    *   **Functional Driver (2 — Critical):** Must **optimize engineering headcount** — cannot justify $2-3K/mo for a dedicated DevOps hire at Seed/Series A stage. Every dollar goes to product. *(Source: Canvas 4 Functional Job, Critical; Pain — "High DevOps Personnel Costs," 10/10)*
+    *   **Functional Driver (2 — Critical):** Must **optimize engineering headcount** — cannot justify salary for a dedicated Ops hire at Seed/Series A stage. Every dollar goes to product. *(Source: Canvas 4 Functional Job, Critical; Pain — "High DevOps Personnel Costs," 10/10)*
     *   **Functional Driver (3 — Critical):** Must **implement Continuous Deployment (CI/CD)** — manual deployments break at scale and fail audit requirements. *(Source: Canvas 4 Functional Job, Critical)*
     *   **Social Driver (Critical):** Must **satisfy investor due diligence** — board and investors demand proof of security, compliance, and infrastructure maturity. *(Source: Canvas 4 Social Job, Critical; Positioning: "ensuring you pass due diligence from Day 1")*
     *   **Emotional Driver (Critical):** Needs to **eliminate deployment fear** — one bad deploy in a regulated environment can trigger audit reviews or customer data incidents. *(Source: Canvas 4 Emotional Job, Critical)*
@@ -162,7 +162,7 @@
 | **Buying Trigger** | Vercel Timeout / First Surprise Cloud Bill / "Works on My Machine" Failure | Reaching >10 Client Sites | Moving off Shared Hosting | Audit Deadline / Investor Due Diligence / First DevOps Hire Decision |
 | **Price Sensitivity** | High (Bootstrapping) | Low (Pass cost to client) | High (Personal projects) | Low (Pay for Reliability) |
 | **Simplicity Hook** | "Zero-Config, Dev-to-Prod Parity" | "One Dashboard" | "Modern UI, Zero CLI" | "Virtual DevOps Team + Automated Compliance" |
-| **Billing Hook** | "Capped Pricing — $39/user Max" | "Flat-Rate Pricing + Client Billing Markup" | "Predictable Costs" | "Replace $2-3K/mo DevOps Hire with $99/user Platform" |
+| **Billing Hook** | "Capped Pricing — $39/user Max" | "Flat-Rate Pricing + Client Billing Markup" | "Predictable Costs" | "Replace dedicated DevOps headcount with $99/user Platform" |
 
 ---
 
@@ -198,7 +198,7 @@
 ### **Funded Startups (The "Orchestrator" Angle)**
 *(Each angle maps to a Critical functional job or top pain from Canvas 4)*
 
-*   **DevOps Personnel Costs (10/10):** "Replace your DevOps hire with a platform. $99/user vs. $3K/month." *(Addresses the #1 pain directly; uses Canvas 4 solution: "Replaces need for dedicated Ops headcount")*
+*   **DevOps Personnel Costs (10/10):** "Replace your DevOps hire with a platform. $99/user vs. high monthly salary." *(Addresses the #1 pain directly; uses Canvas 4 solution: "Replaces need for dedicated Ops headcount")*
 *   **Data Residency/Compliance (9/10):** "Global Compliance, Local Control." *(Retained — directly addresses the 9/10 pain)*
 *   **Deployment Reliability (9/10):** "Zero-downtime deployments, automatic rollback, audit-ready logs." *(Addresses the missing 9/10 pain; uses Canvas solution: "Rolling Updates: Zero-downtime architecture with auto-rollback")*
 *   **Investor Due Diligence (Critical Social):** "Walk into due diligence with infrastructure that speaks for itself." *(Addresses the Critical social job; uses Positioning: "ensuring you pass due diligence from Day 1")*

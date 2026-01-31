@@ -19,10 +19,9 @@
 ## 4. Pricing Strategy
 *   **Model:** Flat Capability-Based Pricing
 *   **Tiers:**
-    *   **Hobby ($15/mo):** Entry level, individual devs.
-    *   **Professional ($25/mo):** Growing teams.
-    *   **Team ($40/mo):** Agencies/Mid-sized.
-    *   **Business ($75/mo):** Compliance & Enterprise needs.
+    *   **Starter ($39/user):** Entry level.
+    *   **Pro ($79/user):** Advanced features.
+    *   **Team ($99/user):** Priority support.
 
 ## 5. Channel Strategy
 *   **Inbound:** (Content, SEO, Docs)

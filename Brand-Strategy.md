@@ -49,7 +49,7 @@
 
 | Segment | The Hook | The Proof |
 |:---|:---|:---|
-| **Agencies** (Highest Priority) | "Manage 50 client sites in one view." | Unified Dashboard + 99.9% SLA |
+| **Agencies** (Highest Priority) | "Manage multiple client sites in one view." | Unified Dashboard + 99.9% SLA |
 | **AI-Native Builders** (Buzz Priority) | "Zero-config deploy. No timeouts. No bill shock." | Zero-Config Pipeline + Long-running Containers + Capped Pricing + Dev-Prod Parity |
 | **Traditional Devs** | "Modernize cPanel workflow." | Git push deploy (No Kubernetes required) |
 | **Funded Startups** | "Virtual DevOps team. Compliance from Day 1." | Automation Platform (replaces DevOps hire) + Regional BYOC + Automated CI/CD |
@@ -87,7 +87,7 @@
 ### Segment 2: AI-Native Builders (33% Allocation)
 **The "Launchpad" Segment**
 - **Profile:** AI Engineers and Fast-Moving Founders building agents/tools and LLM-powered applications.
-- **Technical Environment:** Python, LangChain, Vector DBs (Pinecone/Weaviate), Next.js, OpenAI/Anthropic APIs, Supabase.
+- **Technical Environment:** Python, LangChain, PostgreSQL (pgvector), Next.js, OpenAI/Anthropic APIs, Supabase.
 - **Psychological Drivers:**
   - **Operational (Critical — 10/10):** Overwhelmed by **Configuration Complexity** — YAML, Dockerfiles, and CI pipelines block shipping. They want `git push → live`. *(Canvas 2: 10/10, highest-severity pain)*
   - **Emotional (1 — Critical):** Paralyzed by **Deployment Anxiety** — fear that pushing code will break production and trigger dropped user sessions. *(Canvas 2: Critical emotional job)*
@@ -111,7 +111,7 @@
 - **Profile:** CTOs of Seed/Series A FinTech and HealthTech startups in regulated markets.
 - **Technical Environment:** AWS (messy), Heroku (expensive), no dedicated platform team.
 - **Psychological Drivers:**
-  - **Functional (1 — Critical, 10/10):** Must **eliminate DevOps personnel costs** — cannot justify $2-3K/mo for a dedicated Ops hire at Seed/Series A stage. Every dollar goes to product. *(Canvas 4: 10/10, highest pain across all canvases)*
+  - **Functional (1 — Critical, 10/10):** Must **eliminate DevOps personnel costs** — cannot justify salary for a dedicated Ops hire at Seed/Series A stage. Every dollar goes to product. *(Canvas 4: 10/10, highest pain across all canvases)*
   - **Functional (2 — Critical):** Must **ensure data residency compliance** — regulators require data in specific regions. Non-compliance means fines or loss of operating license. *(Canvas 4 Functional Job, Critical; Pain — 9/10)*
   - **Functional (3 — Critical):** Must **implement CI/CD** with deployment reliability — manual deployments break at scale and fail audit requirements. *(Canvas 4 Functional Job, Critical; Pain — "Deployment Reliability," 9/10)*
   - **Social (Critical):** Must **satisfy investor due diligence** — board demands proof of security, compliance, and infrastructure maturity. *(Canvas 4 Social Job, Critical)*
@@ -273,7 +273,7 @@ Let me know if you're still stuck. Happy to jump on a quick call.
 7. **African-First Support:** "Local timezone, local understanding, local language."
 
 ### Tertiary Messages (Proof Points)
-- $15/user/month (capped flat pricing)
+- $39/user/month (capped flat pricing)
 - Long-running containers (no timeouts)
 - 15-minute deployment
 - Paystack payment integration
@@ -283,7 +283,7 @@ Let me know if you're still stuck. Happy to jump on a quick call.
 
 **vs. Vercel / Railway (The "Escape" Strategy)**
 - **Attack:** "Love the UX, hate the lock-in?"
-- **Proof:** "Cloudsania gives you the same Git-push simplicity, but deployed to *your* AWS account. Plus, predictable flat pricing ($15/user) instead of usage-based bill shock."
+- **Proof:** "Cloudsania gives you the same Git-push simplicity, but deployed to *your* AWS account. Plus, predictable flat pricing ($39/user) instead of usage-based bill shock."
 
 **vs. Northflank / Porter (The "Simplicity" Strategy)**
 - **Attack:** "Powerful, but do you need a PhD in Kubernetes?"
@@ -291,7 +291,7 @@ Let me know if you're still stuck. Happy to jump on a quick call.
 
 **vs. Coolify (The "Reliability" Strategy)**
 - **Attack:** "Free is great, until it breaks at 3AM."
-- **Proof:** "Coolify is DIY. Cloudsania is managed. We offer a 99.9% SLA and 24/7 support so you can sleep."
+- **Proof:** "Coolify is DIY. Cloudsania is managed. We offer a 99.9% SLA and Business Hours support (Enterprise 24/7) so you can sleep."
 
 ---
 
@@ -327,7 +327,7 @@ Let me know if you're still stuck. Happy to jump on a quick call.
 - **Agencies:** "When I need to deploy updates across 50 client sites, I want zero-downtime deployments from a single dashboard, so I can scale my client base without hiring DevOps or risking my reputation on 3 AM failures." (Canvas 1: Two Critical functional jobs + Critical emotional + Critical social)
 - **AI Builders:** "When I need to ship my AI agent to production, I want to push my repo and have it live — zero config, same environment as dev — so I can move fast without deployment anxiety or surprise bills." (Canvas 2: Config Complexity 10/10 + Environment Drift 9/10 + Both Critical emotional jobs)
 - **Traditional Devs:** "When I want to modernize my deployment workflow, I want a visual interface that replaces cPanel/FTP without requiring me to learn Docker or Kubernetes, so I can feel current without the command-line anxiety." (Canvas 3: Both Critical emotional jobs + Loss of cPanel simplicity 9/10)
-- **Funded Startups:** "When I need to pass a compliance audit and ship reliably, I want automated infrastructure on my own cloud accounts that handles deployment, security, and CI/CD, so I can stop spending $3K/mo on a DevOps hire and satisfy investors from Day 1." (Canvas 4: DevOps Costs 10/10 + Compliance 9/10 + Deployment Reliability 9/10 + Critical social job)
+- **Funded Startups:** "When I need to pass a compliance audit and ship reliably, I want automated infrastructure on my own cloud accounts that handles deployment, security, and CI/CD, so I can stop spending on a DevOps hire and satisfy investors from Day 1." (Canvas 4: DevOps Costs 10/10 + Compliance 9/10 + Deployment Reliability 9/10 + Critical social job)
 
 **Emotional Job:**
 - **Agencies — Reduce operational anxiety (Critical):** "No more after-hours emergencies and manual firefighting." (Canvas 1)
@@ -375,7 +375,7 @@ Let me know if you're still stuck. Happy to jump on a quick call.
 | **Configuration wall** | AI-04 | 10/10 | Technical Frustration | "Push your repo. It's live. Zero config, zero YAML." |
 | **"Works on my machine" failure** | AI-01/TD-05 | 9/10 | Confusion, Frustration | "Identical environments from dev to prod. Guaranteed." |
 | **Function Timeout** | AI-02 | 9/10 | Technical Urgency | "Run long processes. No 10s limits." |
-| **DevOps hire decision** | FS-02 | 10/10 | Budget Anxiety | "Replace the $3K/mo DevOps hire with a $99/user platform." |
+| **DevOps hire decision** | FS-02 | 10/10 | Budget Anxiety | "Replace the dedicated DevOps hire with a $99/user platform." |
 | **Investor due diligence deadline** | FS-01 | 9/10 | Compliance Panic | "Automated compliance templates. Pass due diligence from Day 1." |
 | **Compliance Audit** | FS-01 | 9/10 | Compliance Panic | "Deploy to AWS Cape Town. Your keys, your compliance." |
 | **Dollar Card Declined** | TD-04 | 6/10 | Frustration | "Pay with your Naira card via Paystack." |

@@ -3,7 +3,7 @@
 **Status:** Verified & Live  
 **Date:** January 25, 2026  
 **Version:** 2.5 (Hierarchy Fix & Heroku Enrichment)  
-**Positioning:** Heroku-like Simplicity with Full Infrastructure Control
+**Positioning:** Modern PaaS Simplicity with Full Infrastructure Control
 
 ---
 
@@ -23,12 +23,12 @@ Cloudsania operates as a **Control Plane Orchestrator**—not a traditional PaaS
 ### 1.2 Strategic Positioning
 
 **Primary Differentiator: White Space Positioning**
-> "Cloudsania occupies the white space where **Heroku-like deployment simplicity** meets **full infrastructure control**."
+> "Cloudsania occupies the white space where **Zero-Config deployment simplicity** meets **full infrastructure control**."
 
 **Positioning Hierarchy:**
 
 1. **PRIMARY: Simplicity + Control (White Space)**
-   - Heroku-like UX without Kubernetes complexity
+   - Modern PaaS UX without Kubernetes complexity
    - BYOC model (deploy to your own AWS/DO/Vultr)
    - Only platform combining both advantages
 
@@ -43,7 +43,7 @@ Cloudsania operates as a **Control Plane Orchestrator**—not a traditional PaaS
 
 ### 1.3 Competitive Moat
 
-> **"Heroku-like simplicity with full infrastructure control. Built for Africa."**
+> **"Modern PaaS simplicity with full infrastructure control. Built for Africa."**
 
 **We win by being the only platform that combines:**
 
@@ -100,7 +100,7 @@ quadrantChart
 
 **Our Unique Market Position:**
 
-> "Cloudsania occupies the white space where **Heroku-like deployment simplicity** meets **full infrastructure control**, with **African-market convenience** as a tertiary benefit."
+> "Cloudsania occupies the white space where **Zero-Config deployment simplicity** meets **full infrastructure control**, with **African-market convenience** as a tertiary benefit."
 
 **What This Means:**
 
@@ -133,9 +133,9 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 
 ### Feature Comparison
 
-| Competitor | Heroku-like UX | Zero-config Deploy | BYOC | Multi-Cloud | Local Payment | Predictable Pricing | SLA | 24/7 Support | **Match %** |
+| Competitor | Modern PaaS UX | Zero-config Deploy | BYOC | Multi-Cloud | Local Payment | Predictable Pricing | SLA | 24/7 Support | **Match %** |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
-| **Cloudsania** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **100%** |
+| **Cloudsania** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **✅ (Enterprise)** | **100%** |
 | Northflank | 🟡 | 🟡 | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | 60% |
 | Porter.run | 🟡 | 🟡 | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | 60% |
 | Railway | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | 50% |
@@ -147,24 +147,24 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 
 | Competitor | Pricing Model | Entry Price | 5-User Team Cost | vs Cloudsania | Advantage? |
 |:---|:---|:---|:---|:---|:---|
-| **Cloudsania** | Per-user flat | $15/user | **$75/mo** | — | Baseline |
-| Northflank | Usage ($0.016/hr) | $2.70/mo | $50-150/mo | 🟡 Variable | Comparable |
-| Porter.run | Per-resource | $3/mo | $60-200/mo | 🟡 Variable | Comparable |
-| Qovery | Per-developer | $29/dev | **$145/mo** | ✅ +93% | **Cheaper** |
-| Vercel Pro | Per-user | $20/user | **$100/mo** | ✅ +33% | **Cheaper** |
-| Railway | Usage credits | $5 + usage | Unpredictable | ✅ Predictable | **Cheaper** |
-| Coolify | Free (DIY) | $0 | $0 + time | ❌ Premium | More expensive |
-| Render | Per-service | $7/service | ~$35-100/mo | 🟡 Variable | Comparable |
+| **Cloudsania** | Flat Platform Fee | $39/user | **$195/mo** | — | Premium |
+| Northflank | Usage ($0.016/hr) | $2.70/mo | $50-150/mo | ✅ Cheaper | ❌ Premium |
+| Porter.run | Per-resource | $3/mo | $60-200/mo | 🟡 Comparable | ❌ Premium |
+| Qovery | Per-developer | $29/dev | **$145/mo** | ✅ +35% | ❌ Premium |
+| Vercel Pro | Per-user | $20/user | **$100/mo** | ✅ +95% | ❌ Premium |
+| Railway | Usage credits | $5 + usage | Unpredictable | ✅ Predictable | ✅ Predictable |
+| Coolify | Free (DIY) | $0 | $0 + time | ❌ Premium | ❌ Premium |
+| Render | Per-service | $7/service | ~$35-100/mo | ✅ Cheaper | ❌ Premium |
 
 ### Pricing Insight
 
-> **Cloudsania is NOT the cheapest. Cloudsania is the BEST VALUE for African teams.**
+> **Cloudsania is a PREMIUM option. You pay for African localization, local support, and No-Ops control.**
 
 | vs Competitor | Price Position | Real Advantage |
 |:---|:---|:---|
-| vs Qovery/Vercel | ✅ Cheaper | Lower cost + Paystack payment |
-| vs Northflank/Porter | 🟡 Comparable | Same price + Paystack payment |
-| vs Coolify | ❌ Premium | Worth it for support + SLA |
+| vs Qovery/Vercel | ❌ Premium | Local payment + No Lock-in |
+| vs Northflank/Porter | ❌ Premium | Simpler UX + African Support |
+| vs Coolify | ❌ Premium | Worth it for SLA + 3am Support |
 
 ---
 
@@ -201,12 +201,12 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 
 **Cloudsania Advantage:**
 - **"Same infrastructure control, simpler UX"** - No Kubernetes complexity required
-- Heroku-like deployment experience (git-push deploys)
+- Modern PaaS deployment experience (git-push deploys)
 - Local payment accepted (Paystack card)
 - African timezone support
 
 **Battle Strategy:**
-> "Love Northflank's BYOC power? We give you the same infrastructure control, but with **Heroku-like simplicity**. No Kubernetes expertise required. Oh, and we accept local payment methods."
+> "Love Northflank's BYOC power? We give you the same infrastructure control, but with **Modern PaaS simplicity**. No Kubernetes expertise required. Oh, and we accept local payment methods."
 
 ---
 
@@ -236,7 +236,7 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 **Cloudsania Advantage:**
 - **"Simpler pricing, no credit games"** - Flat pricing from day 1
 - Know your costs upfront (no surprises when credits expire)
-- Heroku-like UX without credit complexity
+- Modern PaaS UX without credit complexity
 - Local payment accepted
 
 **Battle Strategy:**
@@ -258,7 +258,7 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 | **Payment Methods** | ❌ **USD only** |
 
 **User Praise:**
-- "Heroku-like simplicity without Heroku pricing"
+- "Modern PaaS simplicity without PaaS pricing"
 - "Git-push deploys just work"
 - "Preview environments are game-changing"
 - "Managed databases included"
@@ -352,17 +352,20 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 
 | Feature | Render | Railway | Northflank | Porter | Qovery | Coolify | **Cloudsania** |
 |:---|:---|:---|:---|:---|:---|:---|:---|
-| **Heroku-like UX** | ✅ | ✅ | ❌ | 🟡 | ❌ | 🟡 | **✅** |
+| **Modern PaaS Experience** | ✅ | ✅ | ❌ | 🟡 | ❌ | 🟡 | **✅** |
 | **Zero-config Deploy** | ✅ | ✅ | ❌ | ❌ | ❌ | 🟡 | **✅** |
 | **BYOC** | ❌ | ❌ (Enterprise only) | ✅ | ✅ | ✅ | ✅ (DIY) | **✅** |
-| **Per-User Pricing** | 🟡 | ❌ (usage-based) | ❌ | ❌ | ❌ | ✅ (free) | **✅** ($15/user) |
+| **Per-User Pricing** | 🟡 | ❌ (usage-based) | ❌ | ❌ | ❌ | ✅ (free) | **✅** ($39/user) |
 | **Local Payment** | ❌ | ❌ | ❌ | ❌ | ❌ | N/A | **✅** (Paystack) |
 | **GPU** | 🟡 | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **SOC2/ISO27001** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | **✅** |
-| **24/7 Support** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | **✅** |
+| **SOC2/ISO27001** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | **✅** (Ready) |
+| **24/7 Support** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | **✅** (Enterprise) |
 | **Preview Environments** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 
 **Key Insight:** Render and Railway compete on **UX simplicity**, but lack BYOC. Northflank/Porter/Qovery have BYOC but lack **deployment simplicity**. Only Cloudsania combines both.
+
+> **Objection Handler - Preview Environments:** 
+> While we don't offer per-PR ephemeral environments yet (Roadmap), our **Environment System** (Dev/Staging/Production) provides strict isolation. Combined with sub-minute Git-push deploys, you can spin up a dedicated Staging environment that mirrors production instantly and cheaply.
 
 ---
 
@@ -381,7 +384,8 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 | **Alibaba Cloud** | Johannesburg (via BCX) | Chinese enterprise | 🟢 Low |
 | **Huawei Cloud** | SA, Nigeria, Egypt | Government contracts | 🟢 Low |
 
-### 3.2 Developer-Friendly VPS
+### 3.2 Developer-Friendly VPS (Universal Support)
+> **Note:** Cloudsania supports **Any VPS** via SSH connector. The following are popular certified options.
 
 | Provider | African Presence | Pricing | Strategic Value |
 |:---|:---|:---|:---|
@@ -411,8 +415,8 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 
 | Pain Point | Evidence | Trigger Event | Our Messaging |
 |:---|:---|:---|:---|
-| **Pricing Purgatory** (AI-03) | ✅ Social Sentiment Log: "Bill shock", "$20/user expensive" | Team grows from 2→5 people | "Predictable $15/user pricing. No surprises." |
-| **Team Scaling Anxiety** (AI-03) | ✅ AI-Native research: "Expensive for agencies" | "Can't afford to hire" | "Predictable per-user pricing ($15/user)." |
+| **Pricing Purgatory** (AI-03) | ✅ Social Sentiment Log: "Bill shock", "$20/user expensive" | Team grows from 2→5 people | "Predictable flat per-user pricing. No surprises." |
+| **Team Scaling Anxiety** (AI-03) | ✅ AI-Native research: "Expensive for agencies" | "Can't afford to hire" | "Predictable per-user pricing." |
 | **Infrastructure Lock-In** (FS-05) | ✅ Managed-only (no BYOC) | "Can't use AWS credits" | "Deploy to your own cloud." |
 | **USD Payment Friction** | ✅ Stripe rejects some Naira cards | "Card declined again" | "Paystack card payment accepted." |
 
@@ -438,13 +442,13 @@ Heroku Simplicity + AWS Control + African Convenience = Cloudsania
 
 | Pain Point | Validated Evidence | Trigger Event | Our Messaging |
 |:---|:---|:---|:---|
-| **Pricing Scaling Trap** (AG-05) | "$25/standard dyno vs $5 VPS" | Scaling from 1 to 5 services = ~$150/mo | "Flat $15/user. Use your own AWS credits for compute." |
+| **Pricing Scaling Trap** (AG-05) | "$25/standard dyno vs $5 VPS" | Scaling from 1 to 5 services = ~$150/mo | "Flat platform fee. Use your own AWS credits for compute." |
 | **Sleeping Dynos** (Technical) | "30s waiting for cold start" | Free/Eco tier apps going to sleep | "Always-on containers. No cold starts." |
 | **No BYOC Control** (TD-03) | "Locked into AWS us-east-1" | Need to use AWS reserved instances or credits | "We orchestrate YOUR cloud. You keep the keys." |
-| **Lack of Innovation** (Legacy) | "No GPU support", "Feels abandoned" | Need to run AI/ML inference | "Modern infrastructure ready for AI workloads." |
+| **Lack of Innovation** (Legacy) | "No GPU support", "Feels abandoned" | Need to run AI/ML inference | "Modern infrastructure for AI agents & inference." |
 
 **Heroku Migration Strategy:**
-> "Heroku was great for 2015. In 2026, you shouldn't pay a premium for a platform that hasn't shipped a major feature in years. Get the Heroku experience you love, but on YOUR own infrastructure, with modern features like GPUs and zero cold starts."
+> "Heroku was great for 2015. In 2026, you shouldn't pay a premium for a platform that hasn't shipped a major feature in years. Get the Heroku experience you love, but on YOUR own infrastructure, with access to **computational power not available on PaaS (like AWS GPUs)** and zero cold starts."
 
 #### 4.2.3 Railway Escapes (Pain ID: FS-03)
 | Pain Point | Validated Evidence | Trigger Event | Our Messaging |
@@ -615,8 +619,8 @@ These platforms target developers stuck on cPanel who want modern Git-based work
 
 | Scenario | Pain ID | Script |
 |:---|:---|:---|
-| PaaS pricing concern | **AI-03 Cloud Cost Opacity** | "Worried about PaaS per-seat pricing? Cloudsania offers $15/user flat, deployed to your own infrastructure." |
-| Heroku cost complaint | **AI-03 Cloud Cost Opacity** | "Your $7 app became $50? That's usage-based pricing. Cloudsania: predictable $15/user, deploy to your own AWS/DO." |
+| PaaS pricing concern | **AI-03 Cloud Cost Opacity** | "Worried about PaaS per-seat pricing? Cloudsania offers flat per-user pricing, deployed to your own infrastructure." |
+| Heroku cost complaint | **AI-03 Cloud Cost Opacity** | "Your $7 app became $50? That's usage-based pricing. Cloudsania: predictable platform fee, deploy to your own AWS/DO." |
 | Vendor lock-in fear | **FS-05 Vendor Lock-in Fear** | "Proprietary PaaS locks you into their infrastructure. With Cloudsania BYOC, deploy to your own cloud—exit anytime." |
 
 ---

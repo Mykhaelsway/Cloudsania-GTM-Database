@@ -52,5 +52,5 @@
 | :--- | :--- | :--- |
 | **Metaphor** | " The Bridge" 🌉 | "The Orchestrator" 🎛️ |
 | **Ideal Stack** | PHP, Laravel, WordPress | Node.js, Python, Microservices |
-| **Primary Value** | **Ease of Use** (Heroku-like) | **Compliance** (Data Residency) |
+| **Primary Value** | **Ease of Use** (Modern PaaS) | **Compliance** (Data Residency) |
 | **Key Capability** | "Zero-Config CI/CD" | "BYOC Architecture" |

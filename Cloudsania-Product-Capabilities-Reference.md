@@ -509,7 +509,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 ### 2.2 Infrastructure Components
 
 **Resource Management:**
-- **Multi-cloud resource orchestration:** Manage resources across AWS, DigitalOcean, Vultr, Linode, Hetzner from one platform
+- **Multi-cloud resource orchestration:** Manage AWS resources or Any VPS (DigitalOcean, Vultr, Hetzner, etc.) from one platform
 - **Infrastructure as Code (IaC):** Konstacks use IaC principles for version-controlled, reproducible infrastructure
 - **State management and tracking:** Real-time synchronization of resource states across cloud providers
 - **Resource optimization:** Automated recommendations for cost and performance optimization
@@ -530,8 +530,8 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 *Provider Integration:*
 - AWS integration services (IAM, CloudTrail, multi-region)
-- DigitalOcean connectivity (API + SSH)
-- VPS management (Vultr, Linode, Hetzner, Namecheap)
+- DigitalOcean connectivity (via VPS Connector)
+- Universal VPS management (Vultr, Linode, Hetzner, Namecheap via SSH)
 - Cross-provider orchestration (deploy across multiple clouds)
 
 *Third-party Services:*
@@ -589,9 +589,9 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ## 3. Solutions (Mapped to Pain Points)
 
-### 2.1 Unified Dashboard
+### 3.1 Unified Dashboard
 **Problem Solved:** Fragmented multi-site management (AG-01)  
-**Solution:** Manage 50+ client sites from one dashboard  
+**Solution:** Manage multiple client sites from one dashboard (Designed for 50+ projects)  
 **Features:**
 - Multi-project/environment management
 - Centralized monitoring and logging
@@ -673,14 +673,14 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 2.7 Capped Flat Pricing
+### 2.7 Predictable Platform Pricing
 **Problem Solved:** Bill shock, pricing anxiety (AI-03)  
-**Solution:** $15/user. Never a penny more.  
+**Solution:** Fixed platform fee ($39/user) + Variable Cloud Costs.  
 **Features:**
-- Predictable monthly costs
-- No surprise bandwidth bills
-- No per-project fees
-- Flat-rate pricing (no usage-based surprises)
+- **Starter:** $39/user/month
+- **Pro:** $79/user/month (Advanced features)
+- **Team:** $99/user/month (Priority support)
+- Predictable platform costs (no markup on cloud resources)
 
 ---
 
@@ -688,16 +688,16 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 **Problem Solved:** Talent shortage, DevOps costs (AG-04)  
 **Solution:** Automated infrastructure provisioning, enterprise security, junior price  
 **Features:**
-- Replaces $2-3K/mo DevOps hire
+- Replaces dedicated DevOps headcount
 - Automated database, storage, network provisioning
 - Enterprise-grade security built-in
 - Junior devs can ship like senior DevOps engineers
 
 ---
 
-## 3. Integrations & Third-Party Connections
+## 4. Integrations & Third-Party Connections
 
-### 3.1 GitHub Integration
+### 4.1 GitHub Integration
 - **Security Model:** OAuth 2.0 with limited scope permissions
 - **Data Access:** Repository metadata, code content (read-only during deployments)
 - **Authentication:** Personal access tokens or GitHub Apps
@@ -707,7 +707,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 3.2 GitLab Integration
+### 4.2 GitLab Integration
 - **Security Model:** OAuth 2.0 with project-specific access
 - **Data Access:** Repository content, CI/CD pipeline data
 - **Authentication:** OAuth tokens (read/write scope limited to selected projects)
@@ -717,7 +717,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 3.3 AWS Integration
+### 4.3 AWS Integration
 - **Security Model:** IAM roles with least-privilege access
 - **Data Access:** Infrastructure provisioning and monitoring data only
 - **Authentication:** Cross-account IAM roles (no long-term credentials)
@@ -728,7 +728,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 3.4 Cloudflare Integration
+### 4.4 Cloudflare Integration
 - **Security Model:** API key-based (scoped permissions)
 - **Data Access:** DNS records, proxy configuration only
 - **Authentication:** Encrypted API keys (domain-specific scope)
@@ -738,7 +738,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 3.5 DigitalOcean Integration
+### 4.5 DigitalOcean Integration
 - **Security Model:** API token authentication (resource-level permissions)
 - **Data Access:** Droplet and infrastructure management data
 - **Authentication:** Personal access tokens (minimal scope, regular rotation)
@@ -748,7 +748,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 3.6 Route 53 Integration
+### 4.6 Route 53 Integration
 - **Security Model:** Automatic if AWS Cloud Connector is set up
 - **Data Access:** DNS records only
 - **Features:** Global DNS network, health checks, traffic routing
@@ -757,9 +757,9 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-## 4. Security & Compliance
+## 5. Security & Compliance
 
-### 4.1 Compliance Certifications & Alignment
+### 5.1 Compliance Certifications & Alignment
 
 **Achieved/Aligned Standards:**
 - **SOC 2:** Security, availability, and confidentiality controls implemented
@@ -772,7 +772,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 4.2 Encryption
+### 5.2 Encryption
 
 **Data at Rest:**
 - **Standard:** AES-256 encryption
@@ -788,7 +788,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 4.3 Access Control & Authentication
+### 5.3 Access Control & Authentication
 
 **Multi-Factor Authentication (MFA):**
 - Required for all admin/management accounts
@@ -859,7 +859,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 4.5 Data Handling & Privacy
+### 5.5 Data Handling & Privacy
 
 **Data Ownership:**
 - Clients retain full ownership and control
@@ -882,7 +882,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 4.6 Shared Responsibility Model
+### 5.6 Shared Responsibility Model
 
 **Cloudsania Responsibilities:**
 - Infrastructure security (servers, networks, monitoring)
@@ -906,7 +906,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-## 5. Pricing & Plans
+## 6. Pricing & Plans
 
 **Source:** `cloudsania.com/pricing` (Official, Validated)
 
@@ -917,7 +917,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 5.1 Starter Tier
+### 6.1 Starter Tier
 **Price:** **$39/user/monthly**
 **Target:** Individuals and small teams building production projects.
 **Features:**
@@ -932,7 +932,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 5.2 Pro Tier
+### 6.2 Pro Tier
 **Price:** **$79/user/monthly**
 **Target:** Start-ups and mid-size teams needing essentials tools.
 **Features:**
@@ -947,7 +947,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-### 5.3 Team Tier (Recommended)
+### 6.3 Team Tier (Recommended)
 **Price:** **$99/user/monthly**
 **Target:** Teams with essential demands and compliance needs.
 **Features:**
@@ -962,9 +962,21 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-## 6. Validation Status
+### 6.4 Support Model
+**Support Hours:**
+- **Monday - Friday:** 9:00 AM - 6:00 PM (UTC+1)
+- **Saturday:** 10:00 AM - 4:00 PM (UTC+1)
+- **Sunday:** Limited email support
 
-### 6.1 Documentation Sources
+**Location:**
+- Support team based in Lagos, Nigeria.
+- Timezone aligned with African business hours.
+
+---
+
+## 7. Validation Status
+
+### 7.1 Documentation Sources
 ✅ **Comprehensive Documentation Crawl:** 66+ pages from guide.cloudsania.com  
 ✅ **App Services Documentation:** Full feature set validated  
 ✅ **Security, Privacy & Compliance Documentation:** Complete security model documented  
@@ -972,15 +984,15 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 ✅ **Pricing Page:** Official pricing confirmed  
 ✅ **Official Homepage Scrape:** Brand positioning validated
 
-### 6.2 Last Validation Date
+### 7.2 Last Validation Date
 **January 20, 2026**
 
-### 6.3 Confidence Level
+### 7.3 Confidence Level
 **HIGH (100%)** - All features, integrations, compliance, and pricing validated against official sources.
 
 ---
 
-## 7. Feature Roadmap (Coming Soon)
+## 8. Feature Roadmap (Coming Soon)
 
 **Source:** Documented as "Coming Soon" in official docs
 
@@ -988,12 +1000,13 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 1. **Enhanced Monitoring & Logging:** Additional capabilities planned
 2. **More Add-ons:** Beyond PostgreSQL, MySQL, Redis
 3. **Additional App Services:** Beyond E-commerce
+4. **Preview Environments:** Ephemeral per-PR deployments
 
 **Note:** This roadmap should be consulted before claiming features are available.
 
 ---
 
-## 8. Quick Reference Table
+## 9. Quick Reference Table
 
 ### Feature Availability Matrix
 
@@ -1017,7 +1030,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ---
 
-## 9. Contact Information
+## 10. Contact Information
 
 **Security Team:** security@cloudsania.com  
 **Incident Reporting:** incidents@cloudsania.com  

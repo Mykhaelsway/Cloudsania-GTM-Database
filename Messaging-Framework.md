@@ -70,12 +70,12 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 
 | Element | Messaging |
 |:---|:---|
-| **Primary Headline** | **"Manage 50 Client Sites. One Dashboard. 99.9% Uptime."** |
+| **Primary Headline** | **"Manage All Your Client Sites. One Dashboard. 99.9% Uptime."** |
 | **Primary Benefit** | Unified multi-client management |
-| **Secondary Benefit** | White-label client portals |
+| **Secondary Benefit** | Multi-Org Agency Portals |
 | **Tertiary Benefit** | Predictable billing you can pass to clients |
 | **Missing VP entry** | **Zero-Downtime Deployments:** Push updates without service interruption |
-| **Missing VP entry** | **Scale Without Hiring:** Grow to 50 clients without a DevOps hire |
+| **Missing VP entry** | **Scale Without Hiring:** Grow multiple clients without a DevOps hire |
 | **Missing VP entry** | **Cost Transparency:** Real-time per-client resource tracking |
 | **Pain We Solve** | "Stop logging into 12 platforms every day" |
 | **Fear We Address** | "Client calls at 3AM about downtime" |
@@ -176,7 +176,7 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 |:---|:---|
 | **Primary Headline** | **"Pass the Security Questionnaire. Skip the DevOps Hire."** |
 | **Primary Benefit** | Simplified compliance (data residency) |
-| **Secondary Benefit** | Replace $2-3K/mo DevOps salary |
+| **Secondary Benefit** | Replace dedicated DevOps headcount |
 | **Tertiary Benefit** | Paystack card payments accepted |
 | **Missing VP entry** | **Deployment Reliability:** Zero-downtime rolling updates |
 | **Missing VP entry** | **Automated CI/CD:** Integrated build/test/deploy pipelines |
@@ -194,7 +194,7 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 **Validated Secret Language (from Pain Point Database):**
 - **FS-01:** "NDPR compliance deadline", "AWS Africa regions confusing", "N10M fine"
 - **FS-02:** "Can't afford $150k DevOps hire", "Constantly pulling engineers into infra", "Burn Rate"
-- **FS-02:** "Hiring SREs" ($150k US salary, $3k/mo contractor, ₦1.5-2M/mo Nigeria)
+- **FS-02:** "Hiring SREs" (High dedicated salary costs vs $99/mo)
 - **FS-04:** "Ship anxiety", "Friday deploy curse", "What if it breaks?"
 - **FS-05:** "Stuck on AWS", "Can't switch providers", "Migration nightmare"
 - **FS-06:** "Production DB migration failed", "Backup untested"
@@ -226,7 +226,7 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 
 | Proof | For Segment | Use In |
 |:---|:---|:---|
-| "Manage 50+ sites. One dashboard." | Agencies | Homepage, pricing |
+| "Manage multiple sites. One dashboard." | Agencies | Homepage, pricing |
 | "Capped pricing from $39/user. Predictable costs." | AI-Native | Pricing page, Twitter |
 | "No SSH. No Kubernetes." | AI-Native, Traditional | Homepage, docs |
 | "Deploy from GitHub in one click" | All | Homepage, comparison |
@@ -275,7 +275,7 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 
 | Proof | For Segment | Use In |
 |:---|:---|:---|
-| "White-label client portals" | Agencies | Sales calls, demos |
+| "Agency Portals for Clients" | Agencies | Sales calls, demos |
 | "Role-based access for junior devs" | Agencies | Sales calls, security page |
 | "Pass-through billing transparency" | Agencies | Sales calls, case studies |
 
@@ -352,7 +352,7 @@ Use these exact customer phrases in messaging to demonstrate understanding:
 1. Open with: "How many client sites are you managing today?"
 2. Pain discovery: "What happens when one goes down at 2AM?"
 3. Solution intro: "What if you could see all 40 in one dashboard?"
-4. Differentiation: "99.9% uptime guarantee and white-label portal included."
+4. Differentiation: "99.9% uptime guarantee and Agency Portal included."
 5. Close: "Want to try with 3 clients for 14 days free? Local payment accepted."
 
 ---
