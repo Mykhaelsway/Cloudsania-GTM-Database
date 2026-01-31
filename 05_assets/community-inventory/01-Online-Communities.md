@@ -8,7 +8,7 @@
 | **Naija Tech Communities Repo** | **MASTER LIST** | GitHub | **CRITICAL RESOURCE**. Contains active invite links for 50+ WhatsApp groups (PHP, Laravel, Python). | [github.com/seunzone](https://github.com/seunzone/naija-tech-communities) |
 | **UI/UX Group Nigeria** | Product Design | Telegram | 68+ members. Dedicated to designers. | [t.me/uiuxgroupnigeria](https://t.me/uiuxgroupnigeria) |
 | **DevOps Nigeria** | DevOps/Cloud | Meetup | 3k+ members. The main hub for infrastructure engineers. | [meetup.com/devops-nigeria](https://www.meetup.com/devops-nigeria/) |
-| **DevCenter Square** | General Dev | Slack | 2k+ members. The "Town Square" for Nigerian devs. | [slack.devcenter.co](https://slack.devcenter.co) |
+| **DevCenter Square** | General Dev | Slack | Devcenter Square is an online community of Software Development talent in Sub-saharan Africa. |([https://slack.devcenter.co](https://devcenter-square.slack.com/)) |
 | **Laravel Nigeria** | PHP/Laravel | WhatsApp/Slack | Very active. Key for agency devs. (Link in Repo above). | via Repo above |
 | **Web3 Ladies** | Web3/Crypto | Web/Discord | Women-led. Training & Mentorship. | [web3ladies.com](https://web3ladies.com) |
 | **Nigerian Tech Twitter** | Information | Twitter | Follow for news/trends. | [@iambolar](https://twitter.com/iambolar), [@Fosudo](https://twitter.com/Fosudo) |
