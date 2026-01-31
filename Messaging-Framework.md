@@ -3,7 +3,7 @@
 **Version:** 2.0  
 **Date:** January 22, 2026  
 **Purpose:** Single source of truth for all GTM messaging  
-**Dependencies:** Pain-Point-Database, Secret-Language-Dictionary, Value-Proposition-Canvases v2.0, Competitive-Landscape-v2.4, Product-Capabilities-Reference
+**Dependencies:** Pain-Point-Database (TBD), Secret-Language-Dictionary (TBD), Value-Proposition-Canvases-Professional, Competitive-Landscape-Analysis-v2.5, Product-Capabilities-Reference
 
 ---
 
@@ -45,15 +45,20 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 | **1. Simplified DevOps** | Zero-config UX without complexity | "No SSH. No Kubernetes YAML." | One-click deployment from GitHub |
 | **2. BYO-Cloud Flexibility** | Deploy to customer's own cloud | "You keep your AWS keys" | Multi-cloud: AWS, DO, Vultr |
 | **3. Enterprise Reliability** | 99.9% SLA guarantee | "Deploy with confidence" | 99.9% SLA guarantee |
-| **3B. Cost Certainty** | Capped, transparent pricing | "No bill shock. Know your max spend." | Capped pricing ($39/79/99 tier) |
+| **3B. Cost Certainty** | Capped, transparent pricing | "Know your platform cost upfront. $39/79/99 per user — no usage surprises on Cloudsania." | Capped pricing ($39/79/99 tier) * |
 | **3C. Environment Parity** | Identical configs dev-to-prod | "What runs on localhost runs in production" | Containerized runtime |
 | **4. Payment Accessibility** | Accept local cards via Paystack | "Pay with your Naira card" | Paystack card integration |
-| **5. African-First Support** | Local timezone, local understanding | "Someone who knows your context" | Lagos & Nairobi support hours |
+| **5. African-First Support** | Local timezone, local understanding | "Someone who knows your context" | Lagos-timezone support (9AM-6PM WAT) |
 
 ### Competitive Positioning Summary
 
 | vs Competitor | Our Advantage |
 |:---|:---|
+| vs PipeOps | Better reliability (99.9% SLA), managed databases, no scaling ceiling |
+| vs Render/Railway | BYOC — customer owns infrastructure, no vendor lock-in |
+| vs Northflank/Porter | Heroku-like simplicity, no Kubernetes required, local payment |
+| vs Vercel | Long-running containers (no timeouts), predictable platform pricing |
+| vs Heroku | Modern infrastructure, BYOC, local payment, active development |
 
 
 ---
@@ -72,11 +77,11 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 |:---|:---|
 | **Primary Headline** | **"Manage All Your Client Sites. One Dashboard. 99.9% Uptime."** |
 | **Primary Benefit** | Unified multi-client management |
-| **Secondary Benefit** | Multi-Org Agency Portals |
-| **Tertiary Benefit** | Predictable billing you can pass to clients |
+| **Secondary Benefit** | Multi-Org project separation with role-based access |
+| **Tertiary Benefit** | Predictable per-user pricing — easy to factor into client retainers |
 | **Missing VP entry** | **Zero-Downtime Deployments:** Push updates without service interruption |
 | **Missing VP entry** | **Scale Without Hiring:** Grow multiple clients without a DevOps hire |
-| **Missing VP entry** | **Cost Transparency:** Real-time per-client resource tracking |
+| **Missing VP entry** | **Observability:** Centralized monitoring dashboard for all projects |
 | **Pain We Solve** | "Stop logging into 12 platforms every day" |
 | **Fear We Address** | "Client calls at 3AM about downtime" |
 | **Proof Point** | "99.9% SLA guarantee" |
@@ -127,6 +132,7 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 - **AI-04:** "DNS Hell", "SSH Fear", "Kubernetes Overkill"
 - **AI-06:** "OOM killed", "Container died", "Exit 137"
 - **AI-07:** "How do I deploy this?", "Totally demoralized", "I'm not technical"
+- **Cost:** "Know your platform cost upfront."
 
 ---
 
@@ -147,7 +153,7 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 | **Missing VP entry** | **Dev-to-Prod Parity:** What runs in XAMPP runs in Production |
 | **Pain We Solve** | "Fear of Obsolescence — stuck on cPanel while industry moves on" |
 | **Fear We Address** | "Learning Kubernetes/Docker seems overwhelming" |
-| **Proof Point** | "Deploy Laravel in 2 minutes. No Docker knowledge needed." |
+| **Proof Point** | "Deploy Laravel from GitHub — no Docker knowledge needed." |
 
 #### Talk Track (10 seconds)
 
@@ -192,7 +198,7 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 #### Customer Language to Use
 
 **Validated Secret Language (from Pain Point Database):**
-- **FS-01:** "NDPR compliance deadline", "AWS Africa regions confusing", "N10M fine"
+- **FS-01:** "NDPR data residency deadline", "AWS Africa regions confusing", "N10M fine"
 - **FS-02:** "Can't afford $150k DevOps hire", "Constantly pulling engineers into infra", "Burn Rate"
 - **FS-02:** "Hiring SREs" (High dedicated salary costs vs $99/mo)
 - **FS-04:** "Ship anxiety", "Friday deploy curse", "What if it breaks?"
@@ -248,9 +254,10 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 
 | Proof | For Segment | Use In |
 |:---|:---|:---|
-| "No bill shock. No surprises." | AI-Native (Vercel refugees) | Competitive pages, ads |
+| "Know your platform cost upfront. No usage surprises on Cloudsania." | AI-Native (Vercel refugees) | Competitive pages, ads |
+| * "Platform fee is capped; cloud costs are separate" | All | Fine print, pricing page |
 | "Client cloud costs billed directly to them" | Agencies | Sales calls, case studies |
-| "Real-time resource tracking" | Agencies, Startups | Dashboard demos, sales |
+| "Centralized infrastructure monitoring" | Agencies | Dashboard demos, sales |
 | "Cap your costs — $39/user (Starter) to $99/user (Team)" | AI-Native | Pricing page, comparison |
 
 ### 4.5B Environment Parity Proof Points
@@ -266,18 +273,18 @@ Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" c
 | Proof | For Segment | Use In |
 |:---|:---|:---|
 | "One-click deploy to AWS Cape Town" | Nigerian Startups | Sales calls, compliance page |
-| "NDPR compliance without complexity" | Nigerian Startups | Sales calls, RFPs |
+| "Compliance-ready infrastructure (AWS Cape Town)" | Nigerian Startups | Sales calls, RFPs |
 | "Deploy to Cape Town, Mumbai, or any region" | All Startups | Compliance page, docs |
-| "SOC 2/ISO 27001 security" | Startups, Agencies | RFPs, security questionnaires |
+| "SOC 2/ISO 27001 aligned controls — compliance-ready infrastructure" | Startups, Agencies | RFPs, security questionnaires |
 | "You own the data. We orchestrate." | All | Security page, sales calls |
 
 ### 4.7 Agency-Specific Proof Points
 
 | Proof | For Segment | Use In |
 |:---|:---|:---|
-| "Agency Portals for Clients" | Agencies | Sales calls, demos |
+| "Role-based access for client teams" | Agencies | Sales calls, demos |
 | "Role-based access for junior devs" | Agencies | Sales calls, security page |
-| "Pass-through billing transparency" | Agencies | Sales calls, case studies |
+
 
 ### 4.8 Secret Language Proof Points
 
@@ -352,7 +359,7 @@ Use these exact customer phrases in messaging to demonstrate understanding:
 1. Open with: "How many client sites are you managing today?"
 2. Pain discovery: "What happens when one goes down at 2AM?"
 3. Solution intro: "What if you could see all 40 in one dashboard?"
-4. Differentiation: "99.9% uptime guarantee and Agency Portal included."
+4. Differentiation: "99.9% uptime guarantee and multi-project management included."
 5. Close: "Want to try with 3 clients for 14 days free? Local payment accepted."
 
 ---
@@ -407,7 +414,7 @@ Before publishing any messaging, verify:
 | Version | Date | Changes |
 |:---|:---|:---|
 | 1.0 | Jan 17, 2026 | Initial framework created |
-| 2.0 | Jan 22, 2026 | Comprehensive audit corrections: Removed Whogohost/Flutterwave/M-Pesa references, fixed pricing to $15/user, reordered pillars to match validated hierarchy (Simplicity+Control PRIMARY), replaced all customer language with validated Secret Language + Pain IDs, updated Control Plane guidance |
+| 2.0 | Jan 22, 2026 | Comprehensive audit corrections: Removed Whogohost/Flutterwave/M-Pesa references, aligned pricing to $39/$79/$99 tiers (Product Capabilities Reference), reordered pillars to match validated hierarchy (Simplicity+Control PRIMARY), replaced all customer language with validated Secret Language + Pain IDs, updated Control Plane guidance |
 
 ---
 

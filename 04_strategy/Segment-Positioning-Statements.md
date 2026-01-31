@@ -13,10 +13,10 @@ This document synthesizes the **Value Proposition Canvas** and the **Strategic O
 
 > **For** Agencies and Development Shops
 > **Who** struggle with "Dashboard Chaos," fragmented billing across multiple client sites, and the high cost of hiring dedicated DevOps staff to manage downtime liability,
-> **Cloudsania is** an Automated Cloud Command Center (Multi-Tenancy PaaS)
-> **That** unifies all client infrastructure into a single control dashboard, automating security updates, backups, and deployments so you can scale your client base without increasing headcount.
+> **Cloudsania is** an Automated Cloud Command Center (Multi-Tenant Control Plane)
+> **That** unifies all client infrastructure into a single control dashboard, automating infrastructure security, backups, and deployments so you can scale your client base without increasing headcount.
 > **Unlike** managing disparate hosting accounts or hiring an expensive DevOps team,
-> **Cloudsania** runs as a Unified Control Plane on your own infrastructure, giving you predictable flat-rate pricing per client and full ownership of the billing relationship.
+> **Cloudsania** runs as a Unified Control Plane on your own infrastructure, giving you predictable per-user platform pricing and full ownership of the infrastructure.
 
 ---
 
@@ -30,7 +30,7 @@ This document synthesizes the **Value Proposition Canvas** and the **Strategic O
 > **Cloudsania is** an Instant Infrastructure Launchpad
 > **That** provides **zero-config, one-click simplicity** combined with the raw, uncapped power of persistent cloud servers—allowing long-running agents and AI workloads to scale indefinitely.
 > **Unlike** serverless platforms that kill your processes or hit you with surprise overage bills,
-> **Cloudsania** offers an "Always-On" container architecture with capped pricing, ensuring your viral success doesn't bankrupt you.
+> **Cloudsania** offers an "Always-On" container architecture with capped pricing—predictable platform pricing from $39/user with transparent cloud costs on your own account, ensuring your viral success doesn't bankrupt you.
 
 ---
 
