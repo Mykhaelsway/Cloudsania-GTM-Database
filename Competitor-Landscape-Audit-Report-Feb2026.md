@@ -99,3 +99,17 @@ This audit concludes a deep-dive investigation into 9 key competitors in the "BY
 1.  **The "K8s Complexity" Wedge (vs Northflank/Qovery):** Northflank and Qovery expose too much Kubernetes complexity (Ingress/DNS management in BYOK). *Attack:* Position Cloudsania as the "No-Ops" alternative that handles the cluster internals while still giving BYOC ownership.
 2.  **The "Price/Performance" Flank (vs Render/Heroku):** Render and Heroku charge significant markups on compute. *Attack:* Use Northflank's own "Cost Transparency" tactic against Render, highlighting our "Zero Markup" policy on raw AWS/GCP costs to win scale-ups.
 3.  **The "Stateful Reliability" Gap (vs Vercel/Railway):** Competitors like Vercel and Railway struggle with persistent state (Databases). *Attack:* Emphasize our "Managed Database" capabilities on the user's own cloud to capture the "Serious Workload" segment that creates churn for them.
+
+---
+
+## 4. Cross-Reference Analysis (Cloudsania vs. The Field)
+
+*Validated against `Cloudsania-Product-Capabilities-Reference.md`*
+
+| Feature Area | Cloudsania (Validated) | Competitor Gaps (Audit Evidence) | The Kill Shot (Attack Vector) |
+| :--- | :--- | :--- | :--- |
+| **Databases** | **Managed Add-ons** (RDS/Postgres) on *your* generic cloud. Automated backups/updates. | **PipeOps:** "Addons" exist but lack deep documentation; "Database Fragmentation" risk remains. **Coolify:** User manages the DB container (Day 2 risk). | "Don't run production DBs in Docker containers. Use our Managed RDS automation." |
+| **Compute Cost** | **Zero Markup.** You pay AWS/DO directly. Platform fee is fixed ($39/user). | **Render:** High markup on compute/bandwidth. **Heroku:** "Dyno tax". | "Stop paying double for EC2. Bring your own AWS account." |
+| **Security** | **Standard Connectors** (Least Privilege IAM). | **Salus:** Claims "AI Security" but requires Enterprise buy-in. **Coolify:** Security is 100% user responsibility. | "Enterprise Security (IAM/RBAC) without the Enterprise Price Tag." |
+| **Support** | **Enterprise SLA** (99.9%) + Service Health Checks (HTTP). | **Coolify:** No SLA (Community only). **Railway:** Support requires Pro plan. | "Your business needs a phone number, not a Discord channel." |
+| **AI Workloads** | **Long-Running Containers** (No timeout). | **Vercel:** 10s Serverless timeout. **Fly.io:** specialized MicroVMs (complex). | "Run Python Agents 24/7 without timeouts or Kubernetes YAML." |
