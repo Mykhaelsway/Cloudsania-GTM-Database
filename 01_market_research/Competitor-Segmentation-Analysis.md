@@ -69,9 +69,3 @@
 
 ---
 
-## 3. Strategic Implications (Post-Audit)
-
-1.  **Battle Northflank on Simplicity (not Availability):** We cannot claim "Availability" dominance (they support all AWS regions via BYOC). We must fight purely on **"No-Ops" vs "K8s Management"**. They are for Platform Engineers; we are for Application Developers.
-2.  **The Salus Pricing Threat:** Salus is **NOT** just an Enterprise tool. At $99/mo, they are a direct threat to our mid-market "Safety" pitch. We must counter their "AI Security" with "AI Productivity" (Agent Hosting).
-3.  **Battle Render on Ownership:** Don't fight on UX (theirs is great). Fight on "Lock-in" and "Cost Scaling" (Zero Markup on Compute).
-4.  **Ignore Coolify (Free):** Do not compete on price with Free. Compete on **Reliability (SLA)** and **Support**. We are the "Business" version.
