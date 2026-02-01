@@ -7,7 +7,7 @@
 ## Canvas 1: Small Agencies (Priority: 🔴 HIGHEST)
 **Persona:** Agency owner managing 20-50 client websites  
 **Focus:** Operational Efficiency & Client Retention
-**ARPU Target:** $500-1500/mo (10-15 users @ $79 [Pro] or $99 [Team])
+**ARPU Target:** $120-300/mo (Pro/Team plans)
 
 ### Customer Profile
 

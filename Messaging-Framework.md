@@ -1,423 +1,489 @@
-# Cloudsania Core Messaging Framework
+# Cloudsania Messaging Framework
 
-**Version:** 2.0  
-**Date:** January 22, 2026  
-**Purpose:** Single source of truth for all GTM messaging  
-**Dependencies:** Pain-Point-Database (TBD), Secret-Language-Dictionary (TBD), Value-Proposition-Canvases-Professional, Competitive-Landscape-Analysis-v2.5, Product-Capabilities-Reference
+**Version:** 3.0
+**Date:** February 1, 2026
+**Purpose:** Single source of truth for all GTM messaging
+**Brand Voice Reference:** Brand-Strategy.md v2.1
+**Validated Against:** Product-Capabilities-Reference.md v1.0, Value-Proposition-Canvases-Professional.md, Segment-Positioning-Statements.md, Target-Audience-Profile.md
 
 ---
 
-## 1. Universal Messaging (All Audiences)
+## 1. Universal Messaging
 
 ### 1.1 Hero Headline
 
-**Primary Headline:**
-> **"Deploy to your own cloud. Zero complexity. Full control."**
+**Primary:**
+> **"Deploy to your own cloud in minutes. Zero complexity. Full ownership."**
 
-**Alternative Headlines (A/B Testing Candidates):**
-- "Deploy to Any Cloud. One Dashboard. Zero DevOps."
-- "Your Cloud. Your Keys. Simplified."
-- "The No-Ops Control Plane Built for Africa."
-- "Enterprise Deployment Made Simple."
+**Alternatives (A/B Testing):**
+- "Your Cloud. Your Keys. Deploy in Minutes."
+- "The No-Ops Cloud Platform Built for Africa."
+- "Modern Deployment. No DevOps Team Required."
 
 ### 1.2 Subheadline
 
-**Primary Subheadline:**
-> **Cloudsania simplifies deployment to AWS, DigitalOcean, or Vultr with zero-config UX—enterprise reliability without the DevOps complexity. Paystack card payments accepted.**
+**Primary:**
+> No-Ops cloud deployment to AWS, DigitalOcean, or Vultr — enterprise reliability on infrastructure you own. Local payment accepted.
 
-**Short Version (20 words):**
-> 99.9% uptime. Deploy to any cloud with Git push. No Kubernetes. No SSH. Paystack accepted.
+**Short (20 words):**
+> 99.9% uptime. Git push deploys. No Kubernetes. No SSH. You keep your keys. Local payment accepted.
 
-### 1.3 One-Sentence Elevator Pitch
+### 1.3 Elevator Pitch
 
-> **"Cloudsania simplifies deployment to AWS, DigitalOcean, or Vultr—giving developers zero-config simplicity with enterprise reliability and BYOC flexibility. Paystack card payments accepted."**
+> Cloudsania is a No-Ops cloud platform that simplifies deployment to AWS, DigitalOcean, or Vultr — giving developers zero-config simplicity with enterprise reliability and full infrastructure ownership. Local payment and African-first support included.
 
----
+### 1.4 Emotional Value Anchor
 
-## 2. Differentiation Pillars (Why We Win)
+**"Sleep through the night."**
 
-Based on Competitive Landscape Analysis v2.4, we occupy a unique "white space" combining **high technology sophistication** with **high African market access**.
+- **For Agencies:** No more 3 AM client downtime panics. 99.9% SLA means you stop firefighting.
+- **For AI Builders:** Ship to production with confidence — what runs in dev runs in prod. No deployment anxiety.
+- **For Traditional Devs:** You're not behind. Your stack just needs a modern runway. No command line required.
+- **For Funded Startups:** Pass due diligence from Day 1. No vendor lock-in. No platform eviction.
 
-### The 5 Core Pillars
+### 1.5 Positioning Hierarchy
 
-| Pillar | What It Means | Customer Language | Proof Point |
-|:---|:---|:---|:---|
-| **1. Simplified DevOps** | Zero-config UX without complexity | "No SSH. No Kubernetes YAML." | One-click deployment from GitHub |
-| **2. BYO-Cloud Flexibility** | Deploy to customer's own cloud | "You keep your AWS keys" | Multi-cloud: AWS, DO, Vultr |
-| **3. Enterprise Reliability** | 99.9% SLA guarantee | "Deploy with confidence" | 99.9% SLA guarantee |
-| **3B. Cost Certainty** | Capped, transparent pricing | "Know your platform cost upfront. $39/79/99 per user — no usage surprises on Cloudsania." | Capped pricing ($39/79/99 tier) * |
-| **3C. Environment Parity** | Identical configs dev-to-prod | "What runs on localhost runs in production" | Containerized runtime |
-| **4. Payment Accessibility** | Accept local cards via Paystack | "Pay with your Naira card" | Paystack card integration |
-| **5. African-First Support** | Local timezone, local understanding | "Someone who knows your context" | Lagos-timezone support (9AM-6PM WAT) |
+All messaging must follow this priority order:
 
-### Competitive Positioning Summary
+- **PRIMARY — Simplicity + Control:** Zero-config deployment on infrastructure you own (BYOC)
+- **SECONDARY — Reliability:** 99.9% SLA, zero-downtime deploys, service health monitoring
+- **TERTIARY — African Convenience:** Local payment, WAT-timezone support, local context
 
-| vs Competitor | Our Advantage |
-|:---|:---|
-| vs PipeOps | Better reliability (99.9% SLA), managed databases, no scaling ceiling |
-| vs Render/Railway | BYOC — customer owns infrastructure, no vendor lock-in |
-| vs Northflank/Porter | Heroku-like simplicity, no Kubernetes required, local payment |
-| vs Vercel | Long-running containers (no timeouts), predictable platform pricing |
-| vs Heroku | Modern infrastructure, BYOC, local payment, active development |
+### 1.6 The 4-Tier Value Stack
 
+Use this escalation model in sales conversations and long-form content:
 
----
+- **Tier 1 — The Hook:** "Deploy in minutes. Own it forever."
+- **Tier 2 — The Technical Why:** "Your cloud, your keys, zero complexity." BYOC architecture. Zero-config deployment. No YAML, no Dockerfiles. Environment parity from dev to production.
+- **Tier 3 — The Business ROI:** "Enterprise reliability at startup prices." Capped platform pricing — $39/user (Starter), $79/user (Pro), $99/user (Team). No surprise platform bills. Enable junior devs to ship like senior DevOps engineers.
+- **Tier 4 — The Emotional Feeling:** "Sleep through the night." Segment-specific emotional anchors (see Section 1.4).
 
-## 3. Segment-Specific Value Propositions
+### 1.7 Who We're NOT For
 
-### 3.1 Segment 1: Small Agencies (Priority: 🔴 HIGHEST)
+Use these to disqualify bad-fit prospects early:
 
-**Target:** 5-15 employees managing 16-60 client websites (WordPress/Laravel)  
-**Location:** Lagos (Yaba/Ikeja) or Nairobi (Westlands/Kilimani)  
-**ARPU:** $120-300/mo (Team/Business plans)
-
-#### Value Proposition
-
-| Element | Messaging |
-|:---|:---|
-| **Primary Headline** | **"Manage All Your Client Sites. One Dashboard. 99.9% Uptime."** |
-| **Primary Benefit** | Unified multi-client management |
-| **Secondary Benefit** | Multi-Org project separation with role-based access |
-| **Tertiary Benefit** | Predictable per-user pricing — easy to factor into client retainers |
-| **Missing VP entry** | **Zero-Downtime Deployments:** Push updates without service interruption |
-| **Missing VP entry** | **Scale Without Hiring:** Grow multiple clients without a DevOps hire |
-| **Missing VP entry** | **Observability:** Centralized monitoring dashboard for all projects |
-| **Pain We Solve** | "Stop logging into 12 platforms every day" |
-| **Fear We Address** | "Client calls at 3AM about downtime" |
-| **Proof Point** | "99.9% SLA guarantee" |
-
-#### Talk Track (10 seconds)
-
-> "We help Nigerian and Kenyan agencies manage all their client sites from one dashboard with 99.9% uptime. Stop apologizing for downtime. Pay with Paystack cards."
-
-#### Customer Language to Use
-
-**Validated Secret Language (from Pain Point Database):**
-- **AG-01:** "Dashboard hell", "Login fatigue", "Terrified of plugin updates", "WSOD" (White Screen of Death)
-- **AG-04:** "Junior Dev Mess", "Massive ransomware attack", "Security Flaw"
-- **AG-05:** "Unexpected AWS bill", "Client budget overrun"
-- **AG-06:** "Client site went down", "Deployment stress", "Friday night deploys"
+- **Not for bargain-bin hosting buyers.** If you're optimizing for the absolute lowest price over reliability, we're not for you. We're for businesses who lose money when they go down.
+- **Not for sysadmin purists.** If you want to SSH in, patch kernels, and manually configure Nginx — use raw EC2. We manage the OS/security layer so you don't have to.
+- **Not for hyperscale enterprises.** If you need 10,000+ node clusters and custom bare-metal tuning, you need an internal platform team.
 
 ---
 
-### 3.2 Segment 2: AI-Native Builders (Priority: 🔴 HIGH)
+## 2. Differentiation Pillars
 
-**Target:** AI Engineers and Fast-Moving Founders building agents, LLM-powered apps, and GenAI tools
-**Location:** Global (Africa focus: Lagos, Nairobi)  
-**ARPU:** $39-79/mo (Starter/Pro plans)
+Our differentiation is built on 7 pillars grounded in validated product capabilities, aligned to the positioning hierarchy: PRIMARY (Simplicity + Control), SECONDARY (Reliability), TERTIARY (African Convenience).
 
-#### Value Proposition
+### PRIMARY — Simplicity + Control
 
-| Element | Messaging |
-|:---|:---|
-| **Primary Headline** | **"From Repo to Production in One Click. No YAML. No Timeouts. No Bill Shock."** |
-| **Primary Benefit** | Zero-config deployment from GitHub (Solves Config Complexity 10/10) |
-| **Secondary Benefit** | Capped pricing from $39/user (Solves Cloud Cost Unpredictability 9/10) |
-| **Tertiary Benefit** | Dev-to-prod environment parity (Solves Environment Drift 9/10) |
-| **Quaternary Benefit** | Long-running containers (Solves Timeouts 9/10) |
-| **Pain We Solve** | "Configuration complexity — the gap between working code and a live deployment" |
-| **Fear We Address** | "Deployment Anxiety — the fear that pushing to production will break everything" |
-| **Proof Point** | "Capped pricing from $39/user. Predictable costs." |
+**Pillar 1: Zero-Config Deployment**
+- **What it means:** Automated Build → Test → Deploy pipeline. No YAML. No Dockerfiles. No Ops skills needed.
+- **Customer language:** "No SSH. No Kubernetes. Just push your code."
+- **Proof:** App Services one-click deployment from GitHub/GitLab. CI/CD pipelines with zero-downtime rolling updates. Three project modes (Easy, Developer, Pro) for every skill level.
+- **Validated source:** Product Capabilities §1.2 (App Services), §1.5 (CI/CD), §1.9 (Project Modes)
 
-#### Talk Track (10 seconds)
+**Pillar 2: BYO-Cloud Ownership**
+- **What it means:** You deploy to your own AWS, DigitalOcean, or Vultr account. You own the infrastructure, the data, and the keys.
+- **Customer language:** "Your cloud. Your keys. Exit anytime."
+- **Proof:** Cloud Connectors (AWS IAM-based, VPS SSH-based). Customer owns all provisioned resources. No vendor lock-in — export anytime. Multi-region deployment.
+- **Validated source:** Product Capabilities §1.3 (Cloud Connectors), §2.5 (BYOC Deployment)
 
-> "Built an AI agent? Push your repo and it's live — zero config, no YAML. Capped pricing from $39/user. No serverless timeouts, no bill shock. Your infrastructure, your control."
+### SECONDARY — Reliability
 
-#### Customer Language to Use
+**Pillar 3: Enterprise Reliability**
+- **What it means:** 99.9% SLA guarantee with service-level health monitoring — not just CPU/RAM, but actual HTTP response checks.
+- **Customer language:** "Deploy with confidence. 99.9% uptime."
+- **Proof:** Service Health Monitoring (endpoint uptime, 502/500 detection). Automated failover. 24/7 continuous monitoring with real-time alerts. Zero-downtime rolling updates.
+- **Validated source:** Product Capabilities §2.4 (Enterprise SLA & Service Health)
 
-**Validated Secret Language (from Pain Point Database):**
-- **AI-01:** "Deployment anxiety", "Works on localhost, fails in production", "Environment drift"
-- **AI-02:** "Vercel 10-second timeout", "Heroku Sleeping Dynos", "30s cold start"
-- **AI-03:** "Ghost workloads", "Zombie resources", "Bill jumped to $3,550 (Vercel) or $150 (Heroku)"
-- **AI-04:** "DNS Hell", "SSH Fear", "Kubernetes Overkill"
-- **AI-06:** "OOM killed", "Container died", "Exit 137"
-- **AI-07:** "How do I deploy this?", "Totally demoralized", "I'm not technical"
-- **Cost:** "Know your platform cost upfront."
+**Pillar 4: Cost Predictability**
+- **What it means:** Capped per-user platform pricing. You always know what Cloudsania costs. Cloud provider costs are separate and depend on your own usage — that's BYOC transparency.
+- **Customer language:** "Know your platform cost upfront. No surprise Cloudsania bills."
+- **Proof:** $39/user Starter, $79/user Pro, $99/user Team. No per-project fees. No bandwidth surcharges on the platform side.
+- **Important qualifier:** Cloud provider costs (AWS, DigitalOcean, Vultr) are billed directly to your account and vary based on your resource usage. Cloudsania's platform fee is the capped portion.
+- **Validated source:** Product Capabilities §5 (Pricing & Plans)
 
----
+**Pillar 5: Environment Parity**
+- **What it means:** Identical containerized configurations from development to staging to production. No more "works on my machine."
+- **Customer language:** "What runs in dev runs in production."
+- **Proof:** Docker-based containerized runtime. Isolated environments (Dev, Staging, Production, QA, Demo, Custom). Environment-specific configurations with consistent container behavior.
+- **Validated source:** Product Capabilities §1.4 (Environments), §1.3.2 (VPS Connector — Docker Compose)
 
-### 3.3 Segment 3: Traditional Developers (Priority: 🟡 MEDIUM)
+### TERTIARY — African Convenience
 
-**Target:** PHP/Laravel developers using cPanel, wanting modern deployment without DevOps complexity  
-**Location:** Nigeria, Kenya, Ghana  
-**ARPU:** $39-79/mo
+**Pillar 6: Local Payment**
+- **What it means:** Pay with local cards in local currency. No dollar card barriers.
+- **Customer language:** "Pay with your Naira card. No dollar card headaches."
+- **Proof:** Direct local currency billing. Mobile Money supported in applicable regions. Credit/Debit cards via Stripe.
+- **Validated source:** Product Capabilities §5 (Payment Methods)
 
-#### Value Proposition
-
-| Element | Messaging |
-|:---|:---|
-| **Primary Headline** | **"Modern Deployment. cPanel Simplicity. No DevOps Required."** |
-| **Primary Benefit** | Git push = deploy (no SSH, no Kubernetes) |
-| **Secondary Benefit** | Modern stack without modern complexity |
-| **Tertiary Benefit** | Paystack card payments accepted |
-| **Missing VP entry** | **Dev-to-Prod Parity:** What runs in XAMPP runs in Production |
-| **Pain We Solve** | "Fear of Obsolescence — stuck on cPanel while industry moves on" |
-| **Fear We Address** | "Learning Kubernetes/Docker seems overwhelming" |
-| **Proof Point** | "Deploy Laravel from GitHub — no Docker knowledge needed." |
-
-#### Talk Track (10 seconds)
-
-> "Want modern deployment without the DevOps learning curve? Connect your GitHub repo and push. We handle the infrastructure—just like cPanel simplicity, but with modern capabilities. Local payment available."
-
-#### Customer Language to Use
-
-**Validated Secret Language (from Pain Point Database):**
-- **TD-01/AI-01:** "Deployment anxiety", "Works on localhost, fails in production"
-- **TD-03:** "Puzzle pieces without a picture", "IAM permissions nightmare", "cPanel limitations"
-- **TD-05:** "It works on my machine", "Dev vs prod curse"
-- **TD-06:** "phpMyAdmin export failed", "Scared to touch production DB"
-- **User Phrase:** "Don't want to learn Kubernetes"
+**Pillar 7: African-First Support**
+- **What it means:** Support that understands your timezone and context.
+- **Customer language:** "Someone who knows your context."
+- **Proof:** Business hours support Mon-Fri 9AM-6PM WAT (UTC+1), Sat 10AM-4PM WAT, Sunday limited email. Enterprise plans: 24/7 dedicated engineer and emergency hotline. Community channels: Slack, WhatsApp (Builder's Hub).
+- **Important qualifier:** 24/7 support is Enterprise-only. Standard support is business hours WAT.
+- **Validated source:** Product Capabilities §5 (Support & Community)
 
 ---
 
-### 3.4 Segment 4: Funded Startups (Priority: 🔴 HIGH)
+## 3. Segment-Specific Value Propositions & Messaging
 
-**Target:** Series A Fintechs, CTOs worried about compliance  
-**Location:** Lagos, Nairobi, Cape Town  
-**ARPU:** $200-500/mo (Enterprise plans)
+### 3.1 Small Agencies — "The Command Center"
 
-#### Value Proposition
+**Priority:** HIGHEST (47% allocation)
+**Target:** Agency owners managing 10-50 client websites (WordPress/Laravel), 3-15 employees
+**Location:** Lagos (Yaba/Ikeja), Nairobi (Westlands/Kilimani), Accra
+**ARPU Target:** $500-1500/mo (10-15 users @ $79 Pro or $99 Team)
 
-| Element | Messaging |
-|:---|:---|
-| **Primary Headline** | **"Pass the Security Questionnaire. Skip the DevOps Hire."** |
-| **Primary Benefit** | Simplified compliance (data residency) |
-| **Secondary Benefit** | Replace dedicated DevOps headcount |
-| **Tertiary Benefit** | Paystack card payments accepted |
-| **Missing VP entry** | **Deployment Reliability:** Zero-downtime rolling updates |
-| **Missing VP entry** | **Automated CI/CD:** Integrated build/test/deploy pipelines |
-| **Missing VP entry** | **Cost Visibility:** BYOC model with real-time dashboard |
-| **Pain We Solve** | "Compliance Audit" anxiety |
-| **Fear We Address** | "Deployment fear — one bad deploy triggers audit reviews" |
-| **Proof Point** | "We don't hold your data" = simpler audit scope |
+**Positioning (from Segment Positioning):**
+> For agencies who struggle with dashboard chaos, fragmented hosting, and the cost of DevOps staff — Cloudsania is an Automated Cloud Command Center that unifies all client infrastructure into a single dashboard, automating deployments and security so you can scale your client base without increasing headcount.
 
-#### Talk Track (10 seconds)
+**Value Proposition:**
+- **Primary Benefit:** Unified multi-client management from one dashboard (Multi-Org support)
+- **Secondary Benefit:** Zero-downtime deployments — push updates without service interruption
+- **Tertiary Benefit:** No-Ops platform replaces the need for a dedicated DevOps hire
+- **Pain we solve:** "Stop logging into 12 different hosting panels every day"
+- **Fear we address:** "Client calls at 3 AM about downtime"
+- **Proof:** 99.9% SLA guarantee. Multi-Org project separation with role-based access. Automated CI/CD from GitHub.
 
-> "Need data residency in Lagos or Nairobi for CBN compliance? Deploy to your own AWS Cape Town or DO Mumbai. We orchestrate—you own the keys. Pass security questionnaires faster."
+**Pricing note:** Cloudsania's platform fee is per user (team member), not per client site. At Pro tier ($79/user), a 10-person agency pays $790/mo for the platform. Cloud provider costs for each client's infrastructure are separate under BYOC.
 
-#### Customer Language to Use
+**Talk Track (10 seconds):**
+> "How many client sites are you managing today? We help agencies manage all their sites from one dashboard with 99.9% uptime and zero-downtime deploys. No DevOps hire needed. Local payment accepted."
 
-**Validated Secret Language (from Pain Point Database):**
-- **FS-01:** "NDPR data residency deadline", "AWS Africa regions confusing", "N10M fine"
-- **FS-02:** "Can't afford $150k DevOps hire", "Constantly pulling engineers into infra", "Burn Rate"
-- **FS-02:** "Hiring SREs" (High dedicated salary costs vs $99/mo)
-- **FS-04:** "Ship anxiety", "Friday deploy curse", "What if it breaks?"
-- **FS-05:** "Stuck on AWS", "Can't switch providers", "Migration nightmare"
-- **FS-06:** "Production DB migration failed", "Backup untested"
-- **General:** "Questionnaire Panic"
+**Customer Language (from Target Audience Profile + Canvas 1):**
+- "Dashboard hell" / "Login fatigue" — managing 12+ hosting accounts (AG-01)
+- "Junior dev mess" / "Security flaw" — access control anxiety (AG-04)
+- "Unexpected AWS bill" / "Client budget overrun" — cost surprises (AG-05)
+- "Client site went down" / "Deployment stress" / "Friday night deploys" — downtime fear (AG-06)
+
+**Emotional Anchor:** Reduce operational anxiety. No more after-hours emergencies and manual firefighting.
 
 ---
 
-## 4. Proof Points Catalog
+### 3.2 AI-Native Builders — "The Launchpad"
 
-### 4.1 Payment Proof Points
+**Priority:** HIGH (33% allocation)
+**Target:** AI Engineers and Fast-Moving Founders building agents, LLM-powered apps, GenAI tools
+**Location:** Global (Africa focus: Lagos, Nairobi)
+**ARPU Target:** $39-79/mo (Starter/Pro plans, 1-2 users)
 
-| Proof | For Segment | Use In |
-|:---|:---|:---|
-| "Card Declined? Ours Works." | Traditional Devs | Landing page, Twitter ads |
-| "Paystack integration live" | All Nigerian | Pricing page, checkout |
-| "No Grey.co fees" | Traditional Devs | Blog, comparison pages |
-| "Pay with your Naira card" | All Nigerian | Homepage, sales calls |
+**Positioning (from Segment Positioning):**
+> For AI engineers and fast-moving founders held back by deployment anxiety and production instability — Cloudsania is an Instant Infrastructure Launchpad that provides zero-config, one-click simplicity combined with persistent, uncapped cloud containers for long-running AI workloads.
 
-### 4.2 Reliability Proof Points
+**Value Proposition:**
+- **Primary Benefit:** Zero-config deployment from GitHub — solves Configuration Complexity (10/10 severity, highest pain across all canvases)
+- **Secondary Benefit:** Capped platform pricing from $39/user — solves Cloud Cost Unpredictability (9/10)
+- **Tertiary Benefit:** Environment parity from dev to production — solves Environment Drift (9/10)
+- **Quaternary Benefit:** Long-running containers with no execution time limits — solves Serverless Timeouts (9/10)
+- **Pain we solve:** "The gap between working code and a live deployment"
+- **Fear we address:** "Deployment anxiety — pushing to production will break everything"
+- **Proof:** Capped pricing from $39/user. ECS Fargate-based persistent containers. Automated Build→Test→Deploy pipeline. Docker-based environment consistency.
 
-| Proof | For Segment | Use In |
-|:---|:---|:---|
-| "99.9% SLA guarantee" | Agencies, Startups | Pricing page, sales calls |
-| "Your cloud, your reliability" | All | Homepage hero |
-| "Zero-downtime deployments" | Agencies, Startups | Sales calls, case studies |
-| "Automated health monitoring" | All | Docs, technical content |
+**Talk Track (10 seconds):**
+> "Built an AI agent? Push your repo and it's live — zero config, no YAML. Capped platform pricing from $39/user. No timeouts on long-running processes. Your infrastructure, your control."
 
-### 4.3 Feature Proof Points
+**Customer Language (from Target Audience Profile + Canvas 2):**
+- "Deployment anxiety" / "Works on localhost, fails in production" — environment mismatch (AI-01)
+- "10-second timeout" / "Sleeping dynos" / "30s cold start" — serverless limits (AI-02)
+- "Ghost workloads" / "Zombie resources" / "Bill jumped to $3,550" — cost surprises (AI-03)
+- "DNS Hell" / "SSH Fear" / "Kubernetes overkill" — infrastructure complexity (AI-04)
+- "OOM killed" / "Container died" / "Exit 137" — container instability (AI-06)
+- "How do I deploy this?" / "Totally demoralized" — deployment barrier (AI-07)
 
-| Proof | For Segment | Use In |
-|:---|:---|:---|
-| "Manage multiple sites. One dashboard." | Agencies | Homepage, pricing |
-| "Capped pricing from $39/user. Predictable costs." | AI-Native | Pricing page, Twitter |
-| "No SSH. No Kubernetes." | AI-Native, Traditional | Homepage, docs |
-| "Deploy from GitHub in one click" | All | Homepage, comparison |
-| "Git push = deploy" | All | Landing page, ads |
-| "Zero-config deployment" | AI-Native, Traditional | Pricing page, demos |
-| "Zero-config simplicity" | All | Competitive pages |
+**Emotional Anchor:** Eliminate deployment anxiety. Ship to production with confidence — identical environments from dev to prod.
 
-### 4.4 Control & BYOC Proof Points
+---
 
-| Proof | For Segment | Use In |
-|:---|:---|:---|
-| "You keep your AWS keys" | All | Homepage, security page |
-| "Deploy to your own cloud account" | All | Homepage, competitive |
-| "Exit anytime - your infrastructure" | Startups, Agencies | Sales calls, contracts |
-| "Multi-cloud: AWS, DO, Vultr" | All | Pricing page, docs |
-| "Switch providers without rebuilding" | Startups | Sales calls, demos |
+### 3.3 Traditional Developers — "The Bridge"
 
-### 4.5 Cost Transparency Proof Points
+**Priority:** MEDIUM (part of 20% allocation)
+**Target:** PHP/Laravel developers using cPanel, wanting modern deployment without DevOps complexity
+**Location:** Nigeria, Kenya, Ghana
+**ARPU Target:** $39-79/mo (Starter/Pro plans)
 
-| Proof | For Segment | Use In |
-|:---|:---|:---|
-| "Know your platform cost upfront. No usage surprises on Cloudsania." | AI-Native (Vercel refugees) | Competitive pages, ads |
-| * "Platform fee is capped; cloud costs are separate" | All | Fine print, pricing page |
-| "Client cloud costs billed directly to them" | Agencies | Sales calls, case studies |
-| "Centralized infrastructure monitoring" | Agencies | Dashboard demos, sales |
-| "Cap your costs — $39/user (Starter) to $99/user (Team)" | AI-Native | Pricing page, comparison |
+**Positioning (from Segment Positioning):**
+> For PHP, Laravel, and WordPress developers who want to modernize but battle the fear of obsolescence and command-line anxiety — Cloudsania is a Cloud Abstraction Bridge that delivers a modern deployment experience for established web technologies, removing the need for FTP, cPanel, or manual server maintenance.
 
-### 4.5B Environment Parity Proof Points
+**Value Proposition:**
+- **Primary Benefit:** Git push = deploy. No SSH, no Kubernetes, no Docker knowledge needed.
+- **Secondary Benefit:** Modern containerized infrastructure without the modern complexity
+- **Tertiary Benefit:** Local payment accepted
+- **Pain we solve:** "Fear of obsolescence — stuck on cPanel while the industry moves on"
+- **Fear we address:** "Learning Kubernetes/Docker feels overwhelming"
+- **Proof:** App Services Easy Mode — authenticate GitHub, select repo, deploy. Docker Compose support via VPS Connector for those who want more control. Containerized runtime ensures consistent environments.
 
-| Proof | For Segment | Use In |
-|:---|:---|:---|
-| "What runs in dev runs in production. Guaranteed." | AI-Native, Trad Devs | Homepage, competitive |
-| "Identical environments across dev, staging, production" | All technical | Docs, demos |
-| "No more 'works on my machine'" | All technical | Pain-focused ads |
+**Talk Track (10 seconds):**
+> "Want modern deployment without the DevOps learning curve? Connect your GitHub repo and push. We handle the infrastructure — modern capabilities with the simplicity you're used to. Local payment available."
 
-### 4.6 Compliance & Data Residency Proof Points
+**Customer Language (from Target Audience Profile + Canvas 3):**
+- "Deployment anxiety" / "Works on localhost, fails in production" — environment gap (TD-01)
+- "Puzzle pieces without a picture" / "IAM permissions nightmare" — AWS complexity (TD-03)
+- "It works on my machine" / "Dev vs prod curse" — environment inconsistency (TD-05)
+- "phpMyAdmin export failed" / "Scared to touch production DB" — database anxiety (TD-06)
+- "Don't want to learn Kubernetes" — complexity barrier
 
-| Proof | For Segment | Use In |
-|:---|:---|:---|
-| "One-click deploy to AWS Cape Town" | Nigerian Startups | Sales calls, compliance page |
-| "Compliance-ready infrastructure (AWS Cape Town)" | Nigerian Startups | Sales calls, RFPs |
-| "Deploy to Cape Town, Mumbai, or any region" | All Startups | Compliance page, docs |
-| "SOC 2/ISO 27001 aligned controls — compliance-ready infrastructure" | Startups, Agencies | RFPs, security questionnaires |
-| "You own the data. We orchestrate." | All | Security page, sales calls |
+**Emotional Anchor:** Overcome fear of obsolescence. You're not behind — your stack just needs a modern runway. No command line required.
 
-### 4.7 Agency-Specific Proof Points
+---
 
-| Proof | For Segment | Use In |
-|:---|:---|:---|
-| "Role-based access for client teams" | Agencies | Sales calls, demos |
-| "Role-based access for junior devs" | Agencies | Sales calls, security page |
+### 3.4 Funded Startups — "The Orchestrator"
 
+**Priority:** HIGH (part of 20% allocation)
+**Target:** CTOs of Seed/Series A FinTech and HealthTech startups in regulated markets
+**Location:** Lagos, Nairobi, Cape Town
+**ARPU Target:** $200-500/mo (Team plans, 2-5 users @ $99/user)
 
-### 4.8 Secret Language Proof Points
+**Positioning (from Segment Positioning):**
+> For CTOs who struggle with high DevOps costs, strict data residency requirements, and deployment reliability without a dedicated platform team — Cloudsania is a Sovereign Cloud Orchestrator that automates production-grade infrastructure directly inside your own cloud accounts, ensuring you pass due diligence from Day 1.
+
+**Value Proposition:**
+- **Primary Benefit:** Replace dedicated DevOps headcount — solves DevOps Personnel Costs (10/10 severity, highest pain in Canvas 4)
+- **Secondary Benefit:** Data residency compliance — BYOC to your chosen AWS region (e.g., Cape Town af-south-1)
+- **Tertiary Benefit:** Automated CI/CD with zero-downtime rolling updates — solves Deployment Reliability (9/10)
+- **Pain we solve:** "Compliance audit anxiety"
+- **Fear we address:** "One bad deploy in a regulated environment triggers audit reviews"
+- **Proof:** BYOC model — you own the data, we orchestrate. Deploy to AWS Global Regions. Automated CI/CD pipelines. SOC 2 and ISO 27001 aligned controls with compliance-ready infrastructure. RBAC and audit logging.
+
+**Compliance note:** Cloudsania provides compliance-ready infrastructure with SOC 2 and ISO 27001 aligned controls. This is framework alignment, not formal certification. Clients maintain responsibility for application-level compliance.
+
+**Talk Track (10 seconds):**
+> "Need data residency for compliance? Deploy to your own AWS account in the region you choose. We orchestrate the infrastructure — you own the keys. Automated CI/CD, audit logging, and compliance-ready controls. No DevOps hire needed."
+
+**Customer Language (from Target Audience Profile + Canvas 4):**
+- "NDPR compliance deadline" / "AWS Africa regions confusing" — regulatory pressure (FS-01)
+- "Can't afford $150k DevOps hire" / "Constantly pulling engineers into infra" — cost pressure (FS-02)
+- "Ship anxiety" / "Friday deploy curse" / "What if it breaks?" — deployment fear (FS-04)
+- "Stuck on AWS" / "Can't switch providers" / "Migration nightmare" — lock-in fear (FS-05)
+- "Production DB migration failed" / "Backup untested" — data integrity anxiety (FS-06)
+- "Questionnaire panic" — investor due diligence pressure
+
+**Emotional Anchor:** Eliminate deployment fear. Walk into due diligence with infrastructure that speaks for itself.
+
+---
+
+## 4. Proof Point Catalog
+
+Every proof point below is validated against the Product Capabilities Reference v1.0. No claim appears here unless it traces to a documented, shipped feature.
+
+### 4.1 Deployment Proof Points
+
+- **"Deploy from GitHub in one click"** — App Services: authenticate GitHub → select repo → deploy. Segments: All. Use in: Homepage, demos.
+  - *Source: Product Capabilities §1.2*
+- **"Git push = deploy"** — CI/CD pipelines trigger on push. Automated Build→Test→Deploy. Segments: All. Use in: Landing pages, ads.
+  - *Source: Product Capabilities §1.5*
+- **"Zero-config deployment"** — No SSH, no Kubernetes, no YAML, no Dockerfiles. App Services Easy Mode handles provisioning. Segments: AI-Native, Traditional Devs. Use in: Homepage, pricing page.
+  - *Source: Product Capabilities §1.2, §1.9 (Easy Mode)*
+- **"Three deployment modes for every skill level"** — Easy Mode (no-code), Developer Mode (Docker Compose), Pro Mode (managed concierge). Segments: All. Use in: Docs, onboarding.
+  - *Source: Product Capabilities §1.9*
+
+### 4.2 Ownership & BYOC Proof Points
+
+- **"Deploy to your own cloud account"** — AWS, DigitalOcean, Vultr, Linode, Hetzner. Customer owns all provisioned resources. Segments: All. Use in: Homepage, security page.
+  - *Source: Product Capabilities §1.3, §2.5*
+- **"You keep your AWS keys"** — IAM-based provisioning with least-privilege access. No long-term credentials stored by Cloudsania. Segments: All. Use in: Security page, sales calls.
+  - *Source: Product Capabilities §1.3.1 (AWS Connector)*
+- **"Exit anytime — your infrastructure"** — Customer owns all provisioned resources. Data exportable in standard formats. No lock-in. Segments: Startups, Agencies. Use in: Sales calls, contracts.
+  - *Source: Product Capabilities §4.5 (Data Portability)*
+- **"Multi-cloud deployment"** — AWS, DigitalOcean, Vultr, Linode, Hetzner from one platform. Cross-provider orchestration. Segments: All. Use in: Pricing page, docs.
+  - *Source: Product Capabilities §2.2 (Integration Layer)*
+
+### 4.3 Reliability Proof Points
+
+- **"99.9% SLA guarantee"** — Backed by Service Health Monitoring with endpoint-level uptime checks, not just CPU/RAM stats. Segments: Agencies, Startups. Use in: Pricing page, sales calls, RFPs.
+  - *Source: Product Capabilities §2.4*
+- **"Zero-downtime deployments"** — Rolling updates via CI/CD pipeline. No service interruption during deploys. Segments: Agencies, Startups. Use in: Sales calls, case studies.
+  - *Source: Product Capabilities §1.5 (CI/CD)*
+- **"24/7 monitoring with real-time alerts"** — Continuous platform monitoring, suspicious event detection, automated incident alerts. Segments: All. Use in: Docs, technical content.
+  - *Source: Product Capabilities §4.4*
+
+### 4.4 Cost Proof Points
+
+- **"$39/user (Starter). $79/user (Pro). $99/user (Team)."** — Capped per-user platform pricing. No per-project fees. Segments: All. Use in: Pricing page, comparisons.
+  - *Source: Product Capabilities §5*
+- **"Your cloud costs are yours to see"** — Under BYOC, cloud provider bills go directly to your account. Full visibility, no markup from Cloudsania. Segments: Agencies, Startups. Use in: Sales calls.
+  - *Source: Product Capabilities §2.5 (BYOC — customer owns infrastructure)*
+- **ALWAYS QUALIFY:** "Cloudsania's platform fee is capped. Cloud provider costs (AWS/DO/Vultr) are separate and vary based on your resource usage." This qualifier must appear wherever "capped pricing" is used.
+
+### 4.5 Environment Parity Proof Points
+
+- **"What runs in dev runs in production"** — Containerized runtime ensures identical behavior across environments. Docker-based consistency. Segments: AI-Native, Traditional Devs. Use in: Homepage, pain-focused ads.
+  - *Source: Product Capabilities §1.4 (Environments)*
+- **"Isolated environments: Dev, Staging, Production, QA, Demo"** — Each with dedicated resources, security policies, and access controls. Segments: All technical. Use in: Docs, demos.
+  - *Source: Product Capabilities §1.4*
+
+### 4.6 Payment Proof Points
+
+- **"Pay with your local card"** — Direct local currency billing supported. No dollar card required. Segments: All Nigerian/Kenyan. Use in: Homepage, checkout, ads.
+  - *Source: Product Capabilities §5 (Payment Methods: Local Cards)*
+- **"Mobile Money supported"** — Available in applicable regions. Segments: East African markets. Use in: Pricing page.
+  - *Source: Product Capabilities §5 (Payment Methods: Mobile Money)*
+
+### 4.7 Compliance & Security Proof Points
+
+- **"You own the data. We orchestrate."** — BYOC model: customer retains full data ownership and control. Cloudsania does not access client data except for service operation. Segments: All. Use in: Security page, sales calls.
+  - *Source: Product Capabilities §4.5*
+- **"Deploy to AWS Cape Town or any region"** — BYOC multi-region deployment. AWS Global Regions, DigitalOcean (NYC, SFO, Amsterdam, Singapore), Vultr/Linode/Hetzner global coverage. Segments: Funded Startups. Use in: Compliance pages, sales.
+  - *Source: Product Capabilities §2.5*
+- **"SOC 2 and ISO 27001 aligned controls"** — Compliance-ready infrastructure. Security, availability, and confidentiality controls implemented. Risk management and secure development practices in place. Segments: Startups, Agencies. Use in: RFPs, security questionnaires.
+  - *MUST say "aligned" — not "certified." Source: Product Capabilities §4.1*
+- **"Role-based access control"** — Granular RBAC with least-privilege principle. MFA supported. SSO integration available. Segments: Agencies (junior dev access control), Startups. Use in: Security page, sales.
+  - *Source: Product Capabilities §4.3*
+- **"Full audit trail"** — All authentication attempts, configuration changes, and deployments logged. CloudTrail integration for AWS. Segments: Startups. Use in: RFPs, compliance docs.
+  - *Source: Product Capabilities §4.3, §1.3.1*
+
+### 4.8 Infrastructure Proof Points
+
+- **"Managed databases — PostgreSQL, MySQL, Redis"** — One-click provisioning. Automated backups. Encryption at rest. Segments: All. Use in: Docs, pricing page.
+  - *Source: Product Capabilities §1.7 (Add-ons)*
+- **"Auto-scaling and load balancing"** — Application Load Balancers with health checks. Auto-scaling groups. Segments: Agencies, Startups. Use in: Technical content.
+  - *Source: Product Capabilities §1.1, §1.2*
+- **"Automated SSL/TLS certificates"** — SSL management across DNS providers (Cloudflare, Route53, DigitalOcean). Segments: All. Use in: Docs.
+  - *Source: Product Capabilities §1.6 (DNS Configuration)*
+- **"Long-running containers"** — ECS Fargate-based persistent containers. No execution time limits. No timeout restrictions. Segments: AI-Native. Use in: Landing pages, pain-focused ads.
+  - *Source: Product Capabilities §2.6*
+
+### 4.9 Customer Language Proof Points
 
 Use these exact customer phrases in messaging to demonstrate understanding:
 
-| Secret Language | Pain ID | For Segment | Use In |
-|:---|:---|:---|:---|
-| "Dashboard hell" | AG-01 | Agencies | Pain-focused ads, blogs |
-| "Forced to re-architect" | AI-02 | AI-Native | Competitive pages, case studies |
-| "Ghost workloads eating my budget" | AI-03 | AI-Native, Startups | Cost comparison pages |
-| "Puzzle pieces without a picture" | TD-03 | Traditional Devs | AWS comparison, landing page |
-| "It works on my machine" | TD-05/AI-01 | Traditional, AI-Native | Problem/solution pages |
-| "Constantly pulling engineers into infra" | FS-02 | Startups | Sales calls, ROI calculators |
-| "AWS Africa regions confusing" | FS-01 | Nigerian Startups | Compliance pages, demos |
-| "Friday deploy curse" | FS-04 | Startups, Agencies | CI/CD pages, demos |
+- **"Dashboard hell"** (AG-01) — Agencies — Use in: Pain-focused ads, blog posts
+- **"Ghost workloads eating my budget"** (AI-03) — AI-Native, Startups — Use in: Cost-focused content
+- **"It works on my machine"** (TD-05/AI-01) — Traditional, AI-Native — Use in: Problem/solution pages
+- **"Constantly pulling engineers into infra"** (FS-02) — Startups — Use in: Sales calls, ROI content
+- **"Friday deploy curse"** (FS-04) — Startups, Agencies — Use in: CI/CD content, demos
+- **"Puzzle pieces without a picture"** (TD-03) — Traditional Devs — Use in: AWS alternative pages
+- **"Forced to re-architect"** (AI-02) — AI-Native — Use in: Case studies
 
 ---
 
-## 5. Objection Handlers (Quick Reference)
-
-### Price Objections
-
-| Objection | Response |
-|:---|:---|
-| "It's more expensive than Coolify" | "Coolify is free, but who wakes up at 3AM when it breaks? Our SLA means we do." |
-| "I can just use DigitalOcean" | "Sure—if you want to be your own DevOps team. We're your DevOps starting at $39/user." |
-
-### Trust Objections
-
-| Objection | Response |
-|:---|:---|
-| "Never heard of you" | "We're new, but we deploy to the clouds you already trust: AWS, DigitalOcean. You keep your keys." |
-| "Is this a Nigerian company?" | "Yes. And we integrate Paystack because we understand your payment reality." |
-
-### Technical Objections
-
-| Objection | Response |
-|:---|:---|
-| "I need bare metal control" | "You get that. We orchestrate—you own the infrastructure. SSH access available for Pro tier." |
-| "What if you shut down?" | "Your code runs on your AWS/DO account. Export anytime. Zero lock-in." |
-
----
-
-## 6. Message Hierarchy (Per Channel)
+## 5. Message Hierarchy (Per Channel)
 
 ### Homepage
 
-1. **Hero:** Universal headline + subheadline
-2. **Section 2:** Segment switcher (Agencies / Builders / Developers)
-3. **Section 3:** Differentiation pillars (5 cards)
-4. **Section 4:** Proof points (logos, testimonials, uptime)
-5. **Section 5:** Pricing CTA
+- **Hero:** Universal headline + subheadline (Section 1.1-1.2)
+- **Section 2:** Segment switcher — "I'm an Agency / Builder / Developer / Startup" — each loads segment-specific value prop
+- **Section 3:** 7 differentiation pillars as cards
+- **Section 4:** Proof points (uptime stats, deployment flow, pricing)
+- **Section 5:** Pricing CTA with tier breakdown
+- **Footer:** Local payment badge, support hours, community links
 
 ### Twitter/X
 
-| Post Type | Message Priority |
-|:---|:---|
-| Pain posts | Use customer language ("FUNCTION_INVOCATION_TIMEOUT", "Card declined") |
-| Solution posts | Lead with benefit ("Deploy in 60 seconds") |
-| Social proof | Quote customer testimonials |
+- **Pain posts:** Lead with customer language. "FUNCTION_INVOCATION_TIMEOUT. Sound familiar?" / "Dashboard hell is real."
+- **Solution posts:** Lead with benefit. "Deploy from GitHub in minutes. No YAML." / "99.9% uptime. Your cloud. Your keys."
+- **Community posts:** Celebrate local devs. "Lagos devs crushing it." / "Built with Cloudsania" spotlights.
+- **Rule:** No unvalidated time claims. Use "in minutes" not specific seconds.
 
-### Sales Calls (AI Builders)
+### Sales Calls — AI Builders
 
-1. Open with: "What are you deploying — agents, an LLM app, something else?"
-2. Pain discovery: "What's the gap between your working code and getting it live? How long does deployment take you?"
-3. Solution intro: "What if you could push your repo and it's live — no Dockerfiles, no YAML, no CI config?"
-4. Differentiation: "Capped pricing at $39/user. No serverless timeouts. Same environment from dev to prod."
-5. Close: "Want to deploy your current project in the next 15 minutes? Free trial, local payment available."
+1. **Open with discovery:** "What are you deploying — agents, an LLM app, something else?"
+2. **Pain discovery:** "What's the gap between your working code and getting it live? How long does deployment take you?"
+3. **Solution intro:** "What if you could push your repo and it's live — no Dockerfiles, no YAML, no CI config?"
+4. **Value:** "Capped platform pricing at $39/user. No timeouts on long-running processes. Same environment from dev to prod."
+5. **Close:** "Want to deploy your current project? Free trial, local payment available."
 
-### Sales Calls (Agencies)
+### Sales Calls — Agencies
 
-1. Open with: "How many client sites are you managing today?"
-2. Pain discovery: "What happens when one goes down at 2AM?"
-3. Solution intro: "What if you could see all 40 in one dashboard?"
-4. Differentiation: "99.9% uptime guarantee and multi-project management included."
-5. Close: "Want to try with 3 clients for 14 days free? Local payment accepted."
+1. **Open with discovery:** "How many client sites are you managing today? What tools are you using?"
+2. **Pain discovery:** "What happens when one goes down at 2 AM? How do you handle deployments across all of them?"
+3. **Solution intro:** "What if you could see and manage all of them from one dashboard with 99.9% uptime and zero-downtime deploys?"
+4. **Value:** "Multi-Org project separation with role-based access for your team. Automated CI/CD. No DevOps hire needed."
+5. **Close:** "Want to try with 3 client projects for 14 days? Local payment accepted."
+
+### Sales Calls — Funded Startups
+
+1. **Open with discovery:** "What compliance requirements are you facing? Who handles your infrastructure today?"
+2. **Pain discovery:** "How much engineering time goes into infra vs product? Have you been through a compliance audit yet?"
+3. **Solution intro:** "What if you had automated infrastructure on your own AWS account — CI/CD, audit logging, compliance-ready controls — without a DevOps hire?"
+4. **Value:** "BYOC means you own the keys. Deploy to Cape Town or any AWS region for data residency. SOC 2/ISO 27001 aligned controls. $99/user/mo Team tier."
+5. **Close:** "Can I show you how a deployment works? Takes about 15 minutes."
+
+### Documentation
+
+- **Voice:** Clear, instructional. Step-by-step, no assumptions about prior knowledge.
+- **Structure:** "Connect your GitHub repo in 3 steps..." / "Step 1: Click New Project. Step 2: Select your repo. Step 3: Click Deploy."
+- **Tone:** Patient, supportive. "Let's get you deployed." Not "Simply do X" (nothing is simple if you're new).
+
+### Email (Support)
+
+- **Voice:** Patient, helpful, solution-focused.
+- **Structure:** Acknowledge the issue → provide clear fix steps → offer further help.
+- **Example:** "Hi [Name], let's get this sorted. It looks like your deployment is failing because of a missing environment variable. Here's how to fix it: [steps]. Let me know if you're still stuck."
+
+### Community (Slack, WhatsApp, Social)
+
+- **Voice:** Casual, friendly, celebratory.
+- **Content:** Customer spotlights, ecosystem wins, local dev celebrations.
+- **Example:** "Shoutout to [agency] for migrating 20 client sites this week." / "Built something with Cloudsania? Show us."
 
 ---
 
-## 7. Words to Use vs. Avoid
+## 6. Brand Voice Quick Reference
 
-### ✅ USE (Customer Language)
+Condensed from Brand-Strategy.md v2.1 for daily use by content creators and sales teams.
 
-| Term | Why |
-|:---|:---|
-| "Deploy" | Standard developer term |
-| "Dashboard" | Clear, non-technical |
-| "Paystack", "Naira" | Shows local understanding (current/live) |
-| "Dollar card" | Pain trigger phrase |
-| "No SSH needed" | Removes fear |
+### Voice (Always Consistent)
 
-### ❌ AVOID (Jargon)
+- **Clear and Direct** — No jargon, no fluff. Say "deploy" not "orchestrate provisioning."
+- **Technically Accurate** — Every claim must be validated against the Product Capabilities Reference. If you can't trace it, don't say it.
+- **Conversational** — Like a knowledgeable peer, not a salesperson. "Let's get you deployed" not "Leverage our platform."
+- **Empowering** — "You can do this" not "Let us do it for you." Guide, don't gatekeep.
 
-| Term | Alternative |
-|:---|:---|
-| "Orchestration" | "Deployment automation" |
-| "Control Plane" | Acceptable for technical audiences. Use "Cloud deployment platform" for non-technical. |
-| "Konstacks" | Explain first: "Pre-built templates called Konstacks" |
-| "BYO-Credits" | "Use your own cloud credits" |
+### Archetype: Guide (60%) + Liberator (40%)
+
+- **Guide voice:** Mentor who shares knowledge. "Here's how to migrate in 15 minutes." Patient, celebrates your success.
+- **Liberator voice:** Frees you from lock-in and complexity. "Own your infrastructure, not rent it." Questions unnecessary complexity.
+
+### Words to Use
+
+- "Deploy" — standard developer term
+- "Dashboard" — clear, non-technical
+- "Local payment" / "Naira card" — shows local understanding
+- "Dollar card" — pain trigger for African developers
+- "No SSH needed" — removes fear for non-DevOps users
+- "Your cloud" / "Your keys" — ownership language
+- "No-Ops" — core brand positioning term
+
+### Words to Avoid
+
+- **"Orchestration"** → say "deployment automation"
+- **"Control Plane"** → acceptable for technical audiences only. Use "cloud deployment platform" for non-technical.
+- **"Konstacks"** → always explain first: "Pre-built infrastructure templates called Konstacks"
+- **"PaaS"** → contradicts BYOC positioning. Say "Application Platform" or "deployment platform"
+- **"24/7 support"** → only valid for Enterprise tier. Say "business hours support (Enterprise: 24/7)"
+- **"SOC 2 certified" / "ISO 27001 certified"** → we are aligned, not certified. Say "SOC 2/ISO 27001 aligned controls"
+- **"per client" (pricing)** → pricing is per user (team member). Say "per user"
+- **"Enterprise plans" / "Business plans"** → these tiers don't exist. Use "Starter / Pro / Team"
+- **"Agency Portal"** → this feature doesn't exist. Say "Multi-Org project management"
+- **"2 minutes" / "60 seconds" / "instant"** → no validated sub-3-minute full deployment path. Say "in minutes" or reference specific validated times (App Services: ~15 min, Cloud Connector: 3 min setup)
 
 ---
 
-## 8. Validation Checklist
+## 7. Validation Governance
 
 Before publishing any messaging, verify:
 
-- [ ] Uses customer language from Secret-Language-Dictionary.md with Pain IDs (AG-01, AI-03, etc.)
-- [ ] Addresses pain point from Pain-Point-Database.md (cite specific ID)
-- [ ] Aligns with Value-Proposition-Canvases v2.0 positioning hierarchy:
-  - PRIMARY: Simplicity + Control (White Space)
-  - SECONDARY: Reliability
-  - TERTIARY: African Convenience
-- [ ] Matches Competitive-Landscape-v2.4 (no Whogohost, no Flutterwave)
-- [ ] Includes specific proof point from Product-Capabilities-Reference.md
-- [ ] Correct for target segment (Agencies vs AI-Native vs Traditional vs Startups)
-- [ ] Clear CTA (what action should reader take?)
-- [ ] No M-Pesa as current feature (ROADMAP only)
-- [ ] Pricing matches Canvas tiers: $39/user (Starter), $79/user (Pro), $99/user (Team). Verify against Value-Proposition-Canvases-Professional.md before publishing.
-- [ ] For AI-Native segment: Configuration Complexity (10/10) must be primary pain/benefit.
-- [ ] For Funded Startups segment: DevOps Personnel Costs (10/10) must appear.
-- [ ] "Control Plane" only for technical audiences
+- [ ] Every feature claim traces to Product-Capabilities-Reference.md v1.0
+- [ ] Pricing matches validated tiers: $39/user (Starter), $79/user (Pro), $99/user (Team)
+- [ ] "Capped pricing" includes the BYOC qualifier (cloud provider costs are separate)
+- [ ] Compliance claims say "aligned" not "certified"
+- [ ] Support claims specify business hours (Enterprise: 24/7)
+- [ ] Aligns with positioning hierarchy: PRIMARY (Simplicity + Control), SECONDARY (Reliability), TERTIARY (African Convenience)
+- [ ] Correct for target segment (Agencies / AI-Native / Traditional / Startups)
+- [ ] Uses customer language from Section 4.9 with Pain IDs where appropriate
+- [ ] No M-Pesa as current feature (roadmap only)
+- [ ] "Control Plane" only used for technical audiences
+- [ ] Has a clear CTA (what action should the reader take?)
+- [ ] Brand voice check: Does this sound like a knowledgeable peer, not a corporate vendor?
+- [ ] Brand honesty check: Is this technically accurate? Would we be comfortable if a developer tested this claim?
 
 ---
 
-## 9. Document Changelog
+## 8. Document Changelog
 
-| Version | Date | Changes |
-|:---|:---|:---|
-| 1.0 | Jan 17, 2026 | Initial framework created |
-| 2.0 | Jan 22, 2026 | Comprehensive audit corrections: Removed Whogohost/Flutterwave/M-Pesa references, aligned pricing to $39/$79/$99 tiers (Product Capabilities Reference), reordered pillars to match validated hierarchy (Simplicity+Control PRIMARY), replaced all customer language with validated Secret Language + Pain IDs, updated Control Plane guidance |
+- **v3.0 (Feb 1, 2026):** Complete rewrite. Built from scratch referencing only Product Capabilities Reference v1.0, Value Proposition Canvases, Segment Positioning Statements, Target Audience Profile, and Brand Strategy v2.1. No competitive analysis referenced. All proof points validated against shipped product features. Brand voice/tone aligned to Guide/Liberator archetype.
 
 ---
 
-**Document Owner:** Marketing  
-**Review Cycle:** Monthly  
-**Last Updated:** January 22, 2026
+**Document Owner:** Marketing
+**Review Cycle:** Monthly
+**Last Updated:** February 1, 2026
