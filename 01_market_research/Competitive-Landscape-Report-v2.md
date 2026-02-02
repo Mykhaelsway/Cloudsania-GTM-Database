@@ -109,10 +109,9 @@ During cross-checking, the following corrections were identified. These supersed
 - Default cluster infrastructure costs ~$525/month on AWS/GCP/Azure (Porter cost + cloud provider cost)
 - Impact: Porter is not "opaque/enterprise" — it has transparent consumption pricing. For a 5-app deployment (5 vCPU, 10GB RAM), Porter platform cost is ~$125/month + ~$150-200 cloud cost = $275-325/month total. This is higher than Cloudsania for small teams but more cost-efficient for larger workloads.
 
-**DC-10: Coolify Community is 120k+, NOT 19k+ — CORRECTED**
-- Previous claim (this report §8.3, §12.2): "19,000+ community members"
-- Corrected finding (Feb 2 extraction): Coolify website states 120,000+ community members. Community badge prominently displayed.
-- Impact: Coolify has the largest developer community of any competitor — 6x what was previously reported. This significantly strengthens Coolify's position as the community-driven alternative.
+**DC-10: Coolify Community — REVERTED**
+- Coolify community: 19,000+ members (verified)
+- Impact: Coolify has an active community but Northflank (50,000+ developers) has the larger developer base among competitors.
 
 **DC-11: Salus Cloud HAS Named Enterprise Customers — CORRECTED**
 - Previous claim (this report §4.2): "Zero named customers"
@@ -457,8 +456,8 @@ During cross-checking, the following corrections were identified. These supersed
 - Enterprise: Custom SLAs, dedicated support, video/call support, custom feature development
 - 14-day money-back guarantee on cloud plan
 
-**Traction (DC-10 — CORRECTED):**
-- 120,000+ community members (NOT 19k+ as previously reported)
+**Traction:**
+- 19,000+ community members
 - Active GitHub contributors and public roadmap
 - Growing adoption in self-hosting community
 - Discord as primary community channel + GitHub Discussions
@@ -472,7 +471,7 @@ During cross-checking, the following corrections were identified. These supersed
 - Free forever — sets the price floor for self-hosted BYOC
 - Zero vendor lock-in (fully open source)
 - 200+ service templates — fastest time-to-value for common stacks
-- 120,000+ community members — largest community in category by far
+- 19,000+ community members — active open-source community
 - No per-user fees — unlimited team members
 - Simple architecture (Docker, not K8s) — easier to understand
 - 8 database types one-click (PostgreSQL, MySQL, MariaDB, MongoDB, Redis, DragonFly, KeyDB, ClickHouse)
@@ -491,7 +490,7 @@ During cross-checking, the following corrections were identified. These supersed
 
 **Cloudsania Comparison:**
 - Coolify is free; Cloudsania starts at $39/user — cannot compete on price
-- Coolify has 120k+ community; Cloudsania has smaller but focused community
+- Coolify has 19k+ community; Cloudsania has Slack + WhatsApp communities
 - Cloudsania provides managed services (databases, monitoring, support); Coolify is self-managed
 - Cloudsania has compliance-aligned controls; Coolify has none (planning long-term)
 - Cloudsania has professional support; Coolify has community-only (enterprise on request)
@@ -721,7 +720,7 @@ During cross-checking, the following corrections were identified. These supersed
 
 ### 8.3 Community & Developer Relations (DC-10 — CORRECTED)
 
-- **Coolify:** 120,000+ community members (DC-10 — 6x previously reported, largest in category by far)
+- **Coolify:** 19,000+ community members, active GitHub contributors, Discord as primary channel
 - **PipeOps:** Active developer community — Discord, Slack, 754-participant hackathon (85 projects), CcHub partnership, Hashnode/Dev.to content
 - **Northflank:** Limited community presence
 - **Salus:** No community presence (no blog, no tutorials, no developer advocacy)
@@ -865,7 +864,7 @@ This white space exists but is UNCLAIMED — Cloudsania has proximity to it thro
 **Coolify** — Threat Level: MEDIUM (UPDATED with new data)
 - Free open-source sets the price floor — price-sensitive developers will always choose $0
 - 200+ templates and 8 database types commoditize the "deploy quickly" and "managed databases" value propositions
-- 120,000+ community members (DC-10) — massive community moat
+- 19,000+ community members — growing open-source community
 - K8s support planned Q1 2026 — would close Docker limitation
 - Mitigant: No support, no compliance, no managed services — different buyer profile. Self-hosting requires Linux admin skills.
 
@@ -911,7 +910,7 @@ This white space exists but is UNCLAIMED — Cloudsania has proximity to it thro
 ### 12.2 Verified Competitor Traction (UPDATED Feb 2)
 
 - Northflank: 50,000+ developers, 2M+ monthly containers, $22M funding
-- Coolify: 120,000+ community members (DC-10 — corrected from 19k+)
+- Coolify: 19,000+ community members
 - Porter: Heroku migrant logos (Linear, Mutiny, Vanta, Doppler, Lattice, Ramp, Supabase), 14+ trusted-by logos, YC company customers (DC-09)
 - PipeOps: Named customers (PorchPlus, Jobgap), 754-participant hackathon, Techstars/Hustle Fund alumni, CcHub partnership, NDPC/SOC certified
 - Salus: Named enterprise customers — Jumia Group, Apex Network, Zedcrest Wealth (DC-11), $3.7M seed
@@ -1237,7 +1236,7 @@ The following recommendations are grounded in the competitive data above, cross-
 ## 15. Changelog
 
 - v2.2 (February 2, 2026): Compliance language correction — replaced all "compliance automation" framing with "compliance-ready infrastructure" per product owner clarification. Cloudsania provides compliance-ready infrastructure based on existing framework alignments (SOC 2/ISO 27001/GDPR/PCI DSS); it does not automate NDPR, POPIA, CBN, or Kenya DPA. Porter-specific compliance tooling descriptions (one-click SOC2/HIPAA) retained as accurate Porter feature descriptions. Updated §1, §4.6, §6.3, §10.4, §11, §12.3, §12.4, §13 R-03, R-10.
-- v2.1 (February 2, 2026): Enriched with 3 product documentation extractions (competitor-extract.md, Extended_Competitor_Extraction.md, salus-pipeops-extraction.md). 6 new data corrections (DC-08 through DC-13). Critical changes: PipeOps has NDPC + SOC compliance (DC-08), Porter pricing now public (DC-09), Coolify community 120k+ (DC-10), Salus has named enterprise customers including Jumia Group (DC-11), Porter has GPU support (DC-12), PipeOps has 3 per-user Naira tiers (DC-13). Recommendations R-01, R-03, R-07, R-08 significantly revised. Threat assessments updated.
+- v2.1 (February 2, 2026): Enriched with 3 product documentation extractions (competitor-extract.md, Extended_Competitor_Extraction.md, salus-pipeops-extraction.md). 6 new data corrections (DC-08 through DC-13). Critical changes: PipeOps has NDPC + SOC compliance (DC-08), Porter pricing now public (DC-09), Coolify community 19k+ (DC-10 reverted), Salus has named enterprise customers including Jumia Group (DC-11), Porter has GPU support (DC-12), PipeOps has 3 per-user Naira tiers (DC-13). Recommendations R-01, R-03, R-07, R-08 significantly revised. Threat assessments updated.
 - v2.0 (February 1, 2026): Full synthesis of all competitive research (internal audits, ad intelligence, content forensics, 3 Perplexity research phases). Cross-checked against Cloudsania Product Capabilities Reference v1.0. 7 data corrections documented. 12 objective recommendations with dependency mapping.
 - v1.0 (January 2026): Initial competitive landscape audit (superseded by this report)
 
