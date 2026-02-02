@@ -13,6 +13,9 @@
 | **Web3 Ladies** | Web3/Crypto | Web/Discord | Women-led. Training & Mentorship. | [web3ladies.com](https://web3ladies.com) |
 | **Nigerian Tech Twitter** | Information | Twitter | Follow for news/trends. | [@iambolar](https://twitter.com/iambolar), [@Fosudo](https://twitter.com/Fosudo) |
 | **Frontstack** | Frontend Eng | Slack | Conference & Community for frontend devs. | [frontstack.io](https://frontstack.io) |
+| **React Native Nigeria** | Mobile/React Native | Slack/Web | Community talks, project showcases, performance tips. Medium blog with tutorials. | [reactnativenigeria.com](https://reactnativenigeria.com) |
+| **Facebook Developer Circles Lagos** | React/Meta Tech | Facebook | **15,000+ Members**. Hosted React Summit. Strong open source culture. | Search "Developer Circles Lagos" on FB |
+| **DevCareer** | Dev Mentorship | Discord/Slack | Training & mentorship pipeline. High developer density. | Search DevCareer on Discord |
 
 ## Nairobi & Kenya ("Silicon Savannah")
 **Strategy:** Meetup.com is strong here; Telegram is better than WhatsApp for large groups.
@@ -26,6 +29,8 @@
 | **Nairobi Gophers** | GoLang | Meetup | Niche but highly technical backend devs. | [nairobi.ai](https://nairobi.ai) (Check site) |
 | **Active Tech Hubs Repo** | **MASTER LIST** | GitHub | Inventory of *physical* hubs in Kenya (Eldoret, Mombasa). | [github.com/ItsMurumba](https://github.com/ItsMurumba/tech-hubs) |
 | **Android254** | Mobile Dev | Meetup/Twitter | The OG Android community. Very active events. | [twitter.com/android254](https://twitter.com/android254) |
+| **Nairobi JS Community** | JavaScript/Node | Meetup | **2,299+ Members**. 1st Saturday monthly at iHub. Free workshops. HTML5, CSS3, Node.js, React, Vue, Angular. | [meetup.com/nairobi-js](https://www.meetup.com/nairobi-js/) |
+| **React Developers Kenya (ReactDevSke)** | React/Next.js | Web/GitHub | Physical meetups + online standups. Hosts **RenderCon Kenya** annually. React Native focus. | [reactdevske.org](https://reactdevske.org) |
 
 ## Pan-African & Niche Communities
 **Strategy:** Join these for specialized talent (AI, Crypto, No-Code) that transcends borders.

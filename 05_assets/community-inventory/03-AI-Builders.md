@@ -13,6 +13,7 @@
 | **AI Kenya** | AI/ML | Meetup | Premier Kenyan AI group. | [Search @AIKenya](https://twitter.com/AIKenya1) (TBD) |
 | **Kenyan ML Meetup** | ML Meetup | WhatsApp | 600+ members. (Link is often rotated/revoked). | Search on Meetup.com |
 | **Naija Tech Repo** | General AI | GitHub | Contains some "Python AI" WhatsApp links. | [github.com/seunzone](https://github.com/seunzone/naija-tech-communities) |
+| **Python Nigeria (PyConNG)** | Python/AI/Data | Web/Event | Annual conference (Oct). Non-profit. Strong overlap with AI/Data Science builders. | [pynigeria.org](https://pynigeria.org) |
 
 ## Physical & Hybrid Channels (20%)
 **Strategy:** Focus on the "Super Bowl" events (Indaba) and high-signal meetups (Tinkerers).
