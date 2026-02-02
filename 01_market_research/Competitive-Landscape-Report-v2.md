@@ -1,7 +1,7 @@
 # Cloudsania Competitive Landscape Report v2.0
 
-**Date:** February 1, 2026
-**Status:** Final Synthesis
+**Date:** February 2, 2026 (v2.1 enrichment)
+**Status:** Final Synthesis — Enriched
 **Author:** GTM Strategy Team
 **Scope:** 5 Direct Competitors (BYOC/Control Plane) + 2 Indirect Competitors (Managed PaaS)
 
@@ -14,8 +14,9 @@ This report synthesizes all competitive research conducted across internal audit
 **Key findings:**
 
 - The BYOC control-plane market in Africa has exactly two local players: Cloudsania (Lagos) and PipeOps (Lagos), with Salus Cloud (Cape Town) entering in 2024
-- PipeOps is the only competitor with both local presence AND a shipping product; Salus has raised $3.7M but has zero public customer proof
-- Cloudsania's pricing ($39-99/user) is the highest among direct competitors except Porter (opaque/enterprise)
+- PipeOps is the primary local rival with NDPC accreditation and AICPA SOC certification; Salus has $3.7M funding and named enterprise customers (Jumia Group)
+- Cloudsania's pricing gap vs PipeOps is primarily at entry tier (Growth ~$10/user vs Starter $39/user); at mid/upper tiers pricing is comparable or Cloudsania is cheaper
+- PipeOps has NDPC + SOC compliance; compliance is no longer a blanket Cloudsania differentiator — advantage is in BREADTH (4 frameworks) not exclusivity
 - No competitor has combined BYOC + African compliance automation + local payment rails — this white space exists but is currently unclaimed, including by Cloudsania
 - Several claims in earlier research documents have been corrected in this report (see Section 3: Data Corrections Log)
 
@@ -43,6 +44,11 @@ This report synthesizes all competitive research conducted across internal audit
 - Phase 1: Detailed profiles of all 7 competitors (1,028 lines, sourced/dated)
 - Phase 2: Strategic positioning, feature matrix, marketing analysis (377 lines)
 - Phase 3: SWOT analysis, positioning maps, pricing/business model analysis (710 lines)
+
+**Product Documentation Extractions (Feb 2, 2026):**
+- competitor-extract.md — Direct website/documentation extraction for Porter, PipeOps, Coolify, Northflank (Nova)
+- Extended_Competitor_Extraction.md — Extended documentation extraction for Porter and Coolify (advanced features, architecture, migration, cost scenarios)
+- salus-pipeops-extraction.md — Detailed Salus Cloud and PipeOps extraction (product structure, pricing, roadmap, customer testimonials)
 
 **Cloudsania Source of Truth:**
 - Cloudsania Product Capabilities Reference v1.0 (January 20, 2026)
@@ -91,6 +97,47 @@ During cross-checking, the following corrections were identified. These supersed
 - This is compliance-ALIGNED, NOT certified
 - All GTM materials must use "aligned" or "compliance-ready" language, never "certified"
 
+**DC-08: PipeOps IS NDPC Accredited and AICPA SOC Certified — CRITICAL CORRECTION**
+- Previous claim (this report §4.1, §6.3, §10, §11): "PipeOps has zero compliance story / zero compliance messaging"
+- Corrected finding (Feb 2 extraction): PipeOps website displays NDPC (National Data Protection Commission) accreditation badge and AICPA SOC (Service Organization Control) certification badge
+- Impact: THIS IS THE MOST SIGNIFICANT CORRECTION IN THIS REPORT. PipeOps has Nigerian regulatory compliance (NDPC) AND international compliance certification (SOC). Cloudsania's compliance posture is no longer a clear differentiator against PipeOps. The compliance advantage vs PipeOps now rests on BREADTH (SOC2 + ISO 27001 + GDPR + PCI DSS aligned) vs PipeOps's narrower NDPC + SOC positioning. However, PipeOps's NDPC accreditation is directly relevant to the Nigerian market — Cloudsania does not have NDPC accreditation specifically.
+- Caveat: Badge display does not guarantee completed audit. Verification needed: has PipeOps completed SOC 2 Type II audit or just SOC 1? Is NDPC accreditation current? These badges were extracted from visual website elements.
+
+**DC-09: Porter Pricing IS Publicly Available — CORRECTED**
+- Previous claim (this report §4.3): "No public pricing page — fully opaque"
+- Corrected finding (Feb 2 extraction): Porter has a public pricing calculator showing $6/month per GB RAM + $13/month per vCPU. Metered billing prorated to the minute. Startup deal: 25 vCPU + 50GB RAM free for 6 months. Volume discounts at 40+ vCPU.
+- Default cluster infrastructure costs ~$525/month on AWS/GCP/Azure (Porter cost + cloud provider cost)
+- Impact: Porter is not "opaque/enterprise" — it has transparent consumption pricing. For a 5-app deployment (5 vCPU, 10GB RAM), Porter platform cost is ~$125/month + ~$150-200 cloud cost = $275-325/month total. This is higher than Cloudsania for small teams but more cost-efficient for larger workloads.
+
+**DC-10: Coolify Community is 120k+, NOT 19k+ — CORRECTED**
+- Previous claim (this report §8.3, §12.2): "19,000+ community members"
+- Corrected finding (Feb 2 extraction): Coolify website states 120,000+ community members. Community badge prominently displayed.
+- Impact: Coolify has the largest developer community of any competitor — 6x what was previously reported. This significantly strengthens Coolify's position as the community-driven alternative.
+
+**DC-11: Salus Cloud HAS Named Enterprise Customers — CORRECTED**
+- Previous claim (this report §4.2): "Zero named customers"
+- Corrected finding (Feb 2 extraction): Salus website features testimonials from three named enterprise customers:
+  - Pedro Fangueiro, CISO & VP IT, Jumia Group ("Salus has simplified & fast-tracked our hybrid, multi cloud adoption")
+  - Abraham Efemena, CEO, Apex Network ("Salus has simplified the orchestration of our cloud infrastructure")
+  - Bayonle Amzat, CTO, Zedcrest Wealth ("enabled us to focus on delivering exceptional product features to our hundreds of thousands of customers")
+- Impact: Salus has enterprise customers including Jumia Group (one of Africa's largest e-commerce companies). This significantly increases Salus's credibility. Zedcrest Wealth is also an investor — the testimonial may reflect an investor-customer relationship.
+- Note: These may be Deimos (parent company) customers migrated to Salus platform, not necessarily Salus-native acquisitions.
+
+**DC-12: Porter HAS GPU Workload Support — CORRECTED**
+- Previous claim (this report §4.4): Northflank described as "only player with GPU support"
+- Corrected finding (Feb 2 extraction): Porter supports GPU workloads via fixed GPU node groups on AWS. Supported instances: p3 (V100), p4 (A100), g4dn (T4), g5 (A10G).
+- Impact: Two competitors (Porter and Northflank) now have GPU support. GPU workloads are relevant to the AI-Native Builder segment.
+
+**DC-13: PipeOps Has 3 Naira Pricing Tiers — CLARIFIED**
+- Previous claim (this report §4.1): Only Growth tier (₦15,500/month) was documented, Scale described as "not publicly transparent"
+- Corrected finding (Feb 2 extraction): PipeOps has three tiers:
+  - Growth: ₦15,500/month (~$10 USD)
+  - Platform: ₦54,250/month (~$35 USD)
+  - Scale: ₦155,000/month (~$100 USD)
+  - Annual billing with -20% discount option
+  - 0 free team seats on Growth tier
+- Impact: PipeOps's Platform tier (~$35/user) approaches Cloudsania Starter ($39/user). The price gap narrows at higher tiers. PipeOps Scale (~$100/month) is comparable to Cloudsania Team ($99/user) but appears to be flat-rate rather than per-user.
+
 ---
 
 ## 4. Direct Competitor Profiles
@@ -99,59 +146,78 @@ During cross-checking, the following corrections were identified. These supersed
 
 **Company Facts:**
 - Founded: ~2021, Lagos, Nigeria
-- Funding: $120K disclosed (Techstars, Accelerate Africa, MTN Accelerator alumni)
+- Funding: $120K disclosed (Techstars, Hustle Fund, Accelerate Africa, MTN Accelerator alumni)
 - Team size: Small (estimated 10-20)
 - Status: Shipping product, active users
+- Partnerships: CcHub (Lagos)
 
 **Product:**
 - Dual product strategy: Console (BYOC) + Nova (managed PaaS)
 - Console: Deploy to customer's AWS, GCP, Azure, DigitalOcean, Vultr, Linode, Huawei Cloud
-- Nova: Managed infrastructure (PipeOps owns the servers)
+- Nova: Managed infrastructure (PipeOps owns the servers), with cost estimator tool (Naira-denominated)
 - Managed databases: PostgreSQL, MongoDB, MySQL, Redis (VERIFIED)
 - Kubernetes-based orchestration
-- CI/CD pipelines (GitHub integration confirmed)
+- CI/CD pipelines (GitHub integration confirmed, auto-build/test/deploy, one-click rollback)
 - AI features: "Co-Pilot" and "OpenCode" mentioned but availability/pricing unclear
+- Real-time monitoring, log viewing, instant error notifications
+- Supported frameworks: React.js, Vue.js, Next.js, PHP, Laravel, Django, Golang, Rust
 
-**Pricing:**
-- Starter: Free (1 project)
-- Growth: ₦15,500/month (~$10 USD)
-- Scale: Not publicly transparent
+**Pricing (DC-13 — UPDATED, per-user/per-seat):**
+- Starter: Free (1 project, 0 free team seats)
+- Growth: ₦15,500/user/month (~$10/user USD)
+- Platform: ₦54,250/user/month (~$35/user USD)
+- Scale: ₦155,000/user/month (~$100/user USD)
 - Enterprise: Custom
+- Annual billing with -20% discount option
 - Naira pricing reduces forex friction for Nigerian users
+- Note: At Platform tier (~$35/user), PipeOps approaches Cloudsania Starter ($39/user) parity. At Scale tier (~$100/user), PipeOps is MORE expensive than Cloudsania Team ($99/user).
+
+**Compliance (DC-08 — CRITICAL UPDATE):**
+- NDPC (National Data Protection Commission) accredited — badge displayed on website
+- AICPA SOC certified — badge displayed on website
+- Caveat: Badge display noted but audit type (SOC 1 vs SOC 2 Type II) and NDPC accreditation currency not independently verified
 
 **Traction:**
-- Only 2 named customers (PorchPlus, Jobgap)
+- Named customers: PorchPlus, Jobgap
+- Hackathon: 754 participants, 85 projects submitted, 27 technologies used
+- Average participant DevOps experience: 1.5/5 (indicating PipeOps appeals to junior developers)
 - Claims: "40% deployment time reduction," "40-60% cloud cost savings" (unverified)
 - Active on Hashnode, Dev.to with deployment tutorials
+- Community: Discord + Slack channels
 - ZERO active paid ad campaigns (organic-only growth)
 
 **Strengths:**
 - Only other Nigeria-based BYOC player — local brand recognition
+- NDPC accredited + AICPA SOC certified (DC-08) — has compliance story
 - Broader cloud provider support than Cloudsania (includes GCP, Azure, Huawei)
-- Naira pricing — no forex friction for Nigerian users
+- Naira pricing across 3 tiers — no forex friction for Nigerian users
 - Free tier with low barrier to entry
-- Techstars/accelerator network credibility
+- Techstars/Hustle Fund/accelerator network credibility
 - NOW has managed databases (PostgreSQL, MongoDB, MySQL, Redis)
+- Active developer community (hackathon, Discord, Slack)
+- CcHub partnership provides distribution in Lagos tech ecosystem
 
 **Weaknesses:**
 - Minimal funding ($120K) constrains feature development
-- Zero compliance story (no SOC2, ISO 27001, NDPR messaging)
-- Pricing transparency gap between marketing site and docs
-- Only 2 named customers — thin social proof
+- Only 2 named customers — thin social proof (hackathon engagement doesn't equal paying customers)
 - No African region focus despite Lagos HQ (no AWS Cape Town messaging)
 - Content is support-driven, not acquisition-driven (per content forensics)
 - AI product status unclear — "Co-Pilot" may be vaporware
+- Compliance scope unclear — NDPC/SOC badges visible but depth unknown (SOC 1 vs SOC 2, Type I vs Type II)
+- Growth tier has 0 free team seats — team collaboration requires upgrade
+- Nova cost estimator uses Naira hourly rates that are hard to predict monthly costs from
 
 **Cloudsania Comparison:**
 - PipeOps supports MORE cloud providers (GCP, Azure, Huawei)
 - PipeOps has MongoDB; Cloudsania does not
-- PipeOps pricing (~$10/user) is significantly lower than Cloudsania ($39/user)
-- Cloudsania has stronger compliance posture (SOC2/ISO 27001 aligned controls)
+- PipeOps Growth pricing (~$10/user) is lower than Cloudsania Starter ($39/user), but Platform tier (~$35/user) approaches parity and Scale (~$100/user) exceeds Cloudsania Team ($99/user)
+- PipeOps has NDPC accreditation; Cloudsania does not have specific NDPC accreditation (has broader SOC2/ISO 27001/GDPR/PCI DSS alignment)
 - Cloudsania has Docker Compose native support (VPS Connector)
-- Cloudsania has more generous free tier (5 users, unlimited projects vs 1 project)
-- Cloudsania has local payments (cards + mobile money) plus multi-currency
+- Cloudsania has more generous free tier (5 users, unlimited projects vs 1 project, 0 team seats)
+- Cloudsania has local payments (cards + mobile money) plus multi-currency; PipeOps has Naira but payment methods unclear
 - Cloudsania has 6 environment types vs PipeOps standard Dev/Staging/Prod
 - Both have managed databases (PostgreSQL, MySQL, Redis); PipeOps adds MongoDB
+- Cloudsania has broader compliance alignment (4 frameworks); PipeOps has NDPC-specific advantage in Nigeria
 
 ---
 
@@ -164,27 +230,41 @@ During cross-checking, the following corrections were identified. These supersed
 - Founder's existing company (Deimos) provides instant access to GCP customer base
 
 **Product:**
-- Positioning: "AI-Native DevSecOps platform"
-- Claims: AI agents for vulnerability scanning, auto-remediation, intelligent operations
-- Zero-touch deployments
-- BYOC model unclear from product docs (may be managed-only)
-- CI/CD pipelines
-- "Isolated bin packing" mentioned in marketing
+- Dual product structure (DC-11 — UPDATED):
+  - Salus Cloud (Public PaaS): Managed by Salus, for small-medium teams, zero infrastructure setup
+  - Salus Enterprise (Single-Tenant PaaS): Deploys to customer's cloud account — THIS IS BYOC. Full compliance control, dedicated infrastructure, fully managed by Salus team with 24/7 support
+- Positioning: "AI-Native DevSecOps platform" — "Deploy with Confidence. Manage with Ease."
+- Features (claimed): AI agents, vulnerability scanning, auto-remediation, intelligent operations, zero-touch configuration, auto-scaling, zero-downtime deployments
+- DevSecOps pipeline: Automated CI/CD, unit testing, static code analysis
+- Monitoring: Centralized logging, real-time metrics, performance tracking
+- AI-Ops: Cost optimization automation, anomaly detection, log analysis — marked "Coming soon"
+- Security: RBAC, encryption at rest and in transit, vulnerability management, pre-deployment risk alerts
+- Architecture support: Simple websites to complex microservices, event-driven architectures
+- US presence: Registered in Dover, Delaware
 
 **Pricing:**
-- Free: 2 users, 2 projects
-- Developer: $29/user/month (pricing page) — may have been $9/user in earlier announcements
-- Team: $99/month flat
-- Business: $299/month flat
-- Enterprise: $5,000/month managed
-- Pricing confusion between announcements ($9) and pricing page ($29)
+- Free: 2 users, 2 projects, automatic CI/CD, support docs and chat
+- Developer: $29/user/month — unlimited projects, business hour support with SLA
+- Team: $99/month flat (up to 5 users, then $730/user — possibly an extraction error, may be $73 or $7.30)
+- Business: $299/month flat — unlimited users, 24/7 support, technical account manager
+- Enterprise: "Let's talk" — isolated infrastructure, fully managed, 24/7 SLA
+- Pricing confusion between announcements ($9) and pricing page ($29) remains
 
-**Traction:**
-- Zero public case studies
-- Zero named customers
+**Roadmap (from product documentation):**
+- Q4 2024 (claimed completed): Release tiers, dependency vulnerability scanning, Salus AI agent introduction
+- Q1 2025 (planned): Databases/caches, SAST, DAST, autonomous AI-Ops agents, SSO, Azure compatibility, K8s (enterprise-only), webhook integrations
+- Q2 2025 (planned): Vulnerability management, container security (image scanning), enhanced access control, SOC2/ISO 27001 platform compliance, AWS compatibility (enterprise-only)
+- Q4 2025 (planned): Rogue deployment monitoring, service catalog
+- Note: We are now in February 2026. No public evidence whether Q1-Q4 2025 roadmap items shipped.
+
+**Traction (DC-11 — CORRECTED):**
+- Named enterprise customers with testimonials:
+  - Jumia Group (CISO & VP IT Pedro Fangueiro — "simplified & fast-tracked our hybrid, multi cloud adoption")
+  - Apex Network (CEO Abraham Efemena — "simplified the orchestration of our cloud infrastructure")
+  - Zedcrest Wealth (CTO Bayonle Amzat — "enabled us to focus on delivering exceptional product features")
+- Note: Zedcrest is also an investor (Zedcrest Capital). Jumia may be a Deimos (parent) customer migrated to Salus.
 - Zero blog posts or tutorials as of February 2026
 - Zero content marketing presence
-- 5 enterprise clients claimed (unverified)
 
 **Strengths:**
 - Fresh $3.7M runway for aggressive market entry
@@ -192,24 +272,33 @@ During cross-checking, the following corrections were identified. These supersed
 - Pan-African investor network (Lagos, Cape Town, pan-African)
 - AI-native positioning is differentiated (no other BYOC player claims this)
 - South Africa HQ gives emerging-market credibility
+- Named enterprise customers including Jumia Group (DC-11)
+- Enterprise tier IS BYOC — deploys to customer's cloud
+- Comprehensive security feature set (RBAC, encryption, vulnerability management)
+- Planned SOC2/ISO 27001 compliance (Q2 2025 roadmap)
+- US entity (Delaware) signals international ambitions
 
 **Weaknesses:**
-- ZERO public proof of any AI capabilities — vaporware risk is high
+- AI capabilities (AI-Ops, autonomous agents) all marked "Coming soon" — vaporware risk remains
 - No content, no community, no developer advocacy
 - Pricing inconsistency damages trust ($9 vs $29)
-- BYOC vs managed model not clearly documented
-- No compliance story (zero SOC2/ISO 27001/NDPR positioning)
-- "Salus" name confusion with Salus Security (Web3 entity) and Salus medical software
+- Team tier pricing appears broken ($730/user after 5 — likely extraction error)
+- SOC2/ISO 27001 was on Q2 2025 roadmap — no public evidence it shipped
+- "Salus" name confusion with Salus Security (Web3) and Salus medical software
 - Messaging is engineer-to-engineer ("isolated bin packing") — lacks business value hook
+- Customer testimonials may be from Deimos relationship, not Salus-native acquisition
+- Many features (SAST, DAST, databases, Azure, AWS enterprise) were "planned" for 2025 — delivery uncertain
 
 **Cloudsania Comparison:**
 - Salus has more funding ($3.7M vs Cloudsania undisclosed)
-- Salus claims AI capabilities Cloudsania does not have — but none are publicly verifiable
-- Cloudsania has a shipping product with documented features; Salus has claims
-- Cloudsania has compliance-aligned controls; Salus has none
-- Cloudsania pricing ($39/user) is higher than Salus Developer ($29/user) but lower than Salus Team ($99 flat for small teams)
+- Salus has named enterprise customers including Jumia Group; Cloudsania customer evidence unclear
+- Salus Enterprise tier is BYOC (deploys to customer cloud); matches Cloudsania model
+- Salus claims AI capabilities Cloudsania does not have — delivery status uncertain
+- Cloudsania has LIVE compliance-aligned controls; Salus had SOC2/ISO 27001 on roadmap (status unknown)
+- Cloudsania pricing ($39/user) is higher than Salus Developer ($29/user) but lower than Salus Business ($299/flat)
 - Cloudsania has local payments; Salus payment methods unclear
-- Salus may have GCP access via Deimos; Cloudsania does not support GCP
+- Salus has GCP access via Deimos; Cloudsania does not support GCP
+- Salus has US entity (Delaware); relevant for international enterprise sales
 
 ---
 
@@ -221,43 +310,65 @@ During cross-checking, the following corrections were identified. These supersed
 - Status: Transitioned from sales-led to self-serve
 
 **Product:**
-- BYOC: Deploys to customer's AWS, GCP, Azure
-- Kubernetes-based (EKS/GKE) infrastructure automation
-- Compliance automation: Pre-configures AWS infrastructure controls to pass Oneleet, Drata, Thoropass audits
+- BYOC: Deploys to customer's AWS, GCP, Azure (EKS/GKE/AKS provisioned automatically)
+- Kubernetes-based infrastructure automation with full K8s abstraction
+- Compliance automation: Pre-configures AWS infrastructure controls to pass Oneleet, Vanta, Drata, Thoropass audits. SOC2 & HIPAA one-click setup (AWS only). (DC-03 caveat: NOT actual certification)
 - BAA (Business Associate Agreement) capability for HIPAA
 - VPC, IAM, encryption automated at provisioning
+- GPU workload support (DC-12): NVIDIA V100 (p3), A100 (p4), T4 (g4dn), A10G (g5) on AWS via fixed node groups
+- Preview environments: Auto-created per PR, isolated on cluster, destroyed on merge
+- VPC Peering: Connect Porter-provisioned VPCs with existing RDS or other workloads (cross-account supported)
+- Add-ons: PostgreSQL, Redis, Datadog, New Relic, Grafana, Loki, Helicone AI Gateway, Metabase, n8n, persistent disk, custom Helm charts
+- Default cluster: 3 node groups (System t3.medium, Monitoring t3.xlarge, Application t3.2xlarge)
+- Advanced features: RBAC (Admin/Developer/Viewer), environment groups, pre/post-deploy jobs, blue-green deployments, HPA/VPA autoscaling
+- CLI tool for CI/CD integration (GitHub Actions, GitLab CI, Jenkins, CircleCI)
 
-**Pricing:**
-- No public pricing page — fully opaque
-- Startup program: "25 vCPU free for 6 months" (not prominently marketed)
-- Estimated: $500-2,000/month minimum based on enterprise positioning
+**Pricing (DC-09 — CORRECTED: IS publicly available):**
+- $6/month per GB RAM + $13/month per vCPU (metered billing, prorated to the minute)
+- Default cluster infrastructure: ~$525/month on AWS/GCP/Azure (cloud provider cost, can use credits)
+- Startup deal: 25 vCPU + 50GB RAM free for 6 months (can pair with cloud credits for $0 total)
+- Volume discounts: Starting at 40 vCPU, 80GB RAM
+- Enterprise tier: Advanced RBAC, SAML SSO, custom alerts, on-prem installation, premium SLO support
+- Example: 5 apps (5 vCPU, 10GB RAM total) → Porter cost: $125/month + cloud ~$150-200 = $275-325/month total
 
-**Traction:**
-- Minimal public customer logos
-- No visible community (Discord/Slack/forum)
-- Limited blog and SEO presence
-- Compliance focus implies regulated-industry customer base
+**Traction (DC-09 — UPDATED):**
+- Heroku migrant logos: Linear, Mutiny, Vanta, Doppler, Lattice, Ramp, Supabase
+- Trusted-by logos: Tennr, Threekit, Getaround, HomeLight, Fleetio, Landing, Nooks, Wefunder, Papier, Apploi, traba, eduMe, Lago, Airbyte
+- Case studies: Writesonic (scaled to 1.6TB RAM, no DevOps engineers), Arcade, Toma, Carry, Getaround (8 countries), CareRev (6 years Heroku → Porter), Landing (500-1,000 employees)
+- YC-backed companies: a priora (YC W24), Kaldi (YC W24)
+- Claims: "50% infrastructure savings vs Heroku," "3x faster," "Reduces DevOps needs by 3,000+ hours"
 
 **Strengths:**
-- Only player with infrastructure-level compliance automation
+- Only player with infrastructure-level compliance automation (SOC2/HIPAA one-click on AWS)
 - Multi-cloud support (AWS, GCP, Azure)
 - BAA capability signals enterprise maturity
+- GPU workload support (V100, A100, T4, A10G) — positions for AI/ML workloads
 - Pre-configured compliant infrastructure is defensible IP
-- Targets high willingness-to-pay verticals (FinTech, HealthTech, GovTech)
+- Strong customer logos including Vanta, Supabase, Linear, Ramp, Getaround
+- YC ecosystem credibility
+- Preview environments and blue-green deployments — strong developer experience
+- Transparent consumption pricing with startup deal
+- Rich add-on ecosystem (databases, monitoring, analytics, AI gateway)
 
 **Weaknesses:**
 - Zero African presence — no local team, payments, or marketing
-- Opaque pricing is high friction for self-serve buyers
-- Compliance partner dependency (Oneleet/Drata can be replicated)
+- Compliance one-click is AWS-only (GCP/Azure: "Coming soon" for datastores and storage)
+- Compliance partner dependency (Oneleet/Vanta/Drata can be replicated)
 - US-centric compliance (HIPAA) doesn't map to African regulations (NDPR, POPIA)
-- No developer community or content marketing engine
+- No developer community (proprietary, no Discord/Slack/forum)
+- Total cost (Porter + cloud) is high: ~$525/month minimum for default cluster
 - Porter's compliance is infrastructure automation, NOT actual certification
+- VPS support "coming soon" — currently major cloud providers only
 
 **Cloudsania Comparison:**
-- Porter has actual compliance automation tooling; Cloudsania has compliance-aligned controls but no one-click compliance
+- Porter has compliance automation tooling (one-click SOC2/HIPAA); Cloudsania has compliance-aligned controls but no one-click compliance
+- Porter has GPU support; Cloudsania does not
+- Porter has preview environments; Cloudsania does not
 - Porter supports GCP and Azure; Cloudsania does not
 - Porter has zero African presence; Cloudsania is Lagos-based with local payments
-- Porter's opaque pricing signals enterprise-only; Cloudsania has transparent tiers
+- Porter's total cost (~$275-325/month for small apps) is higher than Cloudsania for small teams ($195 for 5 users) but scales differently
+- Porter has 14+ named customer logos and case studies; strong social proof
+- Cloudsania has transparent per-user pricing; Porter's consumption pricing requires calculation
 - Porter targets US/EU regulated verticals; opportunity exists for Cloudsania to own African regulated verticals
 
 ---
@@ -272,7 +383,7 @@ During cross-checking, the following corrections were identified. These supersed
 **Product:**
 - Full BYOC: AWS, GCP, Azure, OCI, Civo (most cloud providers supported)
 - Kubernetes-based with full K8s exposure + application abstraction layer
-- GPU infrastructure: L4, A100, H100, H200 (only player with GPU support)
+- GPU infrastructure: L4, A100, H100, H200 (alongside Porter — DC-12)
 - Pure consumption pricing ($0.01667/vCPU/hour, ~$12/vCPU/month)
 - 330+ deployment regions
 - Enterprise features: audit logs, VPC peering, SLA
@@ -291,7 +402,7 @@ During cross-checking, the following corrections were identified. These supersed
 
 **Strengths:**
 - Most funded competitor ($22M) — resource advantage
-- GPU support (unique in category) — AI/ML workload differentiation
+- GPU support (shared with Porter) — AI/ML workload differentiation
 - Broadest cloud provider support (5 providers)
 - Pure consumption = cost-efficient for large teams (no seat tax)
 - Proven at enterprise scale
@@ -319,51 +430,74 @@ During cross-checking, the following corrections were identified. These supersed
 ### 4.5 Coolify (Open Source) — PRICE FLOOR
 
 **Company Facts:**
-- Open-source project (not a funded company)
-- Docker-based (NOT Kubernetes)
+- Open-source project (not a funded company, no VC backing)
+- Docker-based (NOT Kubernetes — K8s support planned Q1 2026)
 - Community-driven development
+- GitHub: coolify-io/coolify
 
 **Product:**
 - Self-hosted control plane (BYOS — Bring Your Own Server)
-- 280+ one-click service templates (largest library)
+- 200+ one-click service templates (largest library): development tools, productivity apps, media servers, databases, monitoring, CRM, e-commerce, analytics, communication
 - Docker Compose + Docker Swarm orchestration
-- No managed databases (self-managed PostgreSQL/Redis via templates)
-- Cloud option: Managed Coolify dashboard at $5/month + $3/server
+- One-click database deployment: PostgreSQL, MySQL, MariaDB, MongoDB, Redis, DragonFly, KeyDB, ClickHouse
+- Cloud option: Managed Coolify dashboard at $5/month (2 servers) + $3/additional server
+- Git-based deployment: GitHub, GitLab, Gitea, Bitbucket, any Git server
+- Docker image deployment from Docker Hub, GHCR, GitLab CR, private registries
+- Automatic SSL via Let's Encrypt, reverse proxy via Traefik
+- Full REST API on both self-hosted and cloud
+- Backup: Scheduled automatic database backups, S3-compatible storage, one-click restore
+- Monitoring: Real-time logs, resource usage, deployment history, error tracking
+- Alerts: Email, Discord, Slack, Telegram, custom webhooks
+- Supports any VPS with Ubuntu 20.04+ or Debian 11+ (min 1GB RAM, tested on DigitalOcean, Hetzner, Linode, Vultr, AWS EC2, GCE, Azure VMs)
 
 **Pricing:**
-- Self-hosted: Free forever
-- Cloud: $5/month base + $3/server
+- Self-hosted: Free forever (full features, no limitations, unlimited apps/teams/servers)
+- Cloud: $5/month base (2 servers) + $3/month per additional server
 - No per-user fees at any tier
+- Enterprise: Custom SLAs, dedicated support, video/call support, custom feature development
+- 14-day money-back guarantee on cloud plan
 
-**Traction:**
-- 19,000+ community members (claimed)
-- Active GitHub contributors
+**Traction (DC-10 — CORRECTED):**
+- 120,000+ community members (NOT 19k+ as previously reported)
+- Active GitHub contributors and public roadmap
 - Growing adoption in self-hosting community
+- Discord as primary community channel + GitHub Discussions
+
+**Roadmap (Q1-Q2 2026):**
+- Q1 2026: Enhanced RBAC, Kubernetes support, built-in load balancing, enhanced monitoring
+- Q2 2026: Database clustering, automated failover, multi-region, enhanced API
+- Long-term: Serverless functions, managed database offerings (cloud tier), enterprise SSO, advanced compliance
 
 **Strengths:**
 - Free forever — sets the price floor for self-hosted BYOC
 - Zero vendor lock-in (fully open source)
-- 280+ templates — fastest time-to-value for common stacks
+- 200+ service templates — fastest time-to-value for common stacks
+- 120,000+ community members — largest community in category by far
 - No per-user fees — unlimited team members
 - Simple architecture (Docker, not K8s) — easier to understand
+- 8 database types one-click (PostgreSQL, MySQL, MariaDB, MongoDB, Redis, DragonFly, KeyDB, ClickHouse)
+- Full API access for automation
+- Cost example: Solo dev on Hetzner €4.49/month + Coolify free = $5/month total for unlimited apps (86% cheaper than equivalent Heroku)
 
 **Weaknesses:**
-- Docker Swarm limitation — cannot handle enterprise-scale workloads
-- No commercial support or SLA
-- Documentation gaps acknowledged ("The docs might not help you there")
-- Manual fixes required for some apps — not truly "one-click"
-- No compliance features of any kind
-- No managed databases (operational burden on user)
-- Monetization model likely unsustainable ($5/month)
+- Docker-only limitation — cannot handle enterprise-scale workloads (K8s planned Q1 2026)
+- No built-in load balancing (planned Q1 2026), no automatic failover, no multi-region
+- No commercial support or SLA (except enterprise tier)
+- Self-hosted requires Linux server admin knowledge
+- No compliance features of any kind (advanced compliance "long-term" roadmap)
+- Databases are self-deployed/self-managed (not managed service)
+- No built-in CI/CD (uses Git-based deployment triggers)
+- No serverless functions (container-based only)
 
 **Cloudsania Comparison:**
 - Coolify is free; Cloudsania starts at $39/user — cannot compete on price
+- Coolify has 120k+ community; Cloudsania has smaller but focused community
 - Cloudsania provides managed services (databases, monitoring, support); Coolify is self-managed
-- Cloudsania has compliance-aligned controls; Coolify has none
-- Cloudsania has professional support; Coolify has community-only
-- Coolify has 280+ templates; Cloudsania has E-commerce App Service (1 template)
+- Cloudsania has compliance-aligned controls; Coolify has none (planning long-term)
+- Cloudsania has professional support; Coolify has community-only (enterprise on request)
+- Coolify has 200+ templates and 8 database types; Cloudsania has 1 App Service and 3 database types
 - Coolify users accept operational burden; Cloudsania users pay to avoid it
-- Different customer profiles: Coolify = hobbyists/cost-optimizers, Cloudsania = teams needing reliability
+- Different customer profiles: Coolify = hobbyists/cost-optimizers/agencies, Cloudsania = teams needing reliability and compliance
 
 ---
 
@@ -452,24 +586,24 @@ During cross-checking, the following corrections were identified. These supersed
 - **Northflank:** Managed databases available (details from platform)
 - **Render:** PostgreSQL with PITR ($95/month), Redis
 - **Railway:** PostgreSQL, MySQL, Redis (usage-based pricing)
-- **Salus:** Unclear from available documentation
-- **Porter:** Database management via K8s (Helm charts)
-- **Coolify:** Self-managed via templates (PostgreSQL, MySQL, MongoDB, Redis)
+- **Salus:** Databases and caches on Q1 2025 roadmap (delivery status unknown)
+- **Porter:** PostgreSQL and Redis via add-ons (AWS only, GCP/Azure "coming soon"). Point-in-time recovery supported.
+- **Coolify:** One-click deployment of 8 database types: PostgreSQL, MySQL, MariaDB, MongoDB, Redis, DragonFly, KeyDB, ClickHouse. Self-managed but with scheduled automated backups and S3 storage support.
 
-**Gap for Cloudsania:** No MongoDB. PipeOps and Coolify both support it. PITR is upcoming but not yet available (Render already has it).
+**Gap for Cloudsania:** No MongoDB. PipeOps, Porter (via Helm), and Coolify all support it. PITR is upcoming but not yet available (Render and Porter already have it).
 
-### 6.3 Compliance & Security
+### 6.3 Compliance & Security (DC-08 — SIGNIFICANTLY UPDATED)
 
-- **Porter:** Infrastructure-level compliance automation (SOC2/HIPAA via Oneleet/Drata/Thoropass), BAA capability. NOT actual certification — automates infrastructure controls.
-- **Cloudsania:** SOC 2/ISO 27001/GDPR/PCI DSS aligned controls. RBAC, MFA, SSO, AES-256, TLS 1.2+, audit logs, vulnerability scanning. NOT certified.
+- **Porter:** Infrastructure-level compliance automation (SOC2/HIPAA one-click on AWS via Oneleet/Vanta/Drata), BAA capability. NOT actual certification — automates infrastructure controls. GPU support for ML/AI workloads.
+- **Cloudsania:** SOC 2/ISO 27001/GDPR/PCI DSS aligned controls. RBAC, MFA, SSO, AES-256, TLS 1.2+, audit logs, vulnerability scanning. NOT certified. Broadest framework alignment.
+- **PipeOps (CORRECTED):** NDPC (National Data Protection Commission) accredited + AICPA SOC certified (badges on website — audit type/currency not independently verified). This is directly relevant for Nigerian regulatory compliance.
+- **Salus:** RBAC, encryption at rest and in transit, vulnerability management, pre-deployment risk alerts. SOC2/ISO 27001 was on Q2 2025 roadmap (delivery status unknown). SBOM/SAST/DAST planned.
 - **Railway:** HIPAA BAA at $1,000/month add-on
-- **PipeOps:** Zero compliance messaging
-- **Salus:** Claims "AI security" and "vulnerability management" but no compliance framework messaging
 - **Northflank:** Audit logs on enterprise tier only
-- **Coolify:** Zero compliance features
+- **Coolify:** Container-level isolation, automatic SSL, team-based permissions. No compliance framework. Advanced compliance "long-term" on roadmap.
 - **Render:** No compliance automation
 
-**Position for Cloudsania:** Second-strongest compliance posture after Porter. Opportunity to close the gap with automation tooling, especially for African regulations (NDPR, POPIA).
+**Revised position for Cloudsania:** Compliance landscape has changed significantly with DC-08. PipeOps now has NDPC accreditation (directly relevant in Nigeria) and AICPA SOC. Cloudsania's advantage is now in BREADTH of framework alignment (4 frameworks: SOC2 + ISO 27001 + GDPR + PCI DSS) vs PipeOps's narrower positioning (NDPC + SOC). However, PipeOps's NDPC accreditation may carry more weight with Nigerian regulators than Cloudsania's broader but non-certified alignment. The opportunity to own "African compliance automation" remains, but the baseline advantage over PipeOps is narrower than previously assessed.
 
 ### 6.4 AI/Automation Capabilities
 
@@ -518,41 +652,47 @@ During cross-checking, the following corrections were identified. These supersed
 - Northflank: $0.01667/vCPU/hour (~$12/vCPU/month), no per-user fees
 - Railway: $10/GB RAM/month, $20/vCPU/month (on top of base)
 
-**Opaque/Enterprise:**
-- Porter: No public pricing
-- Salus Enterprise: $5,000/month (managed)
+**Consumption-Based (DC-09 — Porter pricing now public):**
+- Porter: $6/month per GB RAM + $13/month per vCPU (+ cloud provider cost ~$525/month default cluster)
+
+**Enterprise:**
+- Salus Enterprise: $5,000/month (managed, single-tenant)
 
 ### 7.2 Cloudsania's Pricing Position
 
 **For a 5-person team (monthly platform cost):**
 - Coolify: $0 (self-hosted) or $5 (Cloud)
 - Railway Pro: $20 (unlimited seats)
-- PipeOps Growth: ~$10
+- PipeOps Growth: ~$50 (5 × ~$10/user)
 - Salus Developer: $145 (5 × $29)
 - Render Pro: $95 (5 × $19)
+- PipeOps Platform: ~$175 (5 × ~$35/user)
 - **Cloudsania Starter: $195 (5 × $39)**
 - Northflank: Variable (consumption-based, no seat fees)
-- Porter: Unknown (likely $500+)
+- PipeOps Scale: ~$500 (5 × ~$100/user)
+- Porter: ~$125 platform + ~$525 cloud = ~$650 total (DC-09)
 
 **For a 15-person team (monthly platform cost):**
 - Coolify: $0 or $5
 - Railway Pro: $20
-- PipeOps: ~$10 (if flat) or unclear (if per-user)
+- Salus Team: $99 (flat, up to 5 users — pricing beyond 5 unclear)
+- PipeOps Growth: ~$150 (15 × ~$10/user)
 - Render Pro: $285 (15 × $19)
-- Salus Team: $99 (flat)
 - Salus Developer: $435 (15 × $29)
+- PipeOps Platform: ~$525 (15 × ~$35/user)
 - **Cloudsania Starter: $585 (15 × $39)**
 - **Cloudsania Pro: $1,185 (15 × $79)**
+- PipeOps Scale: ~$1,500 (15 × ~$100/user)
 - Northflank: Variable
-- Porter: Unknown
+- Porter: Variable (consumption-based, scales with resources not users)
 
-**Objective assessment:** Cloudsania is the most expensive per-user option among direct BYOC competitors for teams of any size. The pricing is justified only if the feature set (compliance, support, local payments, reliability) delivers proportional value.
+**Revised pricing assessment:** With per-seat pricing, PipeOps is only cheaper at the Growth tier. At Platform tier (~$35/user), PipeOps and Cloudsania are near pricing parity. At Scale tier (~$100/user), PipeOps is MORE expensive than Cloudsania Team ($99/user). The pricing gap is primarily at the entry level — precisely where price sensitivity is highest.
 
 ### 7.3 Free Tier Comparison
 
 - **Cloudsania:** All basic features, multiple Konstacks, up to 5 users, unlimited projects, Cloud Connectors, DNS configs, 3 add-ons/environment — MOST GENEROUS
 - **Salus:** 2 users, 2 projects
-- **PipeOps:** 1 project (Starter free)
+- **PipeOps:** 1 project, 0 free team seats (Starter free)
 - **Coolify:** Unlimited (self-hosted, forever free)
 - **Render:** 750 hours/month, 500 pipeline minutes
 - **Railway:** $5 one-time credit (not recurring)
@@ -579,13 +719,13 @@ During cross-checking, the following corrections were identified. These supersed
 - **Salus:** No paid campaigns detected; website messaging is engineer-to-engineer
 - **All global competitors:** Standard SaaS digital marketing (Google Ads, social media) but none targeting African market specifically
 
-### 8.3 Community & Developer Relations
+### 8.3 Community & Developer Relations (DC-10 — CORRECTED)
 
-- **Coolify:** 19,000+ community members (strongest community in category)
+- **Coolify:** 120,000+ community members (DC-10 — 6x previously reported, largest in category by far)
+- **PipeOps:** Active developer community — Discord, Slack, 754-participant hackathon (85 projects), CcHub partnership, Hashnode/Dev.to content
 - **Northflank:** Limited community presence
-- **PipeOps:** Active but small developer community (tutorials, blog posts)
-- **Salus:** No community presence
-- **Porter:** No visible community
+- **Salus:** No community presence (no blog, no tutorials, no developer advocacy)
+- **Porter:** No visible developer community (proprietary, no Discord/Slack). Enterprise support with SLO. Case study-driven.
 - **Cloudsania:** Slack community, WhatsApp Builder's Hub, social media presence
 
 ### 8.4 SEO White Space (from Perplexity Phase 2)
@@ -649,7 +789,7 @@ These search terms have low competition among all analyzed competitors:
 
 ### 10.1 Where Cloudsania Is Stronger
 
-- **Compliance posture:** Second only to Porter. SOC 2/ISO 27001/GDPR/PCI DSS aligned controls, audit logs, vulnerability scanning, RBAC, MFA, SSO. No other African competitor has this.
+- **Compliance breadth:** Broadest framework alignment in the market (SOC 2 + ISO 27001 + GDPR + PCI DSS). Audit logs, vulnerability scanning, RBAC, MFA, SSO, AES-256, TLS 1.2+. Note: PipeOps now has NDPC + SOC (DC-08), so compliance is no longer a blanket differentiator against PipeOps — but Cloudsania's multi-framework scope is wider.
 - **Free tier generosity:** 5 users, unlimited projects is the most generous paid-platform free tier.
 - **Local payment rails:** Local cards + mobile money. Only PipeOps comes close (Naira pricing).
 - **Deployment mode spectrum:** Easy/Developer/Professional modes cover the full buyer sophistication range.
@@ -662,9 +802,10 @@ These search terms have low competition among all analyzed competitors:
 
 - **Pricing:** $39/user is 4x PipeOps (~$10), 1.3x Salus Developer ($29/user), 2x Render Pro ($19/user). Highest per-user cost among direct competitors.
 - **Cloud provider coverage:** No GCP, no Azure. PipeOps supports both. Porter supports both. Northflank supports both plus OCI and Civo.
-- **Template/app service library:** 1 App Service (E-commerce) vs Coolify's 280+ templates. Narrow solution coverage.
-- **Database breadth:** No MongoDB (PipeOps has it, Coolify templates include it). No Point-in-time recovery yet (Render already has PITR).
-- **GPU/AI workloads:** No GPU support. Northflank has L4/A100/H100/H200. As AI/ML workloads grow, this becomes more relevant.
+- **Template/app service library:** 1 App Service (E-commerce) vs Coolify's 200+ templates. Narrow solution coverage.
+- **Database breadth:** No MongoDB (PipeOps has it, Coolify has 8 types). No Point-in-time recovery yet (Render and Porter already have PITR).
+- **GPU/AI workloads:** No GPU support. Northflank and Porter both have GPU support. As AI/ML workloads grow, this becomes more relevant.
+- **NDPC accreditation:** PipeOps has NDPC accreditation (DC-08). Cloudsania does not. For Nigerian regulatory contexts, PipeOps may be perceived as more compliant despite Cloudsania's broader framework alignment.
 - **Funding/resources:** Undisclosed funding vs PipeOps ($120K), Salus ($3.7M), Northflank ($22M). Resource constraints limit feature development velocity.
 
 ### 10.3 Where Cloudsania Is Comparable
@@ -691,31 +832,42 @@ This white space exists but is UNCLAIMED — Cloudsania has proximity to it but 
 
 ### Tier 1: Immediate Threats (competing for the same buyer today)
 
-**PipeOps** — Threat Level: HIGH
+**PipeOps** — Threat Level: HIGH (ELEVATED from previous assessment)
 - Same geography (Lagos), same ICP (African developers/startups)
-- 4x cheaper ($10 vs $39/user)
-- Broader cloud support (includes GCP, Azure)
+- Per-user pricing: Growth (~$10/user) is 4x cheaper than Cloudsania Starter ($39/user). However, Platform (~$35/user) approaches parity, and Scale (~$100/user) is MORE expensive than Cloudsania Team ($99/user). The price advantage is concentrated at entry level.
+- Broader cloud support (includes GCP, Azure, Huawei)
 - Now has managed databases (previous gap closed)
-- Weaker on: compliance, environment diversity, support structure, free tier
+- NOW has NDPC accreditation + AICPA SOC (DC-08) — compliance gap significantly narrowed
+- Active developer community (hackathon, Discord, Slack, CcHub partnership)
+- Remaining Cloudsania advantages: broader compliance framework (4 vs 2), free tier generosity (5 users vs 0 team seats), environment diversity, Docker Compose, local payment breadth (mobile money), Cloudsania is cheaper at higher tiers
 
-**Salus Cloud** — Threat Level: MEDIUM-HIGH (rising)
+**Salus Cloud** — Threat Level: MEDIUM-HIGH (rising, UPDATED)
 - $3.7M funding enables aggressive market entry
 - Pan-African investor/distribution network (Atlantica Lagos, P1, Deimos GCP)
-- AI-native positioning is differentiated (even if unproven)
-- Risk: If Salus ships real AI features AND transparent compliance, they could leapfrog both PipeOps and Cloudsania
-- Mitigant: Zero shipping product evidence, zero content, zero named customers
+- AI-native positioning is differentiated (even if delivery uncertain)
+- NOW has named enterprise customers including Jumia Group (DC-11) — credibility significantly higher
+- Enterprise tier IS BYOC (deploys to customer's cloud)
+- SOC2/ISO 27001 was on Q2 2025 roadmap — may have shipped
+- Risk: If Salus delivers on AI roadmap + compliance, they become the most dangerous African competitor (funded, enterprise-proven, AI-differentiated, GCP access, pan-African distribution)
+- Mitigant: AI features still "Coming soon," zero content marketing, pricing confusion, customer testimonials may be Deimos inherited
 
 ### Tier 2: Structural Threats (reshape the market if they enter Africa)
 
-**Porter** — Threat Level: MEDIUM
-- If Porter adds transparent pricing + African compliance (NDPR/POPIA), it captures the regulated-vertical market
+**Porter** — Threat Level: MEDIUM (UPDATED with new data)
+- NOW has transparent pricing ($6/GB + $13/vCPU, DC-09) — removes previous barrier
+- Strong customer logos (Vanta, Supabase, Linear, Ramp) and case studies
+- GPU workload support (DC-12) positions for AI/ML market
+- If Porter adds African compliance (NDPR/POPIA), it captures the regulated-vertical market
 - Currently zero African strategy, but African FinTech market growing rapidly
 - Compliance automation tooling is a defensible moat
+- Total cost (~$650+/month for basic setup) keeps Porter out of the price-sensitive African market for now
 
-**Coolify** — Threat Level: MEDIUM
+**Coolify** — Threat Level: MEDIUM (UPDATED with new data)
 - Free open-source sets the price floor — price-sensitive developers will always choose $0
-- 280+ templates commoditize the "deploy quickly" value proposition
-- Mitigant: No support, no compliance, no managed services — different buyer profile
+- 200+ templates and 8 database types commoditize the "deploy quickly" and "managed databases" value propositions
+- 120,000+ community members (DC-10) — massive community moat
+- K8s support planned Q1 2026 — would close Docker limitation
+- Mitigant: No support, no compliance, no managed services — different buyer profile. Self-hosting requires Linux admin skills.
 
 ### Tier 3: Awareness Threats (not competing directly, but shaping expectations)
 
@@ -740,42 +892,51 @@ This white space exists but is UNCLAIMED — Cloudsania has proximity to it but 
 
 ### 12.1 Competitor Pricing Reference
 
-- PipeOps Growth: ₦15,500/month (~$10 USD)
+- PipeOps Growth: ₦15,500/user/month (~$10/user USD)
+- PipeOps Platform: ₦54,250/user/month (~$35/user USD) (DC-13)
+- PipeOps Scale: ₦155,000/user/month (~$100/user USD) (DC-13)
 - Salus Developer: $29/user/month (pricing page)
-- Salus Team: $99/month flat
+- Salus Team: $99/month flat (up to 5 users)
+- Salus Business: $299/month flat (unlimited users)
 - Railway Pro: $20/month (unlimited seats)
 - Render Pro: $19/user/month
 - Northflank: $0.01667/vCPU/hour (no seat fees)
-- Porter: Opaque (estimated $500-2,000/month)
-- Coolify: $0 (self-hosted) / $5/month (Cloud)
+- Porter: $6/GB RAM + $13/vCPU/month + ~$525 cloud infra (DC-09)
+- Porter Startup: 25 vCPU + 50GB RAM free for 6 months
+- Coolify: $0 (self-hosted) / $5/month (Cloud, 2 servers)
 - **Cloudsania Starter: $39/user/month**
 - **Cloudsania Pro: $79/user/month**
 - **Cloudsania Team: $99/user/month**
 
-### 12.2 Verified Competitor Traction
+### 12.2 Verified Competitor Traction (UPDATED Feb 2)
 
 - Northflank: 50,000+ developers, 2M+ monthly containers, $22M funding
-- Coolify: 19,000+ community members
-- PipeOps: 2 named customers (PorchPlus, Jobgap), Techstars alumni
-- Salus: 5 enterprise clients claimed (unverified), $3.7M seed
+- Coolify: 120,000+ community members (DC-10 — corrected from 19k+)
+- Porter: Heroku migrant logos (Linear, Mutiny, Vanta, Doppler, Lattice, Ramp, Supabase), 14+ trusted-by logos, YC company customers (DC-09)
+- PipeOps: Named customers (PorchPlus, Jobgap), 754-participant hackathon, Techstars/Hustle Fund alumni, CcHub partnership, NDPC/SOC certified
+- Salus: Named enterprise customers — Jumia Group, Apex Network, Zedcrest Wealth (DC-11), $3.7M seed
 - Render: Red Bull, Watershed as named customers
-- Porter: No public traction data
 - Railway: Active developer community (size undisclosed)
 
-### 12.3 Compliance Landscape
+### 12.3 Compliance Landscape (UPDATED Feb 2)
 
-- Porter: Infrastructure automation for SOC2/HIPAA via third-party platforms (strongest)
-- Cloudsania: SOC2/ISO27001/GDPR/PCI DSS aligned controls (second)
+- Porter: Infrastructure automation for SOC2/HIPAA via Oneleet/Vanta/Drata (one-click on AWS, strongest automation)
+- PipeOps: NDPC accredited + AICPA SOC certified (DC-08 — Nigerian regulatory compliance)
+- Cloudsania: SOC2/ISO27001/GDPR/PCI DSS aligned controls (broadest multi-framework scope)
+- Salus: SOC2/ISO27001 on Q2 2025 roadmap (delivery status unknown)
 - Railway: HIPAA BAA at $1,000/month
-- All others: Zero compliance positioning
+- Coolify: No compliance features (advanced compliance "long-term" on roadmap)
+- Northflank: Audit logs on enterprise tier only
+- Render: No compliance automation
 
-### 12.4 African Market Factors
+### 12.4 African Market Factors (UPDATED Feb 2)
 
-- Local HQ: Cloudsania (Lagos), PipeOps (Lagos), Salus (Cape Town)
-- Local pricing: PipeOps (Naira), Cloudsania (local cards + mobile money)
+- Local HQ: Cloudsania (Lagos), PipeOps (Lagos), Salus (Cape Town, also US entity in Delaware)
+- Local pricing: PipeOps (3 Naira tiers), Cloudsania (local cards + mobile money + multi-currency)
 - African cloud regions: No competitor explicitly markets AWS Cape Town or other African regions
-- African compliance: No competitor automates NDPR, POPIA, CBN, or Kenya DPA compliance
+- African compliance: PipeOps has NDPC accreditation (Nigeria-specific). No competitor automates POPIA, CBN, or Kenya DPA.
 - Support in African time zones: Cloudsania (WAT hours), PipeOps (implied Lagos hours)
+- Named African enterprise customers: Salus (Jumia Group, Apex Network, Zedcrest Wealth), PipeOps (PorchPlus, Jobgap)
 
 ---
 
@@ -785,18 +946,23 @@ This white space exists but is UNCLAIMED — Cloudsania has proximity to it but 
 
 The following recommendations are grounded in the competitive data above, cross-referenced against Cloudsania's validated Product Capabilities Reference (v1.0), Value Proposition Canvases, Segment Positioning Statements, Target Audience Profiles, Brand Strategy (v2.1), and Messaging Framework (v3.0). Each recommendation cites the competitive evidence that drives it.
 
-### R-01: Address the Pricing Gap — Cloudsania's Biggest Competitive Vulnerability
+### R-01: Address the Pricing Gap — Reframed with Per-Seat Data
 
-**Evidence:**
-- Cloudsania Starter ($39/user) is 4x PipeOps (~$10), 1.3x Salus Developer ($29), 2x Render Pro ($19), and 2x Railway Pro ($20 unlimited seats)
-- For a 5-person team, Cloudsania costs $195/month vs PipeOps ~$10 and Salus Developer $145
-- The gap widens at scale: 15 users on Cloudsania Pro = $1,185/month vs Salus Team $99/flat
+**Evidence (UPDATED with per-seat correction):**
+- PipeOps pricing is per-user: Growth ~$10/user, Platform ~$35/user, Scale ~$100/user
+- Cloudsania Starter ($39/user) is 4x PipeOps Growth but only 1.1x PipeOps Platform (~$35/user)
+- Cloudsania Team ($99/user) is CHEAPER than PipeOps Scale (~$100/user)
+- Salus Developer ($29/user) remains 1.3x cheaper than Cloudsania Starter
+- For a 5-person team: PipeOps Growth $50, Salus Developer $145, PipeOps Platform $175, Cloudsania Starter $195
+- The pricing gap is concentrated at entry-level tiers, not at mid/upper tiers
 
-**Recommendation:**
-- Evaluate whether the current pricing structure ($39/$79/$99 per-user) is sustainable against competitors who are 2-4x cheaper
-- The free tier (5 users, unlimited projects) is strong — it is the most generous in the market. The conversion path FROM free TO $39/user is where friction exists.
-- Consider whether the value delivered at $39/user is demonstrably superior to what PipeOps delivers at $10/user. The current differentiators (compliance posture, support localization, environment diversity) need to be made tangible and visible to justify the premium.
-- Per the Brand Strategy value of "Brutal Honesty" — Cloudsania should acknowledge the price premium transparently and articulate exactly what the buyer gets for 4x the cost. Hiding from the pricing conversation will lose to PipeOps on price-sensitive deals.
+**Revised Recommendation:**
+- The pricing vulnerability is narrower than previously assessed. Cloudsania is only significantly more expensive than PipeOps Growth (entry tier). At PipeOps Platform tier, the gap is ~$4/user — near parity.
+- The real competitive pricing pressure comes from Railway Pro ($20/month unlimited seats) and Coolify ($0) — both non-African competitors.
+- The free tier (5 users, unlimited projects) is critical for competing against PipeOps Growth. A developer who starts free on Cloudsania gets more functionality (5 users vs 0 team seats on PipeOps Growth).
+- The pricing narrative should shift from "we're expensive" to "our Growth competitor charges $10/user with zero team seats, our free tier gives you 5 users and unlimited projects."
+- At higher tiers, Cloudsania is price-competitive or cheaper. The challenge is entry-level conversion.
+- Per the Brand Strategy value of "Brutal Honesty" — transparent pricing comparison should be part of the sales narrative.
 
 **Dependencies:** Product Capabilities §5 (pricing), Brand Strategy §4 (Brutal Honesty), Value Proposition Canvas 1 (Agency ARPU target: $500-1500/mo at 10-15 users)
 
@@ -826,17 +992,19 @@ The following recommendations are grounded in the competitive data above, cross-
 **Evidence:**
 - Porter is the only competitor with infrastructure-level compliance automation, but has zero African presence
 - Cloudsania already has SOC2/ISO 27001/GDPR/PCI DSS aligned controls, audit logs, vulnerability scanning
-- PipeOps has zero compliance messaging
-- Salus has zero compliance messaging
-- No competitor automates NDPR, POPIA, CBN, or Kenya DPA compliance
+- PipeOps NOW has NDPC accreditation + AICPA SOC certification (DC-08) — compliance is no longer a blanket differentiator against PipeOps
+- Salus had SOC2/ISO 27001 on Q2 2025 roadmap (delivery status unknown)
+- No competitor automates POPIA, CBN, or Kenya DPA compliance. PipeOps has NDPC but no evidence of compliance automation tooling.
 - The Funded Startups segment (Positioning Statement 4) explicitly identifies "Compliance Assurance" as the primary job-to-be-done
 
-**Recommendation:**
-- Cloudsania's compliance posture is its strongest differentiator against PipeOps and Salus in Africa. This advantage should be made more concrete and visible.
+**Revised Recommendation:**
+- Cloudsania's compliance advantage is now in BREADTH (4 frameworks: SOC2 + ISO 27001 + GDPR + PCI DSS) vs PipeOps's DEPTH in Nigeria-specific compliance (NDPC + SOC). Both have compliance positioning — the differentiation is in scope.
 - The existing compliance controls (RBAC, MFA, SSO, AES-256, TLS 1.2+, audit logs, vulnerability scanning) should be packaged and documented as a "compliance readiness checklist" that buyers can show auditors, investors, and regulators.
-- African regulatory compliance (NDPR, POPIA) is an uncontested white space. Even basic infrastructure scanning documentation mapped to NDPR requirements would be first-in-market.
-- Per Data Correction DC-03: Porter's compliance is infrastructure automation via third-party platforms, NOT certification. Cloudsania's own compliance-aligned controls are closer to Porter's actual offering than previously understood. The gap is in packaging and automation, not necessarily in underlying capability.
+- NDPC accreditation is a gap. PipeOps has it; Cloudsania does not. For Nigerian buyers specifically, PipeOps can claim regulatory compliance that Cloudsania cannot. Evaluate pursuing NDPC accreditation.
+- Beyond NDPC, African regulatory compliance (POPIA, CBN, Kenya DPA) remains an uncontested white space across ALL competitors.
+- Per Data Correction DC-03: Porter's compliance is infrastructure automation via third-party platforms (Oneleet/Vanta/Drata), NOT certification. Cloudsania's own compliance-aligned controls are closer to Porter's actual offering than previously understood.
 - All compliance messaging must use "aligned" or "compliance-ready" language, never "certified" (per Messaging Framework v3.0 governance rules and Data Correction DC-07).
+- Verify PipeOps's SOC certification type (SOC 1 vs SOC 2, Type I vs Type II) — this determines whether their badge represents equivalent assurance to Cloudsania's SOC 2 alignment.
 
 **Dependencies:** Product Capabilities §4 (Security & Compliance), Segment Positioning Statement 4 (Sovereign Orchestrator), Value Proposition Canvas 4 (Funded Startups), Brand Strategy §6 (Brutal Honesty — "Trust is built by admitting limitations")
 
@@ -846,7 +1014,7 @@ The following recommendations are grounded in the competitive data above, cross-
 
 **Evidence:**
 - Cloudsania free tier: 5 users, unlimited projects, multiple Konstacks, Cloud Connectors, DNS, 3 add-ons/env
-- PipeOps free: 1 project only
+- PipeOps free: 1 project, 0 free team seats (team collaboration requires paid Growth tier)
 - Salus free: 2 users, 2 projects
 - Railway: $5 one-time credit (no recurring free)
 - Northflank: Sandbox (2 services, 1 database)
@@ -908,46 +1076,56 @@ The following recommendations are grounded in the competitive data above, cross-
 
 ---
 
-### R-07: Sharpen the PipeOps Counter-Positioning
+### R-07: Sharpen the PipeOps Counter-Positioning (UPDATED Feb 2)
 
-**Evidence:**
+**Evidence (REVISED):**
 - PipeOps is the primary competitive threat (same geography, same ICP)
-- PipeOps is 4x cheaper with broader cloud support and now has managed databases
-- PipeOps weaknesses: zero compliance, thin traction (2 named customers), $120K funding, no content marketing strategy, unclear AI product status, pricing transparency gaps
+- PipeOps per-user pricing: Growth ~$10, Platform ~$35, Scale ~$100. Price gap is only significant at entry tier — at Platform/Scale, pricing is comparable or PipeOps is more expensive.
+- PipeOps NOW has NDPC + SOC compliance (DC-08) — compliance is no longer a blanket differentiator
+- PipeOps has broader cloud support (GCP, Azure), managed databases including MongoDB
+- PipeOps weaknesses: thin traction (2 named customers), $120K funding, no content marketing strategy, unclear AI product status, 0 free team seats on Growth tier, compliance depth unknown
 
-**Recommendation:**
-- The counter-positioning against PipeOps should NOT be price-based (Cloudsania loses that fight at $39 vs $10).
-- Effective counter-positioning should focus on what PipeOps cannot match:
-  - **Compliance readiness:** PipeOps has zero compliance messaging. For any buyer who needs to pass an audit, answer due diligence questions, or operate in a regulated sector, PipeOps offers nothing.
-  - **Support structure:** Cloudsania has documented support hours, enterprise 24/7, incident response protocols. PipeOps support structure is unclear.
-  - **Free tier scope:** 5 users/unlimited projects vs 1 project. For teams evaluating both platforms, Cloudsania's free tier is more usable.
-  - **Environment diversity:** 6 environment types with isolation vs standard Dev/Staging/Prod. Matters for agencies managing multiple clients and funded startups with compliance requirements.
-  - **Docker Compose native support:** Zero-translation from localhost to production. PipeOps uses K8s, which adds abstraction.
+**Revised Recommendation:**
+- The pricing narrative changes: Cloudsania is NOT universally more expensive. At comparable tier levels (Platform ~$35 vs Starter $39), the gap is minimal. At upper tiers, Cloudsania is cheaper.
+- The compliance narrative changes: Cloudsania cannot claim PipeOps has "zero compliance." Instead, the differentiation is SCOPE — Cloudsania aligns to 4 international frameworks (SOC2, ISO 27001, GDPR, PCI DSS) while PipeOps has NDPC (Nigeria-specific) + SOC (type unknown). For buyers needing international compliance (investor due diligence, multinational clients), Cloudsania's multi-framework alignment is more relevant. For purely Nigerian regulatory contexts, PipeOps's NDPC has more direct applicability.
+- Effective counter-positioning should now focus on:
+  - **Free tier superiority:** 5 users, unlimited projects vs PipeOps Growth's 0 free team seats. This is the clearest advantage at entry level.
+  - **International compliance breadth:** 4 frameworks vs 2. Relevant for funded startups, agency enterprise clients, and FinTech/HealthTech.
+  - **Support structure:** Documented hours, enterprise 24/7, incident response. PipeOps support structure unclear.
+  - **Environment diversity:** 6 types vs standard 3. Critical for agencies and compliance-driven teams.
+  - **Docker Compose native support:** Zero-translation from localhost to production.
+  - **Local payment breadth:** Mobile money + local cards vs PipeOps Naira-only.
+  - **Higher-tier value:** At Team tier ($99/user), Cloudsania is cheaper than PipeOps Scale (~$100/user).
 - Per Brand Strategy: positioning should be "here's what we provide" not "here's why PipeOps is worse." The Guide archetype educates, it doesn't attack.
 
-**Dependencies:** Messaging Framework v3.0 (anti-UVP: "We don't compete on price. We compete on what you get for what you pay."), Brand Strategy §3 (Archetype), Competitive Landscape §4.1 (PipeOps profile)
+**Dependencies:** Messaging Framework v3.0 (anti-UVP), Brand Strategy §3 (Archetype), Competitive Landscape §4.1 (PipeOps profile, updated)
 
 ---
 
-### R-08: Monitor Salus Cloud's Product Launch Trajectory
+### R-08: Monitor Salus Cloud's Product Launch Trajectory (UPDATED Feb 2)
 
-**Evidence:**
+**Evidence (REVISED with DC-11):**
 - Salus has $3.7M seed funding — 31x PipeOps's disclosed funding
 - Deimos (founder's company) is Africa's largest GCP partner — instant distribution channel
 - Pan-African investor network (Atlantica Lagos, P1 Ventures, LoftyInc, Zedcrest)
-- As of February 2026: zero public customers, zero content, zero shipped AI features, pricing inconsistency ($9 vs $29)
-- AI-native positioning is differentiated but entirely unproven
+- NOW has named enterprise customers: Jumia Group (CISO), Apex Network (CEO), Zedcrest Wealth (CTO) (DC-11)
+- Enterprise tier IS BYOC — deploys to customer's cloud
+- AI features ("AI-Ops," autonomous agents) still marked "Coming soon"
+- SOC2/ISO 27001 was on Q2 2025 roadmap — delivery unknown
+- Zero content marketing still
 
-**Recommendation:**
-- Salus is not an immediate product threat but is a strategic threat due to funding and distribution advantages.
+**Revised Recommendation:**
+- Salus is a more credible threat than previously assessed. Named enterprise customers (especially Jumia — one of Africa's largest e-commerce companies) validate market traction, even if inherited from Deimos.
+- Salus's threat has evolved from "unproven startup with funding" to "funded platform with enterprise customer logos and BYOC enterprise tier."
 - Monitor monthly for:
-  - First public customer announcement or case study
-  - Any shipped AI feature with public demo (especially auto-remediation)
-  - Content marketing launch (blog, tutorials, developer advocacy)
-  - Pricing stabilization (which price point becomes canonical: $9 or $29?)
-  - GCP-exclusive features leveraging Deimos relationship
-- If Salus ships real AI features AND establishes compliance messaging, they become the most dangerous competitor in the African market (funded, AI-differentiated, pan-African distribution, GCP access).
-- Cloudsania's advantage window is NOW — while Salus is pre-product-market-fit. Every month Cloudsania strengthens compliance posture, builds content authority, and acquires customers is a month of moat-building.
+  - AI feature delivery (are "Coming soon" features shipping?)
+  - SOC2/ISO 27001 certification announcement (was on Q2 2025 roadmap)
+  - Content marketing launch (currently zero — first blog post would signal go-to-market activation)
+  - AWS support on enterprise tier (was on Q2 2025 roadmap — would make Salus multi-cloud BYOC)
+  - Pricing stabilization ($9 vs $29 confusion)
+  - New customer announcements beyond Deimos-inherited base
+- If Salus delivers on Q1-Q2 2025 roadmap items (AI agents, compliance, AWS/Azure) AND activates content marketing, they become the most dangerous competitor in the African market.
+- Cloudsania's window to build moat is narrowing. Salus has customers. Cloudsania needs to accelerate compliance packaging, content authority, and customer acquisition.
 
 **Dependencies:** Competitive Landscape §4.2 (Salus profile), §11 Threat Assessment (Tier 1)
 
@@ -1042,7 +1220,8 @@ The following recommendations are grounded in the competitive data above, cross-
 - R-11: Create sales battle cards
 
 **Short-term (requires product/strategy decisions):**
-- R-01: Evaluate pricing structure against competitive landscape
+- R-01: Refine pricing narrative (gap narrower than previously assessed)
+- R-03: Evaluate NDPC accreditation (PipeOps has it, Cloudsania doesn't)
 - R-09: Build concrete compliance deliverables for Funded Startups
 - R-06: Expand App Service templates for priority segments
 
@@ -1057,9 +1236,10 @@ The following recommendations are grounded in the competitive data above, cross-
 
 ## 15. Changelog
 
+- v2.1 (February 2, 2026): Enriched with 3 product documentation extractions (competitor-extract.md, Extended_Competitor_Extraction.md, salus-pipeops-extraction.md). 6 new data corrections (DC-08 through DC-13). Critical changes: PipeOps has NDPC + SOC compliance (DC-08), Porter pricing now public (DC-09), Coolify community 120k+ (DC-10), Salus has named enterprise customers including Jumia Group (DC-11), Porter has GPU support (DC-12), PipeOps has 3 per-user Naira tiers (DC-13). Recommendations R-01, R-03, R-07, R-08 significantly revised. Threat assessments updated.
 - v2.0 (February 1, 2026): Full synthesis of all competitive research (internal audits, ad intelligence, content forensics, 3 Perplexity research phases). Cross-checked against Cloudsania Product Capabilities Reference v1.0. 7 data corrections documented. 12 objective recommendations with dependency mapping.
 - v1.0 (January 2026): Initial competitive landscape audit (superseded by this report)
 
 ---
 
-*End of Competitive Landscape Report v2.0 with Recommendations*
+*End of Competitive Landscape Report v2.1 with Recommendations*
