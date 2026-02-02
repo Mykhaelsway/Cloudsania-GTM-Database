@@ -1,7 +1,7 @@
 # Cloudsania Competitive Landscape Report v2.0
 
-**Date:** February 2, 2026 (v2.1 enrichment)
-**Status:** Final Synthesis — Enriched
+**Date:** February 2, 2026 (v2.2 compliance language correction)
+**Status:** Final Synthesis — Enriched + Corrected
 **Author:** GTM Strategy Team
 **Scope:** 5 Direct Competitors (BYOC/Control Plane) + 2 Indirect Competitors (Managed PaaS)
 
@@ -17,7 +17,7 @@ This report synthesizes all competitive research conducted across internal audit
 - PipeOps is the primary local rival with NDPC accreditation and AICPA SOC certification; Salus has $3.7M funding and named enterprise customers (Jumia Group)
 - Cloudsania's pricing gap vs PipeOps is primarily at entry tier (Growth ~$10/user vs Starter $39/user); at mid/upper tiers pricing is comparable or Cloudsania is cheaper
 - PipeOps has NDPC + SOC compliance; compliance is no longer a blanket Cloudsania differentiator — advantage is in BREADTH (4 frameworks) not exclusivity
-- No competitor has combined BYOC + African compliance automation + local payment rails — this white space exists but is currently unclaimed, including by Cloudsania
+- No competitor has combined BYOC + compliance-ready infrastructure for African regulations + local payment rails — this white space exists but is currently unclaimed, including by Cloudsania
 - Several claims in earlier research documents have been corrected in this report (see Section 3: Data Corrections Log)
 
 ---
@@ -412,7 +412,7 @@ During cross-checking, the following corrections were identified. These supersed
 - Zero African presence, payments, or marketing
 - Enterprise positioning too broad ("startups to enterprises")
 - Complex pricing (CPU + RAM + disk + network + logs) = hard to predict
-- No compliance automation
+- No compliance tooling or features
 - No AI/automation story
 - High minimum costs for small workloads
 
@@ -422,7 +422,7 @@ During cross-checking, the following corrections were identified. These supersed
 - Northflank supports 5 cloud providers; Cloudsania supports 3 (AWS, DO, VPS)
 - Northflank's consumption pricing is more cost-efficient for large teams
 - Cloudsania's flat per-user pricing is simpler to understand
-- Neither has compliance automation
+- Neither has one-click compliance tooling (like Porter's SOC2/HIPAA setup)
 - Cloudsania has African presence and local payments; Northflank has none
 
 ---
@@ -601,9 +601,9 @@ During cross-checking, the following corrections were identified. These supersed
 - **Railway:** HIPAA BAA at $1,000/month add-on
 - **Northflank:** Audit logs on enterprise tier only
 - **Coolify:** Container-level isolation, automatic SSL, team-based permissions. No compliance framework. Advanced compliance "long-term" on roadmap.
-- **Render:** No compliance automation
+- **Render:** No compliance features
 
-**Revised position for Cloudsania:** Compliance landscape has changed significantly with DC-08. PipeOps now has NDPC accreditation (directly relevant in Nigeria) and AICPA SOC. Cloudsania's advantage is now in BREADTH of framework alignment (4 frameworks: SOC2 + ISO 27001 + GDPR + PCI DSS) vs PipeOps's narrower positioning (NDPC + SOC). However, PipeOps's NDPC accreditation may carry more weight with Nigerian regulators than Cloudsania's broader but non-certified alignment. The opportunity to own "African compliance automation" remains, but the baseline advantage over PipeOps is narrower than previously assessed.
+**Revised position for Cloudsania:** Compliance landscape has changed significantly with DC-08. PipeOps now has NDPC accreditation (directly relevant in Nigeria) and AICPA SOC. Cloudsania's advantage is now in BREADTH of framework alignment (4 frameworks: SOC2 + ISO 27001 + GDPR + PCI DSS) vs PipeOps's narrower positioning (NDPC + SOC). However, PipeOps's NDPC accreditation may carry more weight with Nigerian regulators than Cloudsania's broader but non-certified alignment. The opportunity to own "compliance-ready infrastructure for African regulations" remains, but the baseline advantage over PipeOps is narrower than previously assessed.
 
 ### 6.4 AI/Automation Capabilities
 
@@ -819,12 +819,12 @@ These search terms have low competition among all analyzed competitors:
 
 No single competitor currently occupies the intersection of:
 - BYOC (cloud portability + data ownership)
-- African compliance automation (NDPR, POPIA, CBN, Kenya DPA)
+- Compliance-ready infrastructure for African regulations (NDPR, POPIA, CBN, Kenya DPA)
 - Local payment rails (local cards, mobile money, Naira/KES billing)
 - Transparent, published pricing
 - Professional support in African time zones
 
-This white space exists but is UNCLAIMED — Cloudsania has proximity to it but has not built the compliance automation tooling or African-specific regulatory features to own it.
+This white space exists but is UNCLAIMED — Cloudsania has proximity to it through its existing framework alignments (SOC 2/ISO 27001/GDPR/PCI DSS) but has not built African-specific regulatory features or compliance readiness tooling to fully own it.
 
 ---
 
@@ -859,7 +859,7 @@ This white space exists but is UNCLAIMED — Cloudsania has proximity to it but 
 - GPU workload support (DC-12) positions for AI/ML market
 - If Porter adds African compliance (NDPR/POPIA), it captures the regulated-vertical market
 - Currently zero African strategy, but African FinTech market growing rapidly
-- Compliance automation tooling is a defensible moat
+- Porter's compliance tooling (one-click SOC2/HIPAA) is a defensible moat
 - Total cost (~$650+/month for basic setup) keeps Porter out of the price-sensitive African market for now
 
 **Coolify** — Threat Level: MEDIUM (UPDATED with new data)
@@ -927,14 +927,14 @@ This white space exists but is UNCLAIMED — Cloudsania has proximity to it but 
 - Railway: HIPAA BAA at $1,000/month
 - Coolify: No compliance features (advanced compliance "long-term" on roadmap)
 - Northflank: Audit logs on enterprise tier only
-- Render: No compliance automation
+- Render: No compliance features
 
 ### 12.4 African Market Factors (UPDATED Feb 2)
 
 - Local HQ: Cloudsania (Lagos), PipeOps (Lagos), Salus (Cape Town, also US entity in Delaware)
 - Local pricing: PipeOps (3 Naira tiers), Cloudsania (local cards + mobile money + multi-currency)
 - African cloud regions: No competitor explicitly markets AWS Cape Town or other African regions
-- African compliance: PipeOps has NDPC accreditation (Nigeria-specific). No competitor automates POPIA, CBN, or Kenya DPA.
+- African compliance: PipeOps has NDPC accreditation (Nigeria-specific). No competitor has compliance-ready infrastructure for POPIA, CBN, or Kenya DPA.
 - Support in African time zones: Cloudsania (WAT hours), PipeOps (implied Lagos hours)
 - Named African enterprise customers: Salus (Jumia Group, Apex Network, Zedcrest Wealth), PipeOps (PorchPlus, Jobgap)
 
@@ -990,11 +990,11 @@ The following recommendations are grounded in the competitive data above, cross-
 ### R-03: Build on the Compliance Advantage — It's Cloudsania's Clearest Moat in Africa
 
 **Evidence:**
-- Porter is the only competitor with infrastructure-level compliance automation, but has zero African presence
+- Porter is the only competitor with infrastructure-level compliance tooling (one-click SOC2/HIPAA on AWS), but has zero African presence
 - Cloudsania already has SOC2/ISO 27001/GDPR/PCI DSS aligned controls, audit logs, vulnerability scanning
 - PipeOps NOW has NDPC accreditation + AICPA SOC certification (DC-08) — compliance is no longer a blanket differentiator against PipeOps
 - Salus had SOC2/ISO 27001 on Q2 2025 roadmap (delivery status unknown)
-- No competitor automates POPIA, CBN, or Kenya DPA compliance. PipeOps has NDPC but no evidence of compliance automation tooling.
+- No competitor has compliance-ready infrastructure for POPIA, CBN, or Kenya DPA. PipeOps has NDPC accreditation but no evidence of broader African regulatory coverage.
 - The Funded Startups segment (Positioning Statement 4) explicitly identifies "Compliance Assurance" as the primary job-to-be-done
 
 **Revised Recommendation:**
@@ -1138,7 +1138,7 @@ The following recommendations are grounded in the competitive data above, cross-
 - Value Proposition Canvas 4: Primary job = "Control, Compliance, & Audit Readiness"
 - Porter targets this segment globally but has zero African presence
 - Railway charges $1,000/month for HIPAA BAA — a pricing reference for compliance add-ons
-- No competitor offers NDPR/POPIA compliance automation
+- No competitor offers compliance-ready infrastructure for NDPR/POPIA
 
 **Recommendation:**
 - The Funded Startups segment has the highest willingness to pay (Canvas 4 implies enterprise-tier revenue) and the clearest unmet need (compliance for African FinTech/HealthTech).
@@ -1236,10 +1236,11 @@ The following recommendations are grounded in the competitive data above, cross-
 
 ## 15. Changelog
 
+- v2.2 (February 2, 2026): Compliance language correction — replaced all "compliance automation" framing with "compliance-ready infrastructure" per product owner clarification. Cloudsania provides compliance-ready infrastructure based on existing framework alignments (SOC 2/ISO 27001/GDPR/PCI DSS); it does not automate NDPR, POPIA, CBN, or Kenya DPA. Porter-specific compliance tooling descriptions (one-click SOC2/HIPAA) retained as accurate Porter feature descriptions. Updated §1, §4.6, §6.3, §10.4, §11, §12.3, §12.4, §13 R-03, R-10.
 - v2.1 (February 2, 2026): Enriched with 3 product documentation extractions (competitor-extract.md, Extended_Competitor_Extraction.md, salus-pipeops-extraction.md). 6 new data corrections (DC-08 through DC-13). Critical changes: PipeOps has NDPC + SOC compliance (DC-08), Porter pricing now public (DC-09), Coolify community 120k+ (DC-10), Salus has named enterprise customers including Jumia Group (DC-11), Porter has GPU support (DC-12), PipeOps has 3 per-user Naira tiers (DC-13). Recommendations R-01, R-03, R-07, R-08 significantly revised. Threat assessments updated.
 - v2.0 (February 1, 2026): Full synthesis of all competitive research (internal audits, ad intelligence, content forensics, 3 Perplexity research phases). Cross-checked against Cloudsania Product Capabilities Reference v1.0. 7 data corrections documented. 12 objective recommendations with dependency mapping.
 - v1.0 (January 2026): Initial competitive landscape audit (superseded by this report)
 
 ---
 
-*End of Competitive Landscape Report v2.1 with Recommendations*
+*End of Competitive Landscape Report v2.2 with Recommendations*
