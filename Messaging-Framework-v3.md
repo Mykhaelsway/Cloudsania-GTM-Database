@@ -13,7 +13,7 @@
 ### 1.1 Hero Headline
 
 **Primary:**
-> **"Deploy to your own cloud in minutes. Zero complexity. Full ownership."**
+> **"Deploy to your own cloud in minutes. Zero complexity. Full infrastructure ownership."**
 
 **Alternatives (A/B Testing):**
 - "Your Cloud. Your Keys. Deploy in Minutes."
