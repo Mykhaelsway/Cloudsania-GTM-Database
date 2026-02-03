@@ -222,7 +222,7 @@
 
 *   **Fragmented Management (9/10):** "50 clients. One dashboard. Zero chaos."
 *   **Zero-Downtime Deployment (Critical Functional):** "Push updates to 50 sites. Zero downtime. Zero 2 AM calls."
-*   **DevOps Hiring Costs (8/10):** "Stop being a SysAdmin. Start building your agency."
+*   **DevOps Hiring Costs (8/10):** "Stop putting out fires. Start building your agency."
 *   **Cost Transparency + Markup:** "Turn hosting costs into profit margins — flat-rate pricing you can mark up."
 *   **Consolidation:** "Your Agency Operating System."
 

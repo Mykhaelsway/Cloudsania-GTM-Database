@@ -141,7 +141,7 @@ REPEAT (next event bigger, better qualified)
 
 **Hero:**
 ```
-Stop Being a SysAdmin. Start Building Your Agency.
+Stop Putting Out Fires. Start Building Your Agency.
 Join 30 [City] Agency Owners at Our Free No-Ops Masterclass
 
 📅 [Date] | 9am - 5pm

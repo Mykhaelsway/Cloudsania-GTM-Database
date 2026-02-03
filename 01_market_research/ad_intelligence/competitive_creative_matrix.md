@@ -33,7 +33,7 @@ We have uncovered a polarized market with a massive gap in the middle.
 
 ### **Campaign A: "The Anti-SysAdmin" (Agencies)**
 *   **Target:** Agency Founders / Lead Devs.
-*   **Hook:** "Stop being a SysAdmin. Start being a CEO."
+*   **Hook:** "Stop putting out fires. Start being a CEO."
 *   **Creative:** Split screen. Left: Chaos (AWS Console). Right: Cloudsania Dashboard.
 *   **Placement:** LinkedIn (Job Title: Founder/CTO), Facebook (Interest: WordPress/Laravel).
 
