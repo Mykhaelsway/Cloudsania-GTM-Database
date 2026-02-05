@@ -84,7 +84,54 @@
 
 ---
 
-### Section 3: Segment Switcher (INTEREST)
+### Section 3: What Can You Do (INTEREST)
+
+**Purpose:** Show concrete use cases to reduce consideration friction
+
+**Psychology Applied:** Specificity + Social Proof
+
+**Copy:**
+
+**Section Headline:**
+> See What You Can Build with Cloudsania
+
+**Subheadline:**
+> Real use cases from agencies, AI builders, startups, and developers.
+
+**Use Case Cards (4 cards, 2x2 grid):**
+
+**Card 1: Agencies**
+- Title: "Manage 50 Client Sites from One Dashboard"
+- Description: "Deploy and monitor all client websites from one control panel. Give clients dashboard access to view uptime."
+- Metrics Badge: "Deploy 10 sites in one day"
+- CTA: "See How Agencies Use Cloudsania →" (link to `/agencies`)
+
+**Card 2: AI Natives**
+- Title: "Self-Host n8n Without Docker Headaches"
+- Description: "Deploy AI automation tools like n8n, Flowise, Langflow on your cloud in minutes. No Docker knowledge required."
+- Metrics Badge: "Deploy in 15 minutes"
+- CTA: "Explore AI Use Cases →" (link to `/use-cases#ai-automation`)
+
+**Card 3: Funded Startups**
+- Title: "Pass SOC2 Audit with BYOC"
+- Description: "Deploy to your own AWS account. Full audit logs, data residency control, no vendor lock-in."
+- Metrics Badge: "SOC2-ready from Day 1"
+- CTA: "See Startup Success Stories →" (link to `/startups`)
+
+**Card 4: Traditional Developers**
+- Title: "Deploy Laravel with Git Push"
+- Description: "No SSH. No Kubernetes. Just push your code to Git and watch it deploy automatically."
+- Metrics Badge: "Git push to live in 5 minutes"
+- CTA: "See Developer Guides →" (link to `/developers`)
+
+**Visual Guidance:**
+- 2x2 grid on desktop, stack on mobile
+- Card: white background, border, hover lift effect
+- Metrics badge: small pill, top-right corner
+
+---
+
+### Section 4: Segment Switcher (INTEREST)
 
 **Purpose:** Help visitors self-identify and navigate to relevant page
 
@@ -132,7 +179,7 @@
 
 ---
 
-### Section 4: Core Value Proposition (INTEREST → DESIRE)
+### Section 5: Core Value Proposition (INTEREST → DESIRE)
 
 **Purpose:** Explain the 3 core benefits (Simplicity, Control, Reliability)
 
@@ -168,7 +215,7 @@
 
 ---
 
-### Section 5: How It Works (DESIRE)
+### Section 6: How It Works (DESIRE)
 
 **Purpose:** Reduce perceived complexity, show ease of use
 
@@ -205,7 +252,7 @@
 
 ---
 
-### Section 6: Differentiation (DESIRE)
+### Section 7: Differentiation (DESIRE)
 
 **Purpose:** Show why Cloudsania vs alternatives
 
@@ -237,7 +284,7 @@
 
 ---
 
-### Section 7: Testimonials (DESIRE)
+### Section 8: Testimonials (DESIRE)
 
 **Purpose:** Build trust through customer stories
 
@@ -274,7 +321,7 @@
 
 ---
 
-### Section 8: Pricing Teaser (DESIRE → ACTION)
+### Section 9: Pricing Teaser (DESIRE → ACTION)
 
 **Purpose:** Show affordability, remove price objection
 
@@ -317,7 +364,7 @@
 
 ---
 
-### Section 9: Final CTA (ACTION)
+### Section 10: Final CTA (ACTION)
 
 **Purpose:** Convert visitors who scrolled to bottom
 
@@ -421,13 +468,13 @@
 
 ## Page Length & Engagement Strategy
 
-**Total Sections:** 9  
-**Estimated Word Count:** ~1,800 words  
-**Estimated Scroll Depth:** 4-5 screens (desktop)  
+**Total Sections:** 10  
+**Estimated Word Count:** ~2,000 words  
+**Estimated Scroll Depth:** 5-6 screens (desktop)  
 **Average Read Time:** 3-4 minutes
 
 **Engagement Tactics:**
-1. **Progressive Disclosure:** Hero → Segments → Benefits → Proof (logical flow)
+1. **Progressive Disclosure:** Hero → Social Proof → Use Cases → Segments → Benefits → Proof (logical flow)
 2. **Visual Breaks:** Alternate text-heavy and visual-heavy sections
 3. **Multiple CTAs:** 4 primary CTA placements to capture at different stages
 4. **Segment Exit Points:** Let visitors navigate to specific pages early (Section 3)
@@ -465,7 +512,7 @@
 - **Title Tag:** "Cloudsania - No-Ops Cloud Deployment to AWS, DigitalOcean, and VPS"
 - **Meta Description:** "Deploy to your own cloud in minutes. Zero-config deployment. 99.9% uptime SLA. Local payment accepted. Start free trial."
 - **H1:** "Deploy to your own cloud in minutes. Zero complexity. Full ownership."
-- **H2s:** Section headlines (9 total)
+- **H2s:** Section headlines (10 total)
 
 ---
 
