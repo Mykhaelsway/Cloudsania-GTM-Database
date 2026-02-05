@@ -23,14 +23,14 @@
 ### 1.2 Subheadline
 
 **Primary:**
-> No-Ops cloud deployment to AWS, DigitalOcean, or Vultr — enterprise reliability on infrastructure you own. Local payment accepted.
+> No-Ops cloud deployment to your own cloud — enterprise reliability on infrastructure you own. Local payment accepted.
 
 **Short (20 words):**
 > 99.9% uptime. Git push deploys. No Kubernetes. No SSH. You keep your keys. Local payment accepted.
 
 ### 1.3 Elevator Pitch
 
-> Cloudsania is a No-Ops cloud platform that simplifies deployment to AWS, DigitalOcean, or Vultr — giving developers zero-config simplicity with enterprise reliability and full infrastructure ownership. Local payment and African-first support included.
+> Cloudsania is a No-Ops cloud platform that simplifies deployment to AWS, DigitalOcean, or any VPS — giving developers zero-config simplicity with enterprise reliability and full infrastructure ownership. Local payment and African-first support included.
 
 ### 1.4 Emotional Value Anchor
 
@@ -81,7 +81,7 @@ Our differentiation is built on 7 pillars grounded in validated product capabili
 - **Validated source:** Product Capabilities §1.2 (App Services), §1.5 (CI/CD), §1.9 (Project Modes)
 
 **Pillar 2: BYO-Cloud Ownership**
-- **What it means:** You deploy to your own AWS, DigitalOcean, or Vultr account. You own the infrastructure, the data, and the keys.
+- **What it means:** You deploy to your own AWS, DigitalOcean, or VPS account. You own the infrastructure, the data, and the keys.
 - **Customer language:** "Your cloud. Your keys. Exit anytime."
 - **Proof:** Cloud Connectors (AWS IAM-based, VPS SSH-based). Customer owns all provisioned resources. No vendor lock-in — export anytime. Multi-region deployment.
 - **Validated source:** Product Capabilities §1.3 (Cloud Connectors), §2.5 (BYOC Deployment)
@@ -98,7 +98,7 @@ Our differentiation is built on 7 pillars grounded in validated product capabili
 - **What it means:** Capped per-user platform pricing. You always know what Cloudsania costs. Cloud provider costs are separate and depend on your own usage — that's BYOC transparency.
 - **Customer language:** "Know your platform cost upfront. No surprise Cloudsania bills."
 - **Proof:** $39/user Starter, $79/user Pro, $99/user Team. No per-project fees. No bandwidth surcharges on the platform side.
-- **Important qualifier:** Cloud provider costs (AWS, DigitalOcean, Vultr) are billed directly to your account and vary based on your resource usage. Cloudsania's platform fee is the capped portion.
+- **Important qualifier:** Cloud provider costs (AWS, DigitalOcean, VPS) are billed directly to your account and vary based on your resource usage. Cloudsania's platform fee is the capped portion.
 - **Validated source:** Product Capabilities §5 (Pricing & Plans)
 
 **Pillar 5: Environment Parity**
@@ -277,13 +277,13 @@ Every proof point below is validated against the Product Capabilities Reference 
 
 ### 4.2 Ownership & BYOC Proof Points
 
-- **"Deploy to your own cloud account"** — AWS, DigitalOcean, Vultr, Linode, Hetzner. Customer owns all provisioned resources. Segments: All. Use in: Homepage, security page.
+- **"Deploy to your own cloud account"** — AWS, DigitalOcean, or any VPS via SSH. Customer owns all provisioned resources. Segments: All. Use in: Homepage, security page.
   - *Source: Product Capabilities §1.3, §2.5*
 - **"You keep your AWS keys"** — IAM-based provisioning with least-privilege access. No long-term credentials stored by Cloudsania. Segments: All. Use in: Security page, sales calls.
   - *Source: Product Capabilities §1.3.1 (AWS Connector)*
 - **"Exit anytime — your infrastructure"** — Customer owns all provisioned resources. Data exportable in standard formats. No lock-in. Segments: Startups, Agencies. Use in: Sales calls, contracts.
   - *Source: Product Capabilities §4.5 (Data Portability)*
-- **"Multi-cloud deployment"** — AWS, DigitalOcean, Vultr, Linode, Hetzner from one platform. Cross-provider orchestration. Segments: All. Use in: Pricing page, docs.
+- **"Multi-cloud deployment"** — AWS, DigitalOcean, or any VPS via SSH from one platform. Cross-provider orchestration. Segments: All. Use in: Pricing page, docs.
   - *Source: Product Capabilities §2.2 (Integration Layer)*
 
 ### 4.3 Reliability Proof Points
@@ -301,7 +301,7 @@ Every proof point below is validated against the Product Capabilities Reference 
   - *Source: Product Capabilities §5*
 - **"Your cloud costs are yours to see"** — Under BYOC, cloud provider bills go directly to your account. Full visibility, no markup from Cloudsania. Segments: Agencies, Startups. Use in: Sales calls.
   - *Source: Product Capabilities §2.5 (BYOC — customer owns infrastructure)*
-- **ALWAYS QUALIFY:** "Cloudsania's platform fee is capped. Cloud provider costs (AWS/DO/Vultr) are separate and vary based on your resource usage." This qualifier must appear wherever "capped pricing" is used.
+- **ALWAYS QUALIFY:** "Cloudsania's platform fee is capped. Cloud provider costs (AWS/DigitalOcean/VPS) are separate and vary based on your resource usage." This qualifier must appear wherever "capped pricing" is used.
 
 ### 4.5 Environment Parity Proof Points
 
@@ -321,7 +321,7 @@ Every proof point below is validated against the Product Capabilities Reference 
 
 - **"You own the data. We orchestrate."** — BYOC model: customer retains full data ownership and control. Cloudsania does not access client data except for service operation. Segments: All. Use in: Security page, sales calls.
   - *Source: Product Capabilities §4.5*
-- **"Deploy to AWS Cape Town or any region"** — BYOC multi-region deployment. AWS Global Regions, DigitalOcean (NYC, SFO, Amsterdam, Singapore), Vultr/Linode/Hetzner global coverage. Segments: Funded Startups. Use in: Compliance pages, sales.
+- **"Deploy to AWS Cape Town or any region"** — BYOC multi-region deployment. AWS Global Regions, DigitalOcean global regions. Segments: Funded Startups. Use in: Compliance pages, sales.
   - *Source: Product Capabilities §2.5*
 - **"SOC 2 and ISO 27001 aligned controls"** — Compliance-ready infrastructure. Security, availability, and confidentiality controls implemented. Risk management and secure development practices in place. Segments: Startups, Agencies. Use in: RFPs, security questionnaires.
   - *MUST say "aligned" — not "certified." Source: Product Capabilities §4.1*

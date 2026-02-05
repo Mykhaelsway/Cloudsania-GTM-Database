@@ -41,7 +41,7 @@ These 5 pillars are the immutable core of our messaging, derived directly from M
 *   **Value Proposition:** "Push your code. We handle the rest. Your infrastructure, zero complexity."
 
 ### Pillar 2: BYO-Cloud Flexibility
-*   **Theme:** Deploy to your own AWS, DigitalOcean, or Vultr account. You keep the keys, we handle the orchestration.
+*   **Theme:** Deploy to your own AWS, DigitalOcean, or VPS account. You keep the keys, we handle the orchestration.
 *   **Target Segments:** Small Agencies, Funded Startups, Traditional Developers
 *   **Mapped Pain Points:**
     *   **FS-01:** Data Residency Infrastructure Access

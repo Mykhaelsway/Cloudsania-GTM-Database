@@ -509,7 +509,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 ### 2.2 Infrastructure Components
 
 **Resource Management:**
-- **Multi-cloud resource orchestration:** Manage AWS resources or Any VPS (DigitalOcean, Vultr, Hetzner, etc.) from one platform
+- **Multi-cloud resource orchestration:** Manage AWS resources or any VPS via SSH (DigitalOcean, or any VPS provider) from one platform
 - **Infrastructure as Code (IaC):** Konstacks use IaC principles for version-controlled, reproducible infrastructure
 - **State management and tracking:** Real-time synchronization of resource states across cloud providers
 - **Resource optimization:** Automated recommendations for cost and performance optimization
@@ -531,7 +531,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 *Provider Integration:*
 - AWS integration services (IAM, CloudTrail, multi-region)
 - DigitalOcean connectivity (via VPS Connector)
-- Universal VPS management (Vultr, Linode, Hetzner, Namecheap via SSH)
+- Universal VPS management (any VPS provider via SSH)
 - Cross-provider orchestration (deploy across multiple clouds)
 
 *Third-party Services:*
@@ -644,7 +644,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 
 ### 2.5 BYOC (Bring Your Own Cloud) Deployment
 **Problem Solved:** Data residency compliance, hosting instability (FS-01, TD-03)  
-**Solution:** Customer deploys to their own AWS/DO/Vultr account  
+**Solution:** Customer deploys to their own AWS, DigitalOcean, or VPS account
 **Features:**
 - Multi-region support (Cape Town, Mumbai, NYC, SFO, Amsterdam, Singapore, etc.)
 - Customer owns infrastructure and data
@@ -655,9 +655,8 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 **Available Regions:**
 - **AWS:** Global Region Support
 - **DigitalOcean:** NYC, SFO, Amsterdam, Singapore, etc.
-- **Vultr:** Global coverage
-- **Linode:** Global coverage
-- **Hetzner:** European coverage
+- **DigitalOcean:** Global coverage
+- **VPS (SSH):** Any VPS provider with SSH access
 
 ---
 
@@ -1016,7 +1015,7 @@ Cloudsania operates as a sophisticated cloud orchestration platform that abstrac
 | **Konstacks (EC2)** | ✅ Available | Medium | 20-30 min | Traditional VM deployments |
 | **App Services (E-commerce)** | ✅ Available | Low | 15-18 min | Quick e-commerce setup |
 | **Cloud Connectors (AWS)** | ✅ Available | Low | 3 min | BYOC AWS deployments |
-| **Cloud Connectors (VPS)** | ✅ Available | Low | 3 min | DigitalOcean/Linode/Vultr |
+| **Cloud Connectors (VPS)** | ✅ Available | Low | 3 min | Any VPS via SSH |
 | **Environments** | ✅ Available | Low | Included | Dev/Staging/Prod isolation |
 | **CI/CD Pipelines** | ✅ Available | Medium | 15 min | Automated deployments |
 | **DNS Configuration** | ✅ Available | Low | 3 min | Domain management |

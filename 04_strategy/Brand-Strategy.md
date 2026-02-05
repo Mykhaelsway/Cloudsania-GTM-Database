@@ -26,7 +26,7 @@
 
 **2. Technical Value (The "Why")**
 **"Your Cloud, Your Keys, Zero Complexity."**
-- **BYOC Architecture:** Deploy to your own AWS/GCP/Vultr account. You own the assets.
+- **BYOC Architecture:** Deploy to your own AWS, DigitalOcean, or VPS account. You own the assets.
 - **Zero-Config Deployment:** Push code → automated Build→Test→Deploy pipeline. No YAML, no Dockerfiles, no Ops skills. *(Canvas 2: Config Complexity 10/10)*
 - **No Restrictions:** Long-running processes, background jobs, websockets — no serverless function timeout limits.
 - **Environment Parity:** Identical configurations from dev to staging to production. *(Canvas 2: Environment Drift 9/10)*
