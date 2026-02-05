@@ -184,6 +184,11 @@
 - Each benefit: Feature → Advantage → Benefit (clear progression)
 - Use customer language quotes in callout boxes
 
+**AI Automation Builders Sub-Segment (n8n, Flowise, Langflow):**
+- **Use Case:** Self-host AI automation tools without Docker complexity
+- **Value Prop:** "Deploy n8n, Flowise, Langflow in 15 minutes. No Docker knowledge required."
+- **CTA:** "See AI Automation Guide →" (link to n8n self-hosting asset)
+
 ---
 
 ### Section 5: Technical Proof Points - FEATURE (For Technical Audience)
