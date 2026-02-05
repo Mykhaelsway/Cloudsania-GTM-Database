@@ -5,6 +5,45 @@
 
 ---
 
+## 2026-02-05 (Brainstorming Session)
+
+**AI Automation Builders Segment:**
+- ✅ Added as sub-segment under AI Natives (33% allocation)
+- ✅ Target: n8n, Flowise, Langflow, Make users
+- ✅ Use case: Self-host AI automation stack without Docker complexity
+- ✅ Positioning: "Run AI workflows on your infrastructure without DevOps complexity"
+
+**RBAC Capability Clarification:**
+- ✅ RBAC provides client view access (read-only or role-based)
+- ❌ NOT white-labeled/branded (clients see Cloudsania interface)
+- ✅ Corrected use case: "Client Dashboard Access" (not "White-Label Client Portals")
+- ✅ Agencies can grant clients dashboard access to view uptime, deployments, metrics
+
+**Ship One App Per Week Challenge:**
+- ✅ Gamified Build in Public (4 apps in 4 weeks)
+- ✅ Incentive: Complete all 4 → Free Pro tier for 6 months
+- ✅ Content output: 4 case studies per builder = 40 per cohort
+- ✅ Add to Build in Public playbook as "advanced track" (Phase 1-2)
+
+**Cloudsania University:**
+- ✅ Vercel Learn-style educational platform
+- ✅ Three tracks: Self-Paced (free), Instructor-Led ($99-299), Certification ($199-499)
+- ✅ Phase 2: Launch Learning Hub with 6 free courses
+- ✅ Phase 3: Launch paid certification programs
+
+**CTO Dinner Series:**
+- ✅ Intimate dinner (8-12 CTOs) for Funded Startups segment
+- ✅ Quarterly frequency (not monthly)
+- ✅ Budget: $500-800 per dinner
+- ✅ Add to Phase 2-3 roadmaps
+
+**Downloadable Assets Strategy:**
+- ✅ Use case-based assets (not generic playbooks)
+- ❌ Removed "client billing template" (not a Cloudsania capability)
+- ✅ Priority assets: "Deploy 10 Client Sites in One Day" Checklist, "Self-Host n8n in 15 Minutes" Guide
+
+---
+
 ## 2026-02-05
 
 **Build in Public Program Structure:**

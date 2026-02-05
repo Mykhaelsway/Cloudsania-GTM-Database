@@ -9,6 +9,7 @@
 
 **1. Agencies:** 47% allocation (Revenue Engine)  
 **2. AI Natives:** 33% allocation (Marketing Engine)  
+   - Sub-segment: AI Automation Builders (n8n, Flowise, Langflow users)  
 **3. Funded Startups:** 13% allocation (Revenue + Credibility Engine)  
 **4. Traditional Developers:** 7% allocation (Market Education Engine)
 
